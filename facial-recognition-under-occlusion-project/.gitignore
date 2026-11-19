@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# Zip files
+zip_files/
+*.zip
+
+# Large model weights and datasets
+*.h5
+*.pth
+*.pkl
+*.onnx
+
+# Exclude all subdirectories in experiments folder
+experiments/*/
+
+# Papers (cited in literature/README.md, not stored here)
+literature/*.pdf
+
+# CelebA dataset
+celeba_dataset/
+
+# Demo samples made from CelebA-HQ, which may not be redistributed
+demo/*.jpg
+demo/*.png

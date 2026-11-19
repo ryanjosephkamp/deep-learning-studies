@@ -1,0 +1,23 @@
+{
+ "checked": "2026-11-19",
+ "passed": 39259,
+ "failed": 0,
+ "counts": {
+  "faces": 1384,
+  "figures": 21,
+  "hero": 33,
+  "sface": 16596,
+  "seeds": 21205,
+  "portraits": 15
+ },
+ "checker": "tools/check_site.mjs",
+ "against": [
+  "results/study/analysis",
+  "results/study/eval/sface/fixed_thresholds.json",
+  "study/config.json",
+  "study/README.md",
+  "paper/numbers.tex",
+  "chapter/chapter.md",
+  "chapter/figures"
+ ]
+}

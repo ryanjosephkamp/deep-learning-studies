@@ -1,0 +1,31 @@
+{
+ "about": "Synthetic portraits of people who don't exist, aligned to the study's 112-pixel template at three times its size (336 pixels). They are illustrations for the course site's face demos, not the study's data.",
+ "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos.",
+ "scale": 3,
+ "portraits": [
+  {
+   "file": "portrait-1.webp",
+   "name": "a woman in a straw hat"
+  },
+  {
+   "file": "portrait-2.webp",
+   "name": "a man with short dark hair"
+  },
+  {
+   "file": "portrait-3.webp",
+   "name": "a laughing older man with a white beard"
+  },
+  {
+   "file": "portrait-4.webp",
+   "name": "a woman with curly hair"
+  },
+  {
+   "file": "portrait-5.webp",
+   "name": "a man with a beard"
+  },
+  {
+   "file": "portrait-6.webp",
+   "name": "a smiling woman"
+  }
+ ]
+}

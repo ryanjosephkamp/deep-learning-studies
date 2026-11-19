@@ -1,0 +1,71 @@
+{
+  "seed": 0,
+  "split": {
+    "test_identities": 1000,
+    "min_images_test": 2,
+    "min_images_train": 2
+  },
+  "crop_size": 112,
+  "frame_size": 256,
+  "align": {
+    "detector_file": "face_detection_yunet_2023mar.onnx",
+    "score_threshold": 0.7
+  },
+  "conditions": {
+    "square_coverages": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60],
+    "eyes_band_rows": [0.30, 0.56],
+    "lower_band_rows": [0.60, 1.00],
+    "random_square_coverage": 0.20,
+    "fill_variants": [["gray", 0.20], ["noise", 0.20], ["gray", 0.40], ["noise", 0.40]],
+    "same_image_coverages": [0.0, 0.05, 0.10, 0.20, 0.30, 0.50]
+  },
+  "frame_levels": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0],
+  "pretrained": [
+    {"key": "sface", "file": "face_recognition_sface_2021dec.onnx", "scale": 1.0, "mean": 0.0, "swap_rb": true, "dim": 128,
+     "source": "github.com/opencv/opencv_zoo, models/face_recognition_sface (also in the project backup)",
+     "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"},
+    {"key": "arcface_r50", "file": "w600k_r50.onnx", "scale": 0.00784313725490196, "mean": 127.5, "swap_rb": true, "dim": 512,
+     "source": "InsightFace buffalo_l pack, github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip",
+     "sha256": null}
+  ],
+  "original_model": {"file": "model.pth", "sha256": "74042b212800d0ae3d7326533f3a6516a9a71a5d94ec92d6b1c6e2f2ae7784ed"},
+  "deepface_models": ["VGG-Face", "Facenet", "Facenet512", "OpenFace", "ArcFace", "SFace"],
+  "train": {
+    "embedding_size": 128,
+    "epochs": 40,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 1,
+    "cosface_scale": 30.0,
+    "cosface_margin": 0.35,
+    "triplet_margin": 0.3,
+    "triplet_identities_per_batch": 64,
+    "triplet_images_per_identity": 4,
+    "occlusion_probability": 0.5,
+    "occlusion_range": [0.10, 0.50],
+    "checkpoint_minutes": 3,
+    "seeds": [0, 1, 2]
+  },
+  "runs": [
+    {"name": "cosface_att_aug", "loss": "cosface", "attention": true, "augment": true},
+    {"name": "cosface_att_noaug", "loss": "cosface", "attention": true, "augment": false},
+    {"name": "cosface_noatt_aug", "loss": "cosface", "attention": false, "augment": true},
+    {"name": "cosface_noatt_noaug", "loss": "cosface", "attention": false, "augment": false},
+    {"name": "triplet_att_aug", "loss": "triplet", "attention": true, "augment": true}
+  ],
+  "attention_probes": 256,
+  "label_check_min_rank1": 0.5,
+  "far_levels": [0.01, 0.001],
+  "smoke": {
+    "identities": 40,
+    "images_per_identity": 3,
+    "test_identities": 16,
+    "crop_size": 48,
+    "frame_size": 64,
+    "epochs": 1,
+    "batch_size": 32,
+    "seeds": [0],
+    "frame_levels": [0.0, 0.2, 0.5, 1.0]
+  }
+}

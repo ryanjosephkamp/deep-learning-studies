@@ -1,0 +1,32 @@
+# Facial Recognition with Occlusion Robustness
+# Author: Ryan Kamp
+# Institution: University of Cincinnati
+# Course: CS 6073 – Deep Learning (Fall 2025)
+
+# Versions are those of the Colab runtime that produced results/original/ (Python 3.12,
+# November and December 2025), where its pip output records them. The PyTorch version wasn't
+# logged; the CPU checks in analysis/ used torch 2.9.1 and torchvision 0.24.1.
+
+# Core deep learning frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow==2.19.0
+tf-keras        # DeepFace needs it with TensorFlow 2.16 or later
+
+# Face recognition and processing
+deepface==0.0.96
+rembg==2.0.68
+onnxruntime==1.23.2
+
+# Image processing
+Pillow==11.3.0
+opencv-python==4.12.0.88
+
+# Data science and visualization
+numpy==2.0.2
+pandas==2.2.2
+matplotlib>=3.7.0
+
+# Utilities
+tqdm>=4.65.0
+requests>=2.31.0

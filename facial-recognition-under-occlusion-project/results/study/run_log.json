@@ -1,0 +1,290 @@
+{
+  "starts": [
+    {
+      "time": "2026-11-11 21:53:00",
+      "stages": [
+        "prepare",
+        "align",
+        "pretrained"
+      ],
+      "smoke": false,
+      "threads": 30
+    },
+    {
+      "time": "2026-11-11 22:53:26",
+      "stages": [
+        "prepare",
+        "align",
+        "pretrained",
+        "pixels",
+        "original",
+        "train",
+        "evaluate",
+        "summary"
+      ],
+      "smoke": false,
+      "threads": 30
+    }
+  ],
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-1064-nvidia-x86_64-with-glibc2.35",
+    "torch": "2.9.1+cu128",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": true,
+    "cv2": "4.12.0",
+    "pandas": "2.3.3",
+    "PIL": "10.0.1",
+    "torchvision": "0.24.1+cu128",
+    "gpu": "NVIDIA A10",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "driver": "580.105.08",
+    "cpu_count": 30
+  },
+  "config": {
+    "seed": 0,
+    "split": {
+      "test_identities": 1000,
+      "min_images_test": 2,
+      "min_images_train": 2
+    },
+    "crop_size": 112,
+    "frame_size": 256,
+    "align": {
+      "detector_file": "face_detection_yunet_2023mar.onnx",
+      "score_threshold": 0.7
+    },
+    "conditions": {
+      "square_coverages": [
+        0.0,
+        0.05,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "eyes_band_rows": [
+        0.3,
+        0.56
+      ],
+      "lower_band_rows": [
+        0.6,
+        1.0
+      ],
+      "random_square_coverage": 0.2,
+      "fill_variants": [
+        [
+          "gray",
+          0.2
+        ],
+        [
+          "noise",
+          0.2
+        ],
+        [
+          "gray",
+          0.4
+        ],
+        [
+          "noise",
+          0.4
+        ]
+      ],
+      "same_image_coverages": [
+        0.0,
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5
+      ]
+    },
+    "frame_levels": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "pretrained": [
+      {
+        "key": "sface",
+        "file": "face_recognition_sface_2021dec.onnx",
+        "scale": 1.0,
+        "mean": 0.0,
+        "swap_rb": true,
+        "dim": 128,
+        "source": "github.com/opencv/opencv_zoo, models/face_recognition_sface (also in the project backup)",
+        "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"
+      },
+      {
+        "key": "arcface_r50",
+        "file": "w600k_r50.onnx",
+        "scale": 0.00784313725490196,
+        "mean": 127.5,
+        "swap_rb": true,
+        "dim": 512,
+        "source": "InsightFace buffalo_l pack, github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip",
+        "sha256": null
+      }
+    ],
+    "original_model": {
+      "file": "model.pth",
+      "sha256": "74042b212800d0ae3d7326533f3a6516a9a71a5d94ec92d6b1c6e2f2ae7784ed"
+    },
+    "deepface_models": [
+      "VGG-Face",
+      "Facenet",
+      "Facenet512",
+      "OpenFace",
+      "ArcFace",
+      "SFace"
+    ],
+    "train": {
+      "embedding_size": 128,
+      "epochs": 40,
+      "batch_size": 256,
+      "lr": 0.001,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 1,
+      "cosface_scale": 30.0,
+      "cosface_margin": 0.35,
+      "triplet_margin": 0.3,
+      "triplet_identities_per_batch": 64,
+      "triplet_images_per_identity": 4,
+      "occlusion_probability": 0.5,
+      "occlusion_range": [
+        0.1,
+        0.5
+      ],
+      "checkpoint_minutes": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "runs": [
+      {
+        "name": "cosface_att_aug",
+        "loss": "cosface",
+        "attention": true,
+        "augment": true
+      },
+      {
+        "name": "cosface_att_noaug",
+        "loss": "cosface",
+        "attention": true,
+        "augment": false
+      },
+      {
+        "name": "cosface_noatt_aug",
+        "loss": "cosface",
+        "attention": false,
+        "augment": true
+      },
+      {
+        "name": "cosface_noatt_noaug",
+        "loss": "cosface",
+        "attention": false,
+        "augment": false
+      },
+      {
+        "name": "triplet_att_aug",
+        "loss": "triplet",
+        "attention": true,
+        "augment": true
+      }
+    ],
+    "attention_probes": 256,
+    "label_check_min_rank1": 0.5,
+    "far_levels": [
+      0.01,
+      0.001
+    ],
+    "smoke": {
+      "identities": 40,
+      "images_per_identity": 3,
+      "test_identities": 16,
+      "crop_size": 48,
+      "frame_size": 64,
+      "epochs": 1,
+      "batch_size": 32,
+      "seeds": [
+        0
+      ],
+      "frame_levels": [
+        0.0,
+        0.2,
+        0.5,
+        1.0
+      ]
+    }
+  },
+  "weights_sha256": {
+    "model.pth": "74042b212800d0ae3d7326533f3a6516a9a71a5d94ec92d6b1c6e2f2ae7784ed",
+    "face_detection_yunet_2023mar.onnx": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+    "face_recognition_sface_2021dec.onnx": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+    "w600k_r50.onnx": "4c06341c33c2ca1f86781dab0e829f88ad5b64be9fba56e56bc9ebdefc619e43"
+  },
+  "labels_sha256": "919c06655ace6cfd03cbec04ff717125c478b88b48f4a46cb293ddf0bc7422f1",
+  "image_map_sha256": "828f6e91f00c9c73c02a8378f0083dc6648c2a49dbaa96e9de2b66ff67fe4806",
+  "counts": {
+    "aligned": 28295,
+    "not_aligned": 4,
+    "test_identities": 1000,
+    "gallery": 1000,
+    "probes": 5200,
+    "train_identities": 3516,
+    "train_images": 22095
+  },
+  "finishes": [
+    {
+      "time": "2026-11-11 22:25:24",
+      "ran": 53,
+      "skipped": 0,
+      "planned": 53,
+      "seconds": 1944.1
+    },
+    {
+      "time": "2026-11-12 00:19:27",
+      "ran": 477,
+      "skipped": 53,
+      "planned": 530,
+      "seconds": 5161.1
+    }
+  ],
+  "label_check": {
+    "clean_rank1": {
+      "sface": 0.9232692307692307,
+      "arcface_r50": 0.9680769230769231
+    },
+    "floor": 0.5,
+    "passed": true
+  }
+}

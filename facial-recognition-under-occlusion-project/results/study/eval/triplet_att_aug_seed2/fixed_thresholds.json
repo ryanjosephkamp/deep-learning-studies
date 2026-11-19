@@ -1,0 +1,9 @@
+{
+  "reference_condition": "square_0.00",
+  "protocol": "identity",
+  "metric": "cosine",
+  "thresholds": {
+    "0.01": 0.9999969005584717,
+    "0.001": 0.9999974370002747
+  }
+}

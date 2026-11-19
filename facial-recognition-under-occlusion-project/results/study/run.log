@@ -1,0 +1,606 @@
+-rw-rw-r-- 1 ubuntu ubuntu 2734306468 Jul  5  2022 dialog_hq.download
+dialog_hq.download: Zip archive data, at least v2.0 to extract, compression method=store
+reference images: 30000
+30000 images to map, 30000 reference images
+  local thumbnails 1s
+  reference thumbnails 3s
+mapped 30000 of 30000 images (0 unmatched) in 9s
+  correlation of the match: min 0.9994, 1st percentile 0.9998, median 0.9999
+  best minus second-best: median 0.1915; 581 images below 0.02 (near-duplicate pictures)
+  30 images took a candidate other than their best, to keep the map one-to-one
+  images matched with correlation below 0.9: 0
+wrote /home/ubuntu/data/facial/image_map.csv
+embedding 5000 aligned crops with arcface_r50...
+
+labeling                      genuine  impostor  rank-1    top-k  pairs  verdict
+file numbers                    0.009     0.007   0.001    0.000   3712  DOES NOT FIT
+image_map.csv                   0.636     0.007   0.967    0.980   3285  fits
+
+genuine/impostor: mean cosine of same-label / different-label pairs in the sample; rank-1 over images with a same-label partner in the sample; top-k: share of the k most similar pairs that share a label, k = same-label pairs (at most 300). A labeling fits at rank-1 >= 0.5.
+  labels: 30000 images, 6217 identities, 0 lines skipped; roles: {'train': 22098, 'probe': 5201, 'unused': 1701, 'gallery': 1000}
+[1/53] prepare split 0.1s
+[2/53] align 1/6 10.9s
+[3/53] align 2/6 10.8s
+[4/53] align 3/6 10.8s
+[5/53] align 4/6 10.8s
+[6/53] align 5/6 10.9s
+[7/53] align 6/6 7.2s
+[8/53] sface identity square_0.00 15.9s
+[9/53] sface identity square_0.05 13.2s
+[10/53] sface identity square_0.10 13.3s
+[11/53] sface identity square_0.15 13.3s
+[12/53] sface identity square_0.20 13.4s
+[13/53] sface identity square_0.25 13.4s
+[14/53] sface identity square_0.30 13.4s
+[15/53] sface identity square_0.40 13.4s
+[16/53] sface identity square_0.50 13.3s
+[17/53] sface identity square_0.60 13.2s
+[18/53] sface identity eyes_band 13.3s
+[19/53] sface identity lower_band 13.2s
+[20/53] sface identity random_square_0.20 13.4s
+[21/53] sface identity gray_square_0.20 13.4s
+[22/53] sface identity noise_square_0.20 13.5s
+[23/53] sface identity gray_square_0.40 13.4s
+[24/53] sface identity noise_square_0.40 13.7s
+[25/53] sface same_image square_0.00 2.7s
+[26/53] sface same_image square_0.05 2.7s
+[27/53] sface same_image square_0.10 2.7s
+[28/53] sface same_image square_0.20 2.6s
+[29/53] sface same_image square_0.30 2.7s
+[30/53] sface same_image square_0.50 2.6s
+[31/53] arcface_r50 identity square_0.00 106.5s
+[32/53] arcface_r50 identity square_0.05 88.9s
+[33/53] arcface_r50 identity square_0.10 88.5s
+[34/53] arcface_r50 identity square_0.15 89.0s
+[35/53] arcface_r50 identity square_0.20 89.2s
+[36/53] arcface_r50 identity square_0.25 89.0s
+[37/53] arcface_r50 identity square_0.30 89.2s
+[38/53] arcface_r50 identity square_0.40 89.1s
+[39/53] arcface_r50 identity square_0.50 89.1s
+[40/53] arcface_r50 identity square_0.60 88.4s
+[41/53] arcface_r50 identity eyes_band 89.1s
+[42/53] arcface_r50 identity lower_band 89.2s
+[43/53] arcface_r50 identity random_square_0.20 89.4s
+[44/53] arcface_r50 identity gray_square_0.20 88.7s
+[45/53] arcface_r50 identity noise_square_0.20 89.3s
+[46/53] arcface_r50 identity gray_square_0.40 88.5s
+[47/53] arcface_r50 identity noise_square_0.40 88.9s
+[48/53] arcface_r50 same_image square_0.00 17.6s
+[49/53] arcface_r50 same_image square_0.05 17.2s
+[50/53] arcface_r50 same_image square_0.10 17.2s
+[51/53] arcface_r50 same_image square_0.20 17.2s
+[52/53] arcface_r50 same_image square_0.30 17.4s
+[53/53] arcface_r50 same_image square_0.50 17.2s
+53 units ran, 0 skipped, of 53; 1944s
+[1/530] prepare split done before, skipped
+[2/530] align 1/6 done before, skipped
+[3/530] align 2/6 done before, skipped
+[4/530] align 3/6 done before, skipped
+[5/530] align 4/6 done before, skipped
+[6/530] align 5/6 done before, skipped
+[7/530] align 6/6 done before, skipped
+[8/530] sface identity square_0.00 done before, skipped
+[9/530] sface identity square_0.05 done before, skipped
+[10/530] sface identity square_0.10 done before, skipped
+[11/530] sface identity square_0.15 done before, skipped
+[12/530] sface identity square_0.20 done before, skipped
+[13/530] sface identity square_0.25 done before, skipped
+[14/530] sface identity square_0.30 done before, skipped
+[15/530] sface identity square_0.40 done before, skipped
+[16/530] sface identity square_0.50 done before, skipped
+[17/530] sface identity square_0.60 done before, skipped
+[18/530] sface identity eyes_band done before, skipped
+[19/530] sface identity lower_band done before, skipped
+[20/530] sface identity random_square_0.20 done before, skipped
+[21/530] sface identity gray_square_0.20 done before, skipped
+[22/530] sface identity noise_square_0.20 done before, skipped
+[23/530] sface identity gray_square_0.40 done before, skipped
+[24/530] sface identity noise_square_0.40 done before, skipped
+[25/530] sface same_image square_0.00 done before, skipped
+[26/530] sface same_image square_0.05 done before, skipped
+[27/530] sface same_image square_0.10 done before, skipped
+[28/530] sface same_image square_0.20 done before, skipped
+[29/530] sface same_image square_0.30 done before, skipped
+[30/530] sface same_image square_0.50 done before, skipped
+[31/530] arcface_r50 identity square_0.00 done before, skipped
+[32/530] arcface_r50 identity square_0.05 done before, skipped
+[33/530] arcface_r50 identity square_0.10 done before, skipped
+[34/530] arcface_r50 identity square_0.15 done before, skipped
+[35/530] arcface_r50 identity square_0.20 done before, skipped
+[36/530] arcface_r50 identity square_0.25 done before, skipped
+[37/530] arcface_r50 identity square_0.30 done before, skipped
+[38/530] arcface_r50 identity square_0.40 done before, skipped
+[39/530] arcface_r50 identity square_0.50 done before, skipped
+[40/530] arcface_r50 identity square_0.60 done before, skipped
+[41/530] arcface_r50 identity eyes_band done before, skipped
+[42/530] arcface_r50 identity lower_band done before, skipped
+[43/530] arcface_r50 identity random_square_0.20 done before, skipped
+[44/530] arcface_r50 identity gray_square_0.20 done before, skipped
+[45/530] arcface_r50 identity noise_square_0.20 done before, skipped
+[46/530] arcface_r50 identity gray_square_0.40 done before, skipped
+[47/530] arcface_r50 identity noise_square_0.40 done before, skipped
+[48/530] arcface_r50 same_image square_0.00 done before, skipped
+[49/530] arcface_r50 same_image square_0.05 done before, skipped
+[50/530] arcface_r50 same_image square_0.10 done before, skipped
+[51/530] arcface_r50 same_image square_0.20 done before, skipped
+[52/530] arcface_r50 same_image square_0.30 done before, skipped
+[53/530] arcface_r50 same_image square_0.50 done before, skipped
+  label check passed: clean rank-1 sface 0.923, arcface_r50 0.968
+[54/530] pixels_crop identity square_0.00 2.9s
+[55/530] pixels_crop identity square_0.05 1.8s
+[56/530] pixels_crop identity square_0.10 1.8s
+[57/530] pixels_crop identity square_0.15 1.8s
+[58/530] pixels_crop identity square_0.20 1.8s
+[59/530] pixels_crop identity square_0.25 1.8s
+[60/530] pixels_crop identity square_0.30 1.8s
+[61/530] pixels_crop identity square_0.40 1.8s
+[62/530] pixels_crop identity square_0.50 1.8s
+[63/530] pixels_crop identity square_0.60 1.8s
+[64/530] pixels_crop identity eyes_band 1.8s
+[65/530] pixels_crop identity lower_band 1.8s
+[66/530] pixels_crop identity random_square_0.20 1.9s
+[67/530] pixels_crop identity gray_square_0.20 1.8s
+[68/530] pixels_crop identity noise_square_0.20 2.0s
+[69/530] pixels_crop identity gray_square_0.40 1.8s
+[70/530] pixels_crop identity noise_square_0.40 2.0s
+[71/530] pixels_crop same_image square_0.00 0.4s
+[72/530] pixels_crop same_image square_0.05 0.4s
+[73/530] pixels_crop same_image square_0.10 0.4s
+[74/530] pixels_crop same_image square_0.20 0.4s
+[75/530] pixels_crop same_image square_0.30 0.4s
+[76/530] pixels_crop same_image square_0.50 0.4s
+[77/530] pixels_frame identity frame_square_0.00 3.9s
+[78/530] pixels_frame identity frame_square_0.05 2.7s
+[79/530] pixels_frame identity frame_square_0.10 2.7s
+[80/530] pixels_frame identity frame_square_0.15 2.7s
+[81/530] pixels_frame identity frame_square_0.20 2.7s
+[82/530] pixels_frame identity frame_square_0.25 2.7s
+[83/530] pixels_frame identity frame_square_0.30 2.7s
+[84/530] pixels_frame identity frame_square_0.35 2.7s
+[85/530] pixels_frame identity frame_square_0.40 2.7s
+[86/530] pixels_frame identity frame_square_0.45 2.7s
+[87/530] pixels_frame identity frame_square_0.50 2.7s
+[88/530] pixels_frame identity frame_square_0.55 2.9s
+[89/530] pixels_frame identity frame_square_0.60 2.9s
+[90/530] pixels_frame identity frame_square_0.65 2.9s
+[91/530] pixels_frame identity frame_square_0.70 2.9s
+[92/530] pixels_frame identity frame_square_0.75 3.0s
+[93/530] pixels_frame identity frame_square_0.80 2.9s
+[94/530] pixels_frame identity frame_square_0.85 2.8s
+[95/530] pixels_frame identity frame_square_0.90 2.8s
+[96/530] pixels_frame identity frame_square_0.95 2.8s
+[97/530] pixels_frame identity frame_square_1.00 2.7s
+[98/530] pixels_frame same_image frame_square_0.00 0.6s
+[99/530] pixels_frame same_image frame_square_0.05 0.6s
+[100/530] pixels_frame same_image frame_square_0.10 0.6s
+[101/530] pixels_frame same_image frame_square_0.15 0.6s
+[102/530] pixels_frame same_image frame_square_0.20 0.6s
+[103/530] pixels_frame same_image frame_square_0.25 0.6s
+[104/530] pixels_frame same_image frame_square_0.30 0.6s
+[105/530] pixels_frame same_image frame_square_0.35 0.6s
+[106/530] pixels_frame same_image frame_square_0.40 0.6s
+[107/530] pixels_frame same_image frame_square_0.45 0.6s
+[108/530] pixels_frame same_image frame_square_0.50 0.6s
+[109/530] pixels_frame same_image frame_square_0.55 0.6s
+[110/530] pixels_frame same_image frame_square_0.60 0.6s
+[111/530] pixels_frame same_image frame_square_0.65 0.6s
+[112/530] pixels_frame same_image frame_square_0.70 0.6s
+[113/530] pixels_frame same_image frame_square_0.75 0.6s
+[114/530] pixels_frame same_image frame_square_0.80 0.6s
+[115/530] pixels_frame same_image frame_square_0.85 0.6s
+[116/530] pixels_frame same_image frame_square_0.90 0.6s
+[117/530] pixels_frame same_image frame_square_0.95 0.6s
+[118/530] pixels_frame same_image frame_square_1.00 0.6s
+[119/530] original_model identity frame_square_0.00 6.7s
+[120/530] original_model identity frame_square_0.05 5.7s
+[121/530] original_model identity frame_square_0.10 5.7s
+[122/530] original_model identity frame_square_0.15 5.7s
+[123/530] original_model identity frame_square_0.20 5.8s
+[124/530] original_model identity frame_square_0.25 5.8s
+[125/530] original_model identity frame_square_0.30 5.8s
+[126/530] original_model identity frame_square_0.35 5.8s
+[127/530] original_model identity frame_square_0.40 5.8s
+[128/530] original_model identity frame_square_0.45 5.8s
+[129/530] original_model identity frame_square_0.50 5.8s
+[130/530] original_model identity frame_square_0.55 5.8s
+[131/530] original_model identity frame_square_0.60 5.8s
+[132/530] original_model identity frame_square_0.65 5.8s
+[133/530] original_model identity frame_square_0.70 5.8s
+[134/530] original_model identity frame_square_0.75 5.8s
+[135/530] original_model identity frame_square_0.80 5.8s
+[136/530] original_model identity frame_square_0.85 5.8s
+[137/530] original_model identity frame_square_0.90 5.8s
+[138/530] original_model identity frame_square_0.95 5.8s
+[139/530] original_model identity frame_square_1.00 5.8s
+[140/530] original_model same_image frame_square_0.00 1.1s
+[141/530] original_model same_image frame_square_0.05 1.1s
+[142/530] original_model same_image frame_square_0.10 1.1s
+[143/530] original_model same_image frame_square_0.15 1.1s
+[144/530] original_model same_image frame_square_0.20 1.1s
+[145/530] original_model same_image frame_square_0.25 1.1s
+[146/530] original_model same_image frame_square_0.30 1.1s
+[147/530] original_model same_image frame_square_0.35 1.1s
+[148/530] original_model same_image frame_square_0.40 1.1s
+[149/530] original_model same_image frame_square_0.45 1.1s
+[150/530] original_model same_image frame_square_0.50 1.1s
+[151/530] original_model same_image frame_square_0.55 1.1s
+[152/530] original_model same_image frame_square_0.60 1.1s
+[153/530] original_model same_image frame_square_0.65 1.1s
+[154/530] original_model same_image frame_square_0.70 1.1s
+[155/530] original_model same_image frame_square_0.75 1.1s
+[156/530] original_model same_image frame_square_0.80 1.1s
+[157/530] original_model same_image frame_square_0.85 1.1s
+[158/530] original_model same_image frame_square_0.90 1.1s
+[159/530] original_model same_image frame_square_0.95 1.1s
+[160/530] original_model same_image frame_square_1.00 1.1s
+[161/530] train cosface_att_aug seed 0 358.9s
+[162/530] train cosface_att_aug seed 1 359.0s
+[163/530] train cosface_att_aug seed 2 359.0s
+[164/530] train cosface_att_noaug seed 0 271.3s
+[165/530] train cosface_att_noaug seed 1 271.4s
+[166/530] train cosface_att_noaug seed 2 271.4s
+[167/530] train cosface_noatt_aug seed 0 283.2s
+[168/530] train cosface_noatt_aug seed 1 283.1s
+[169/530] train cosface_noatt_aug seed 2 283.2s
+[170/530] train cosface_noatt_noaug seed 0 226.0s
+[171/530] train cosface_noatt_noaug seed 1 225.9s
+[172/530] train cosface_noatt_noaug seed 2 225.8s
+[173/530] train triplet_att_aug seed 0 360.4s
+[174/530] train triplet_att_aug seed 1 360.3s
+[175/530] train triplet_att_aug seed 2 360.2s
+[176/530] cosface_att_aug_seed0 identity square_0.00 1.6s
+[177/530] cosface_att_aug_seed0 identity square_0.05 1.4s
+[178/530] cosface_att_aug_seed0 identity square_0.10 1.4s
+[179/530] cosface_att_aug_seed0 identity square_0.15 1.4s
+[180/530] cosface_att_aug_seed0 identity square_0.20 1.4s
+[181/530] cosface_att_aug_seed0 identity square_0.25 1.4s
+[182/530] cosface_att_aug_seed0 identity square_0.30 1.4s
+[183/530] cosface_att_aug_seed0 identity square_0.40 1.4s
+[184/530] cosface_att_aug_seed0 identity square_0.50 1.4s
+[185/530] cosface_att_aug_seed0 identity square_0.60 1.4s
+[186/530] cosface_att_aug_seed0 identity eyes_band 1.4s
+[187/530] cosface_att_aug_seed0 identity lower_band 1.4s
+[188/530] cosface_att_aug_seed0 identity random_square_0.20 1.5s
+[189/530] cosface_att_aug_seed0 identity gray_square_0.20 1.4s
+[190/530] cosface_att_aug_seed0 identity noise_square_0.20 1.6s
+[191/530] cosface_att_aug_seed0 identity gray_square_0.40 1.4s
+[192/530] cosface_att_aug_seed0 identity noise_square_0.40 1.6s
+[193/530] cosface_att_aug_seed0 same_image square_0.00 0.3s
+[194/530] cosface_att_aug_seed0 same_image square_0.05 0.3s
+[195/530] cosface_att_aug_seed0 same_image square_0.10 0.3s
+[196/530] cosface_att_aug_seed0 same_image square_0.20 0.3s
+[197/530] cosface_att_aug_seed0 same_image square_0.30 0.3s
+[198/530] cosface_att_aug_seed0 same_image square_0.50 0.3s
+[199/530] cosface_att_aug_seed0 attention check 1.5s
+[200/530] cosface_att_aug_seed1 identity square_0.00 1.6s
+[201/530] cosface_att_aug_seed1 identity square_0.05 1.4s
+[202/530] cosface_att_aug_seed1 identity square_0.10 1.4s
+[203/530] cosface_att_aug_seed1 identity square_0.15 1.4s
+[204/530] cosface_att_aug_seed1 identity square_0.20 1.4s
+[205/530] cosface_att_aug_seed1 identity square_0.25 1.4s
+[206/530] cosface_att_aug_seed1 identity square_0.30 1.4s
+[207/530] cosface_att_aug_seed1 identity square_0.40 1.4s
+[208/530] cosface_att_aug_seed1 identity square_0.50 1.4s
+[209/530] cosface_att_aug_seed1 identity square_0.60 1.4s
+[210/530] cosface_att_aug_seed1 identity eyes_band 1.4s
+[211/530] cosface_att_aug_seed1 identity lower_band 1.4s
+[212/530] cosface_att_aug_seed1 identity random_square_0.20 1.5s
+[213/530] cosface_att_aug_seed1 identity gray_square_0.20 1.4s
+[214/530] cosface_att_aug_seed1 identity noise_square_0.20 1.6s
+[215/530] cosface_att_aug_seed1 identity gray_square_0.40 1.4s
+[216/530] cosface_att_aug_seed1 identity noise_square_0.40 1.6s
+[217/530] cosface_att_aug_seed1 same_image square_0.00 0.3s
+[218/530] cosface_att_aug_seed1 same_image square_0.05 0.3s
+[219/530] cosface_att_aug_seed1 same_image square_0.10 0.3s
+[220/530] cosface_att_aug_seed1 same_image square_0.20 0.3s
+[221/530] cosface_att_aug_seed1 same_image square_0.30 0.3s
+[222/530] cosface_att_aug_seed1 same_image square_0.50 0.3s
+[223/530] cosface_att_aug_seed1 attention check 1.5s
+[224/530] cosface_att_aug_seed2 identity square_0.00 1.7s
+[225/530] cosface_att_aug_seed2 identity square_0.05 1.4s
+[226/530] cosface_att_aug_seed2 identity square_0.10 1.4s
+[227/530] cosface_att_aug_seed2 identity square_0.15 1.4s
+[228/530] cosface_att_aug_seed2 identity square_0.20 1.4s
+[229/530] cosface_att_aug_seed2 identity square_0.25 1.4s
+[230/530] cosface_att_aug_seed2 identity square_0.30 1.4s
+[231/530] cosface_att_aug_seed2 identity square_0.40 1.5s
+[232/530] cosface_att_aug_seed2 identity square_0.50 1.4s
+[233/530] cosface_att_aug_seed2 identity square_0.60 1.4s
+[234/530] cosface_att_aug_seed2 identity eyes_band 1.4s
+[235/530] cosface_att_aug_seed2 identity lower_band 1.4s
+[236/530] cosface_att_aug_seed2 identity random_square_0.20 1.5s
+[237/530] cosface_att_aug_seed2 identity gray_square_0.20 1.4s
+[238/530] cosface_att_aug_seed2 identity noise_square_0.20 1.6s
+[239/530] cosface_att_aug_seed2 identity gray_square_0.40 1.4s
+[240/530] cosface_att_aug_seed2 identity noise_square_0.40 1.7s
+[241/530] cosface_att_aug_seed2 same_image square_0.00 0.3s
+[242/530] cosface_att_aug_seed2 same_image square_0.05 0.3s
+[243/530] cosface_att_aug_seed2 same_image square_0.10 0.3s
+[244/530] cosface_att_aug_seed2 same_image square_0.20 0.3s
+[245/530] cosface_att_aug_seed2 same_image square_0.30 0.3s
+[246/530] cosface_att_aug_seed2 same_image square_0.50 0.3s
+[247/530] cosface_att_aug_seed2 attention check 1.5s
+[248/530] cosface_att_noaug_seed0 identity square_0.00 1.6s
+[249/530] cosface_att_noaug_seed0 identity square_0.05 1.4s
+[250/530] cosface_att_noaug_seed0 identity square_0.10 1.4s
+[251/530] cosface_att_noaug_seed0 identity square_0.15 1.4s
+[252/530] cosface_att_noaug_seed0 identity square_0.20 1.4s
+[253/530] cosface_att_noaug_seed0 identity square_0.25 1.4s
+[254/530] cosface_att_noaug_seed0 identity square_0.30 1.4s
+[255/530] cosface_att_noaug_seed0 identity square_0.40 1.5s
+[256/530] cosface_att_noaug_seed0 identity square_0.50 1.4s
+[257/530] cosface_att_noaug_seed0 identity square_0.60 1.4s
+[258/530] cosface_att_noaug_seed0 identity eyes_band 1.4s
+[259/530] cosface_att_noaug_seed0 identity lower_band 1.4s
+[260/530] cosface_att_noaug_seed0 identity random_square_0.20 1.5s
+[261/530] cosface_att_noaug_seed0 identity gray_square_0.20 1.4s
+[262/530] cosface_att_noaug_seed0 identity noise_square_0.20 1.6s
+[263/530] cosface_att_noaug_seed0 identity gray_square_0.40 1.4s
+[264/530] cosface_att_noaug_seed0 identity noise_square_0.40 1.7s
+[265/530] cosface_att_noaug_seed0 same_image square_0.00 0.3s
+[266/530] cosface_att_noaug_seed0 same_image square_0.05 0.3s
+[267/530] cosface_att_noaug_seed0 same_image square_0.10 0.3s
+[268/530] cosface_att_noaug_seed0 same_image square_0.20 0.3s
+[269/530] cosface_att_noaug_seed0 same_image square_0.30 0.3s
+[270/530] cosface_att_noaug_seed0 same_image square_0.50 0.3s
+[271/530] cosface_att_noaug_seed0 attention check 1.5s
+[272/530] cosface_att_noaug_seed1 identity square_0.00 1.7s
+[273/530] cosface_att_noaug_seed1 identity square_0.05 1.4s
+[274/530] cosface_att_noaug_seed1 identity square_0.10 1.4s
+[275/530] cosface_att_noaug_seed1 identity square_0.15 1.4s
+[276/530] cosface_att_noaug_seed1 identity square_0.20 1.4s
+[277/530] cosface_att_noaug_seed1 identity square_0.25 1.4s
+[278/530] cosface_att_noaug_seed1 identity square_0.30 1.4s
+[279/530] cosface_att_noaug_seed1 identity square_0.40 1.4s
+[280/530] cosface_att_noaug_seed1 identity square_0.50 1.4s
+[281/530] cosface_att_noaug_seed1 identity square_0.60 1.4s
+[282/530] cosface_att_noaug_seed1 identity eyes_band 1.4s
+[283/530] cosface_att_noaug_seed1 identity lower_band 1.4s
+[284/530] cosface_att_noaug_seed1 identity random_square_0.20 1.5s
+[285/530] cosface_att_noaug_seed1 identity gray_square_0.20 1.4s
+[286/530] cosface_att_noaug_seed1 identity noise_square_0.20 1.6s
+[287/530] cosface_att_noaug_seed1 identity gray_square_0.40 1.4s
+[288/530] cosface_att_noaug_seed1 identity noise_square_0.40 1.7s
+[289/530] cosface_att_noaug_seed1 same_image square_0.00 0.3s
+[290/530] cosface_att_noaug_seed1 same_image square_0.05 0.3s
+[291/530] cosface_att_noaug_seed1 same_image square_0.10 0.3s
+[292/530] cosface_att_noaug_seed1 same_image square_0.20 0.3s
+[293/530] cosface_att_noaug_seed1 same_image square_0.30 0.3s
+[294/530] cosface_att_noaug_seed1 same_image square_0.50 0.3s
+[295/530] cosface_att_noaug_seed1 attention check 1.5s
+[296/530] cosface_att_noaug_seed2 identity square_0.00 1.6s
+[297/530] cosface_att_noaug_seed2 identity square_0.05 1.4s
+[298/530] cosface_att_noaug_seed2 identity square_0.10 1.4s
+[299/530] cosface_att_noaug_seed2 identity square_0.15 1.4s
+[300/530] cosface_att_noaug_seed2 identity square_0.20 1.4s
+[301/530] cosface_att_noaug_seed2 identity square_0.25 1.4s
+[302/530] cosface_att_noaug_seed2 identity square_0.30 1.4s
+[303/530] cosface_att_noaug_seed2 identity square_0.40 1.4s
+[304/530] cosface_att_noaug_seed2 identity square_0.50 1.4s
+[305/530] cosface_att_noaug_seed2 identity square_0.60 1.4s
+[306/530] cosface_att_noaug_seed2 identity eyes_band 1.4s
+[307/530] cosface_att_noaug_seed2 identity lower_band 1.4s
+[308/530] cosface_att_noaug_seed2 identity random_square_0.20 1.5s
+[309/530] cosface_att_noaug_seed2 identity gray_square_0.20 1.4s
+[310/530] cosface_att_noaug_seed2 identity noise_square_0.20 1.6s
+[311/530] cosface_att_noaug_seed2 identity gray_square_0.40 1.4s
+[312/530] cosface_att_noaug_seed2 identity noise_square_0.40 1.7s
+[313/530] cosface_att_noaug_seed2 same_image square_0.00 0.3s
+[314/530] cosface_att_noaug_seed2 same_image square_0.05 0.3s
+[315/530] cosface_att_noaug_seed2 same_image square_0.10 0.3s
+[316/530] cosface_att_noaug_seed2 same_image square_0.20 0.3s
+[317/530] cosface_att_noaug_seed2 same_image square_0.30 0.3s
+[318/530] cosface_att_noaug_seed2 same_image square_0.50 0.3s
+[319/530] cosface_att_noaug_seed2 attention check 1.5s
+[320/530] cosface_noatt_aug_seed0 identity square_0.00 1.6s
+[321/530] cosface_noatt_aug_seed0 identity square_0.05 1.3s
+[322/530] cosface_noatt_aug_seed0 identity square_0.10 1.3s
+[323/530] cosface_noatt_aug_seed0 identity square_0.15 1.4s
+[324/530] cosface_noatt_aug_seed0 identity square_0.20 1.3s
+[325/530] cosface_noatt_aug_seed0 identity square_0.25 1.4s
+[326/530] cosface_noatt_aug_seed0 identity square_0.30 1.4s
+[327/530] cosface_noatt_aug_seed0 identity square_0.40 1.4s
+[328/530] cosface_noatt_aug_seed0 identity square_0.50 1.3s
+[329/530] cosface_noatt_aug_seed0 identity square_0.60 1.3s
+[330/530] cosface_noatt_aug_seed0 identity eyes_band 1.3s
+[331/530] cosface_noatt_aug_seed0 identity lower_band 1.3s
+[332/530] cosface_noatt_aug_seed0 identity random_square_0.20 1.5s
+[333/530] cosface_noatt_aug_seed0 identity gray_square_0.20 1.3s
+[334/530] cosface_noatt_aug_seed0 identity noise_square_0.20 1.5s
+[335/530] cosface_noatt_aug_seed0 identity gray_square_0.40 1.3s
+[336/530] cosface_noatt_aug_seed0 identity noise_square_0.40 1.6s
+[337/530] cosface_noatt_aug_seed0 same_image square_0.00 0.3s
+[338/530] cosface_noatt_aug_seed0 same_image square_0.05 0.3s
+[339/530] cosface_noatt_aug_seed0 same_image square_0.10 0.3s
+[340/530] cosface_noatt_aug_seed0 same_image square_0.20 0.3s
+[341/530] cosface_noatt_aug_seed0 same_image square_0.30 0.3s
+[342/530] cosface_noatt_aug_seed0 same_image square_0.50 0.3s
+[343/530] cosface_noatt_aug_seed1 identity square_0.00 1.5s
+[344/530] cosface_noatt_aug_seed1 identity square_0.05 1.3s
+[345/530] cosface_noatt_aug_seed1 identity square_0.10 1.3s
+[346/530] cosface_noatt_aug_seed1 identity square_0.15 1.3s
+[347/530] cosface_noatt_aug_seed1 identity square_0.20 1.3s
+[348/530] cosface_noatt_aug_seed1 identity square_0.25 1.3s
+[349/530] cosface_noatt_aug_seed1 identity square_0.30 1.3s
+[350/530] cosface_noatt_aug_seed1 identity square_0.40 1.3s
+[351/530] cosface_noatt_aug_seed1 identity square_0.50 1.3s
+[352/530] cosface_noatt_aug_seed1 identity square_0.60 1.3s
+[353/530] cosface_noatt_aug_seed1 identity eyes_band 1.3s
+[354/530] cosface_noatt_aug_seed1 identity lower_band 1.3s
+[355/530] cosface_noatt_aug_seed1 identity random_square_0.20 1.4s
+[356/530] cosface_noatt_aug_seed1 identity gray_square_0.20 1.3s
+[357/530] cosface_noatt_aug_seed1 identity noise_square_0.20 1.5s
+[358/530] cosface_noatt_aug_seed1 identity gray_square_0.40 1.3s
+[359/530] cosface_noatt_aug_seed1 identity noise_square_0.40 1.6s
+[360/530] cosface_noatt_aug_seed1 same_image square_0.00 0.3s
+[361/530] cosface_noatt_aug_seed1 same_image square_0.05 0.3s
+[362/530] cosface_noatt_aug_seed1 same_image square_0.10 0.3s
+[363/530] cosface_noatt_aug_seed1 same_image square_0.20 0.3s
+[364/530] cosface_noatt_aug_seed1 same_image square_0.30 0.3s
+[365/530] cosface_noatt_aug_seed1 same_image square_0.50 0.3s
+[366/530] cosface_noatt_aug_seed2 identity square_0.00 1.6s
+[367/530] cosface_noatt_aug_seed2 identity square_0.05 1.4s
+[368/530] cosface_noatt_aug_seed2 identity square_0.10 1.4s
+[369/530] cosface_noatt_aug_seed2 identity square_0.15 1.3s
+[370/530] cosface_noatt_aug_seed2 identity square_0.20 1.3s
+[371/530] cosface_noatt_aug_seed2 identity square_0.25 1.4s
+[372/530] cosface_noatt_aug_seed2 identity square_0.30 1.4s
+[373/530] cosface_noatt_aug_seed2 identity square_0.40 1.4s
+[374/530] cosface_noatt_aug_seed2 identity square_0.50 1.3s
+[375/530] cosface_noatt_aug_seed2 identity square_0.60 1.3s
+[376/530] cosface_noatt_aug_seed2 identity eyes_band 1.3s
+[377/530] cosface_noatt_aug_seed2 identity lower_band 1.3s
+[378/530] cosface_noatt_aug_seed2 identity random_square_0.20 1.4s
+[379/530] cosface_noatt_aug_seed2 identity gray_square_0.20 1.3s
+[380/530] cosface_noatt_aug_seed2 identity noise_square_0.20 1.5s
+[381/530] cosface_noatt_aug_seed2 identity gray_square_0.40 1.3s
+[382/530] cosface_noatt_aug_seed2 identity noise_square_0.40 1.6s
+[383/530] cosface_noatt_aug_seed2 same_image square_0.00 0.3s
+[384/530] cosface_noatt_aug_seed2 same_image square_0.05 0.3s
+[385/530] cosface_noatt_aug_seed2 same_image square_0.10 0.3s
+[386/530] cosface_noatt_aug_seed2 same_image square_0.20 0.3s
+[387/530] cosface_noatt_aug_seed2 same_image square_0.30 0.3s
+[388/530] cosface_noatt_aug_seed2 same_image square_0.50 0.3s
+[389/530] cosface_noatt_noaug_seed0 identity square_0.00 1.6s
+[390/530] cosface_noatt_noaug_seed0 identity square_0.05 1.4s
+[391/530] cosface_noatt_noaug_seed0 identity square_0.10 1.3s
+[392/530] cosface_noatt_noaug_seed0 identity square_0.15 1.4s
+[393/530] cosface_noatt_noaug_seed0 identity square_0.20 1.3s
+[394/530] cosface_noatt_noaug_seed0 identity square_0.25 1.4s
+[395/530] cosface_noatt_noaug_seed0 identity square_0.30 1.4s
+[396/530] cosface_noatt_noaug_seed0 identity square_0.40 1.4s
+[397/530] cosface_noatt_noaug_seed0 identity square_0.50 1.3s
+[398/530] cosface_noatt_noaug_seed0 identity square_0.60 1.4s
+[399/530] cosface_noatt_noaug_seed0 identity eyes_band 1.3s
+[400/530] cosface_noatt_noaug_seed0 identity lower_band 1.3s
+[401/530] cosface_noatt_noaug_seed0 identity random_square_0.20 1.4s
+[402/530] cosface_noatt_noaug_seed0 identity gray_square_0.20 1.3s
+[403/530] cosface_noatt_noaug_seed0 identity noise_square_0.20 1.6s
+[404/530] cosface_noatt_noaug_seed0 identity gray_square_0.40 1.4s
+[405/530] cosface_noatt_noaug_seed0 identity noise_square_0.40 1.6s
+[406/530] cosface_noatt_noaug_seed0 same_image square_0.00 0.3s
+[407/530] cosface_noatt_noaug_seed0 same_image square_0.05 0.3s
+[408/530] cosface_noatt_noaug_seed0 same_image square_0.10 0.3s
+[409/530] cosface_noatt_noaug_seed0 same_image square_0.20 0.3s
+[410/530] cosface_noatt_noaug_seed0 same_image square_0.30 0.3s
+[411/530] cosface_noatt_noaug_seed0 same_image square_0.50 0.3s
+[412/530] cosface_noatt_noaug_seed1 identity square_0.00 1.5s
+[413/530] cosface_noatt_noaug_seed1 identity square_0.05 1.3s
+[414/530] cosface_noatt_noaug_seed1 identity square_0.10 1.3s
+[415/530] cosface_noatt_noaug_seed1 identity square_0.15 1.3s
+[416/530] cosface_noatt_noaug_seed1 identity square_0.20 1.3s
+[417/530] cosface_noatt_noaug_seed1 identity square_0.25 1.4s
+[418/530] cosface_noatt_noaug_seed1 identity square_0.30 1.4s
+[419/530] cosface_noatt_noaug_seed1 identity square_0.40 1.4s
+[420/530] cosface_noatt_noaug_seed1 identity square_0.50 1.3s
+[421/530] cosface_noatt_noaug_seed1 identity square_0.60 1.4s
+[422/530] cosface_noatt_noaug_seed1 identity eyes_band 1.3s
+[423/530] cosface_noatt_noaug_seed1 identity lower_band 1.4s
+[424/530] cosface_noatt_noaug_seed1 identity random_square_0.20 1.4s
+[425/530] cosface_noatt_noaug_seed1 identity gray_square_0.20 1.3s
+[426/530] cosface_noatt_noaug_seed1 identity noise_square_0.20 1.5s
+[427/530] cosface_noatt_noaug_seed1 identity gray_square_0.40 1.4s
+[428/530] cosface_noatt_noaug_seed1 identity noise_square_0.40 1.6s
+[429/530] cosface_noatt_noaug_seed1 same_image square_0.00 0.3s
+[430/530] cosface_noatt_noaug_seed1 same_image square_0.05 0.3s
+[431/530] cosface_noatt_noaug_seed1 same_image square_0.10 0.3s
+[432/530] cosface_noatt_noaug_seed1 same_image square_0.20 0.3s
+[433/530] cosface_noatt_noaug_seed1 same_image square_0.30 0.3s
+[434/530] cosface_noatt_noaug_seed1 same_image square_0.50 0.3s
+[435/530] cosface_noatt_noaug_seed2 identity square_0.00 1.6s
+[436/530] cosface_noatt_noaug_seed2 identity square_0.05 1.3s
+[437/530] cosface_noatt_noaug_seed2 identity square_0.10 1.3s
+[438/530] cosface_noatt_noaug_seed2 identity square_0.15 1.4s
+[439/530] cosface_noatt_noaug_seed2 identity square_0.20 1.3s
+[440/530] cosface_noatt_noaug_seed2 identity square_0.25 1.3s
+[441/530] cosface_noatt_noaug_seed2 identity square_0.30 1.4s
+[442/530] cosface_noatt_noaug_seed2 identity square_0.40 1.4s
+[443/530] cosface_noatt_noaug_seed2 identity square_0.50 1.4s
+[444/530] cosface_noatt_noaug_seed2 identity square_0.60 1.4s
+[445/530] cosface_noatt_noaug_seed2 identity eyes_band 1.3s
+[446/530] cosface_noatt_noaug_seed2 identity lower_band 1.4s
+[447/530] cosface_noatt_noaug_seed2 identity random_square_0.20 1.4s
+[448/530] cosface_noatt_noaug_seed2 identity gray_square_0.20 1.4s
+[449/530] cosface_noatt_noaug_seed2 identity noise_square_0.20 1.6s
+[450/530] cosface_noatt_noaug_seed2 identity gray_square_0.40 1.3s
+[451/530] cosface_noatt_noaug_seed2 identity noise_square_0.40 1.6s
+[452/530] cosface_noatt_noaug_seed2 same_image square_0.00 0.3s
+[453/530] cosface_noatt_noaug_seed2 same_image square_0.05 0.3s
+[454/530] cosface_noatt_noaug_seed2 same_image square_0.10 0.3s
+[455/530] cosface_noatt_noaug_seed2 same_image square_0.20 0.3s
+[456/530] cosface_noatt_noaug_seed2 same_image square_0.30 0.3s
+[457/530] cosface_noatt_noaug_seed2 same_image square_0.50 0.3s
+[458/530] triplet_att_aug_seed0 identity square_0.00 1.5s
+[459/530] triplet_att_aug_seed0 identity square_0.05 1.3s
+[460/530] triplet_att_aug_seed0 identity square_0.10 1.3s
+[461/530] triplet_att_aug_seed0 identity square_0.15 1.3s
+[462/530] triplet_att_aug_seed0 identity square_0.20 1.3s
+[463/530] triplet_att_aug_seed0 identity square_0.25 1.3s
+[464/530] triplet_att_aug_seed0 identity square_0.30 1.3s
+[465/530] triplet_att_aug_seed0 identity square_0.40 1.3s
+[466/530] triplet_att_aug_seed0 identity square_0.50 1.3s
+[467/530] triplet_att_aug_seed0 identity square_0.60 1.3s
+[468/530] triplet_att_aug_seed0 identity eyes_band 1.3s
+[469/530] triplet_att_aug_seed0 identity lower_band 1.3s
+[470/530] triplet_att_aug_seed0 identity random_square_0.20 1.4s
+[471/530] triplet_att_aug_seed0 identity gray_square_0.20 1.3s
+[472/530] triplet_att_aug_seed0 identity noise_square_0.20 1.5s
+[473/530] triplet_att_aug_seed0 identity gray_square_0.40 1.3s
+[474/530] triplet_att_aug_seed0 identity noise_square_0.40 1.5s
+[475/530] triplet_att_aug_seed0 same_image square_0.00 0.2s
+[476/530] triplet_att_aug_seed0 same_image square_0.05 0.2s
+[477/530] triplet_att_aug_seed0 same_image square_0.10 0.3s
+[478/530] triplet_att_aug_seed0 same_image square_0.20 0.2s
+[479/530] triplet_att_aug_seed0 same_image square_0.30 0.3s
+[480/530] triplet_att_aug_seed0 same_image square_0.50 0.2s
+[481/530] triplet_att_aug_seed0 attention check 1.5s
+[482/530] triplet_att_aug_seed1 identity square_0.00 1.6s
+[483/530] triplet_att_aug_seed1 identity square_0.05 1.3s
+[484/530] triplet_att_aug_seed1 identity square_0.10 1.3s
+[485/530] triplet_att_aug_seed1 identity square_0.15 1.3s
+[486/530] triplet_att_aug_seed1 identity square_0.20 1.3s
+[487/530] triplet_att_aug_seed1 identity square_0.25 1.3s
+[488/530] triplet_att_aug_seed1 identity square_0.30 1.3s
+[489/530] triplet_att_aug_seed1 identity square_0.40 1.3s
+[490/530] triplet_att_aug_seed1 identity square_0.50 1.3s
+[491/530] triplet_att_aug_seed1 identity square_0.60 1.3s
+[492/530] triplet_att_aug_seed1 identity eyes_band 1.3s
+[493/530] triplet_att_aug_seed1 identity lower_band 1.3s
+[494/530] triplet_att_aug_seed1 identity random_square_0.20 1.4s
+[495/530] triplet_att_aug_seed1 identity gray_square_0.20 1.3s
+[496/530] triplet_att_aug_seed1 identity noise_square_0.20 1.5s
+[497/530] triplet_att_aug_seed1 identity gray_square_0.40 1.3s
+[498/530] triplet_att_aug_seed1 identity noise_square_0.40 1.6s
+[499/530] triplet_att_aug_seed1 same_image square_0.00 0.2s
+[500/530] triplet_att_aug_seed1 same_image square_0.05 0.3s
+[501/530] triplet_att_aug_seed1 same_image square_0.10 0.2s
+[502/530] triplet_att_aug_seed1 same_image square_0.20 0.3s
+[503/530] triplet_att_aug_seed1 same_image square_0.30 0.3s
+[504/530] triplet_att_aug_seed1 same_image square_0.50 0.3s
+[505/530] triplet_att_aug_seed1 attention check 1.5s
+[506/530] triplet_att_aug_seed2 identity square_0.00 1.5s
+[507/530] triplet_att_aug_seed2 identity square_0.05 1.3s
+[508/530] triplet_att_aug_seed2 identity square_0.10 1.3s
+[509/530] triplet_att_aug_seed2 identity square_0.15 1.3s
+[510/530] triplet_att_aug_seed2 identity square_0.20 1.3s
+[511/530] triplet_att_aug_seed2 identity square_0.25 1.3s
+[512/530] triplet_att_aug_seed2 identity square_0.30 1.3s
+[513/530] triplet_att_aug_seed2 identity square_0.40 1.3s
+[514/530] triplet_att_aug_seed2 identity square_0.50 1.3s
+[515/530] triplet_att_aug_seed2 identity square_0.60 1.3s
+[516/530] triplet_att_aug_seed2 identity eyes_band 1.3s
+[517/530] triplet_att_aug_seed2 identity lower_band 1.3s
+[518/530] triplet_att_aug_seed2 identity random_square_0.20 1.4s
+[519/530] triplet_att_aug_seed2 identity gray_square_0.20 1.3s
+[520/530] triplet_att_aug_seed2 identity noise_square_0.20 1.5s
+[521/530] triplet_att_aug_seed2 identity gray_square_0.40 1.3s
+[522/530] triplet_att_aug_seed2 identity noise_square_0.40 1.6s
+[523/530] triplet_att_aug_seed2 same_image square_0.00 0.2s
+[524/530] triplet_att_aug_seed2 same_image square_0.05 0.3s
+[525/530] triplet_att_aug_seed2 same_image square_0.10 0.3s
+[526/530] triplet_att_aug_seed2 same_image square_0.20 0.3s
+[527/530] triplet_att_aug_seed2 same_image square_0.30 0.2s
+[528/530] triplet_att_aug_seed2 same_image square_0.50 0.3s
+[529/530] triplet_att_aug_seed2 attention check 1.5s
+[530/530] summary 4.1s
+477 units ran, 53 skipped, of 530; 5161s

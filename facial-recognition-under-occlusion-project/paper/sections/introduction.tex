@@ -1,0 +1,11 @@
+\section{Introduction}
+
+Face recognition systems see covered faces all the time: masks, sunglasses, scarves, and hands~\cite{zeng2021survey,deng2021mfr}. For these systems, the principal challenge is identification: given a new photo of a person with part of the face hidden, does the model still manage to identify the individual among many others? A simpler question, whether an occluded image can be matched to its own clean copy, has a much easier answer, because the two images share every uncovered pixel.
+
+The course project trained a small convolutional neural network (CNN) with a spatial attention layer and a triplet loss on occluded examples, and compared it with six pretrained recognizers run through DeepFace~\cite{serengil2020lightface} on CelebA-HQ~\cite{karras2018pggan}. Its protocol was the simpler one. This revision asks three things:
+\begin{itemize}
+\item What did the original protocol measure, and why did the pretrained models fail on it? (Section~\ref{sec:original})
+\item How does identification of a different photo of the same person fall with the size, place, and fill of a synthetic occluder, when the face is found and aligned before the occluder is drawn? (Sections~\ref{sec:design} and~\ref{sec:pretrained})
+\item Do the project's two ideas, the attention layer and training with occluded faces, help the same small network identify occluded faces? (Section~\ref{sec:ablation})
+\end{itemize}
+The findings, each with the limits Section~\ref{sec:limitations} states, are these: the original protocol is image matching, which raw pixels already solve at small occlusions; occlusion augmentation trades clean accuracy for occluded accuracy in this network; and the attention layer's main effect, one of the three primary contrasts, comes from noise fills and a lower-face band, at a cost on clean faces.

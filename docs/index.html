@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-leaf="0">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A project from CS 6073 Deep Learning, fall 2025, revised and extended: face identification with part of the face covered, what the course project measured, and what a cleaner experiment shows.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%274%27%20fill%3D%27%23f2ebdc%27%2F%3E%3Crect%20x%3D%276%27%20y%3D%276%27%20width%3D%2720%27%20height%3D%2720%27%20fill%3D%27%23c0532e%27%2F%3E%3C%2Fsvg%3E">
+<link rel="canonical" href="https://ryanjosephkamp.github.io/deep-learning-studies/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Deep Learning Studies">
+<meta property="og:title" content="Deep Learning Studies">
+<meta property="og:description" content="A project from CS 6073 Deep Learning, fall 2025, revised and extended: face identification with part of the face covered, what the course project measured, and what a cleaner experiment shows.">
+<meta property="og:url" content="https://ryanjosephkamp.github.io/deep-learning-studies/">
+<meta property="og:image" content="https://ryanjosephkamp.github.io/deep-learning-studies/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The title page of Deep Learning Studies, by Ryan Kamp: the title in red on cream paper, with the course and the line Studies from Fall 2025, revised and extended.">
+<meta name="twitter:card" content="summary_large_image">
+<title>Deep Learning Studies</title>
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="assets/book.css?v=69820c8120">
+<script src="assets/book.js?v=2469685aef"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the text</a>
+<header class="head"><a class="brand" href="index.html">Deep Learning Studies</a>
+<nav aria-label="Book"><a href="index.html#contents">Contents</a><button class="mode" type="button">◐</button></nav></header>
+<nav class="edge" aria-label="Thumb index"><a href="index.html" style="--c:var(--ink-2)" aria-label="Contents" aria-current="page"></a><a href="facial-recognition-under-occlusion-project/index.html" style="--c:#c0532e" aria-label="Chapter I"></a></nav>
+<main id="main">
+<section class="title-page">
+<p class="kicker">CS 6073 Deep Learning, University of Cincinnati</p>
+<h1 class="t">Deep Learning Studies</h1>
+<p class="sub">Studies from Fall 2025, revised and extended</p>
+<div class="rule"></div>
+<p class="by">by Ryan Kamp</p>
+</section>
+<p class="how pencil">Tap any printed plate to lift it off the page; pinch or scroll to zoom, then drag to look around. The live plates show the study&#x27;s results; one of them also runs SFace, one of the study&#x27;s models, on your device, and two can use your own face, which never leaves it.</p>
+<section class="contents" id="contents"><h2>Contents</h2><ol><li><a href="facial-recognition-under-occlusion-project/index.html"><span class="no">I.</span><span class="name"><em>Seeing through the mask</em></span><span class="sum">Face identification with part of the face covered: what the course project measured, and what a cleaner experiment shows.</span></a></li></ol></section>
+<section class="others" aria-labelledby="others-h"><h2 id="others-h">The other course books</h2><ul><li><a href="https://ryanjosephkamp.github.io/advanced-ml-studies/"><span class="o-title">Advanced Machine Learning Studies</span><span class="o-course">CS 7063 Advanced Machine Learning, Spring 2026</span></a></li><li><a href="https://ryanjosephkamp.github.io/generative-ai-studies/"><span class="o-title">Generative AI Studies</span><span class="o-course">CS 6078 Generative AI, Spring 2026</span></a></li></ul></section>
+</main>
+<footer class="foot"><div class="foot-inner">
+<p class="foot-title">Deep Learning Studies</p>
+<nav aria-label="Book and source"><a href="index.html">Title page and contents</a><a href="https://github.com/ryanjosephkamp/deep-learning-studies">The repository on GitHub</a></nav>
+<p class="fine">CS 6073 Deep Learning, University of Cincinnati, Fall 2025. The code is under the MIT License; each study credits its data.</p>
+<div class="site-credit">
+  <p class="site-credit-made">Made by <a href="https://ryanjosephkamp.github.io/">Ryan Kamp</a></p>
+  <ul class="site-credit-social" aria-label="Ryan Kamp online">
+    <li><a href="https://ryanjosephkamp.github.io/" aria-label="Ryan Kamp’s website" title="Website"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 5.7 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-5.7-3.9-9.2S9.4 5.4 12 2.8Z"/></g></svg></a></li>
+    <li><a href="https://github.com/ryanjosephkamp/" aria-label="Ryan Kamp on GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+    <li><a href="https://www.linkedin.com/in/ryanjosephkamp/" aria-label="Ryan Kamp on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://x.com/ryanjosephkamp" aria-label="Ryan Kamp on X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a></li>
+    <li><a href="https://m.youtube.com/@RyanJosephKamp" aria-label="Ryan Kamp on YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li>
+  </ul>
+  <a class="site-credit-sponsor" href="https://github.com/sponsors/ryanjosephkamp"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16.8S3 12.6 3 7.6A3.6 3.6 0 0 1 10 6a3.6 3.6 0 0 1 7 1.6c0 5-7 9.2-7 9.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Sponsor on GitHub</a>
+</div>
+
+</div></footer>
+<div class="lifted" hidden role="dialog" aria-modal="true" aria-label="Plate">
+<div class="bar"><span class="title"></span><button class="close" type="button" aria-label="Put the plate back">✕</button></div>
+<div class="stage"><div class="sheet"></div></div>
+<p class="lift-cap"></p>
+</div>
+</body>
+</html>

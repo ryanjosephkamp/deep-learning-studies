@@ -1,0 +1,14 @@
+# The study (study/), pinned to the versions that produced results/study/ on November 11, 2026:
+# Python 3.10.12 on Linux, CUDA 12.8 (torch 2.9.1+cu128 from the PyTorch index), NVIDIA A10.
+# analyze.py's outputs were produced on Python 3.11.5 with numpy 1.26.4 and pandas 2.3.3.
+
+torch==2.9.1
+numpy==2.2.6
+pandas==2.3.3
+opencv-python-headless==4.12.0.88
+Pillow==10.0.1
+
+# Optional deepface stage (not part of the November 11 run):
+# deepface==0.0.96
+# tensorflow==2.19.0
+# tf-keras==2.19.0

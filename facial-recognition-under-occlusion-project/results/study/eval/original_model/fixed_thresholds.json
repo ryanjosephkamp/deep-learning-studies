@@ -1,0 +1,9 @@
+{
+  "reference_condition": "frame_square_0.00",
+  "protocol": "identity",
+  "metric": "l2",
+  "thresholds": {
+    "0.01": -2.5555458068847656,
+    "0.001": -0.7110118865966797
+  }
+}

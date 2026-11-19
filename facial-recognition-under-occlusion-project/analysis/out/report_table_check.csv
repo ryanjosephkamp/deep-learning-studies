@@ -1,0 +1,247 @@
+table,occlusion,column,file,reported_pct,file_pct,match
+Table 1,0.0,Custom,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.0,VGG-Face,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.0,Facenet,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.0,Facenet512,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.0,OpenFace,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.0,ArcFace,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.0,SFace,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.05,Custom,exper__size_100__20251130_235656,100.0,100.0,True
+Table 1,0.05,VGG-Face,exper__size_100__20251130_235656,72.0,72.0,True
+Table 1,0.05,Facenet,exper__size_100__20251130_235656,5.0,5.0,True
+Table 1,0.05,Facenet512,exper__size_100__20251130_235656,34.0,34.0,True
+Table 1,0.05,OpenFace,exper__size_100__20251130_235656,4.0,4.0,True
+Table 1,0.05,ArcFace,exper__size_100__20251130_235656,3.0,3.0,True
+Table 1,0.05,SFace,exper__size_100__20251130_235656,16.0,16.0,True
+Table 1,0.1,Custom,exper__size_100__20251130_235656,99.0,99.0,True
+Table 1,0.1,VGG-Face,exper__size_100__20251130_235656,13.0,13.0,True
+Table 1,0.1,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.1,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.1,OpenFace,exper__size_100__20251130_235656,3.0,3.0,True
+Table 1,0.1,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.1,SFace,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.15,Custom,exper__size_100__20251130_235656,96.0,96.0,True
+Table 1,0.15,VGG-Face,exper__size_100__20251130_235656,3.0,3.0,True
+Table 1,0.15,Facenet,exper__size_100__20251130_235656,1.0,2.0,False
+Table 1,0.15,Facenet512,exper__size_100__20251130_235656,1.0,2.0,False
+Table 1,0.15,OpenFace,exper__size_100__20251130_235656,5.0,3.0,False
+Table 1,0.15,ArcFace,exper__size_100__20251130_235656,1.0,0.0,False
+Table 1,0.15,SFace,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.2,Custom,exper__size_100__20251130_235656,90.0,90.0,True
+Table 1,0.2,VGG-Face,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.2,Facenet,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.2,Facenet512,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.2,OpenFace,exper__size_100__20251130_235656,6.0,6.0,True
+Table 1,0.2,ArcFace,exper__size_100__20251130_235656,0.0,0.0,True
+Table 1,0.2,SFace,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.25,Custom,exper__size_100__20251130_235656,82.0,81.0,False
+Table 1,0.25,VGG-Face,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.25,Facenet,exper__size_100__20251130_235656,1.0,2.0,False
+Table 1,0.25,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.25,OpenFace,exper__size_100__20251130_235656,5.0,2.0,False
+Table 1,0.25,ArcFace,exper__size_100__20251130_235656,0.0,1.0,False
+Table 1,0.25,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.3,Custom,exper__size_100__20251130_235656,73.0,73.0,True
+Table 1,0.3,VGG-Face,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.3,Facenet,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.3,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.3,OpenFace,exper__size_100__20251130_235656,3.0,3.0,True
+Table 1,0.3,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.3,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.4,Custom,exper__size_100__20251130_235656,50.0,50.0,True
+Table 1,0.4,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.4,Facenet,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.4,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.4,OpenFace,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.4,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.4,SFace,exper__size_100__20251130_235656,0.0,0.0,True
+Table 1,0.5,Custom,exper__size_100__20251130_235656,31.0,31.0,True
+Table 1,0.5,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.5,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.5,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.5,OpenFace,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.5,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.5,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.6,Custom,exper__size_100__20251130_235656,18.0,18.0,True
+Table 1,0.6,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.6,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.6,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.6,OpenFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.6,ArcFace,exper__size_100__20251130_235656,0.0,0.0,True
+Table 1,0.6,SFace,exper__size_100__20251130_235656,2.0,2.0,True
+Table 1,0.7,Custom,exper__size_100__20251130_235656,11.0,12.0,False
+Table 1,0.7,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.7,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.7,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.7,OpenFace,exper__size_100__20251130_235656,1.0,0.0,False
+Table 1,0.7,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.7,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.8,Custom,exper__size_100__20251130_235656,8.0,8.0,True
+Table 1,0.8,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.8,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.8,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.8,OpenFace,exper__size_100__20251130_235656,0.0,0.0,True
+Table 1,0.8,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.8,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.9,Custom,exper__size_100__20251130_235656,3.0,2.0,False
+Table 1,0.9,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.9,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.9,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.9,OpenFace,exper__size_100__20251130_235656,1.0,0.0,False
+Table 1,0.9,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,0.9,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,Custom,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,VGG-Face,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,Facenet,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,Facenet512,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,OpenFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,ArcFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 1,1.0,SFace,exper__size_100__20251130_235656,1.0,1.0,True
+Table 2,0.0,Custom,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.0,VGG-Face,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.0,Facenet,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.0,Facenet512,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.0,OpenFace,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.0,ArcFace,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.0,SFace,exper__size_200__20251201_203249,100.0,100.0,True
+Table 2,0.05,Custom,exper__size_200__20251201_203249,98.5,98.5,True
+Table 2,0.05,VGG-Face,exper__size_200__20251201_203249,64.5,64.5,True
+Table 2,0.05,Facenet,exper__size_200__20251201_203249,3.0,3.0,True
+Table 2,0.05,Facenet512,exper__size_200__20251201_203249,37.0,37.0,True
+Table 2,0.05,OpenFace,exper__size_200__20251201_203249,4.5,4.5,True
+Table 2,0.05,ArcFace,exper__size_200__20251201_203249,2.0,2.0,True
+Table 2,0.05,SFace,exper__size_200__20251201_203249,14.0,14.0,True
+Table 2,0.1,Custom,exper__size_200__20251201_203249,95.5,95.5,True
+Table 2,0.1,VGG-Face,exper__size_200__20251201_203249,10.5,10.5,True
+Table 2,0.1,Facenet,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.1,Facenet512,exper__size_200__20251201_203249,2.5,2.5,True
+Table 2,0.1,OpenFace,exper__size_200__20251201_203249,4.0,4.0,True
+Table 2,0.1,ArcFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.1,SFace,exper__size_200__20251201_203249,3.5,3.5,True
+Table 2,0.15,Custom,exper__size_200__20251201_203249,88.0,89.0,False
+Table 2,0.15,VGG-Face,exper__size_200__20251201_203249,4.5,3.5,False
+Table 2,0.15,Facenet,exper__size_200__20251201_203249,1.5,1.0,False
+Table 2,0.15,Facenet512,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.15,OpenFace,exper__size_200__20251201_203249,2.5,1.5,False
+Table 2,0.15,ArcFace,exper__size_200__20251201_203249,1.5,2.0,False
+Table 2,0.15,SFace,exper__size_200__20251201_203249,2.5,2.0,False
+Table 2,0.2,Custom,exper__size_200__20251201_203249,78.0,78.0,True
+Table 2,0.2,VGG-Face,exper__size_200__20251201_203249,3.0,3.0,True
+Table 2,0.2,Facenet,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.2,Facenet512,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.2,OpenFace,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.2,ArcFace,exper__size_200__20251201_203249,2.0,2.0,True
+Table 2,0.2,SFace,exper__size_200__20251201_203249,2.0,2.0,True
+Table 2,0.25,Custom,exper__size_200__20251201_203249,68.5,69.0,False
+Table 2,0.25,VGG-Face,exper__size_200__20251201_203249,2.0,3.0,False
+Table 2,0.25,Facenet,exper__size_200__20251201_203249,1.0,1.5,False
+Table 2,0.25,Facenet512,exper__size_200__20251201_203249,1.5,1.0,False
+Table 2,0.25,OpenFace,exper__size_200__20251201_203249,1.5,2.0,False
+Table 2,0.25,ArcFace,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.25,SFace,exper__size_200__20251201_203249,1.5,1.0,False
+Table 2,0.3,Custom,exper__size_200__20251201_203249,59.5,59.5,True
+Table 2,0.3,VGG-Face,exper__size_200__20251201_203249,2.5,2.5,True
+Table 2,0.3,Facenet,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.3,Facenet512,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.3,OpenFace,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.3,ArcFace,exper__size_200__20251201_203249,2.0,2.0,True
+Table 2,0.3,SFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.4,Custom,exper__size_200__20251201_203249,41.0,41.0,True
+Table 2,0.4,VGG-Face,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.4,Facenet,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.4,Facenet512,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.4,OpenFace,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.4,ArcFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.4,SFace,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.5,Custom,exper__size_200__20251201_203249,19.5,19.5,True
+Table 2,0.5,VGG-Face,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.5,Facenet,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.5,Facenet512,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.5,OpenFace,exper__size_200__20251201_203249,1.5,1.5,True
+Table 2,0.5,ArcFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.5,SFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.6,Custom,exper__size_200__20251201_203249,8.5,8.5,True
+Table 2,0.6,VGG-Face,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.6,Facenet,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.6,Facenet512,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.6,OpenFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.6,ArcFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.6,SFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.7,Custom,exper__size_200__20251201_203249,3.5,1.0,False
+Table 2,0.7,VGG-Face,exper__size_200__20251201_203249,1.0,0.5,False
+Table 2,0.7,Facenet,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.7,Facenet512,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.7,OpenFace,exper__size_200__20251201_203249,0.5,1.0,False
+Table 2,0.7,ArcFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.7,SFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.8,Custom,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.8,VGG-Face,exper__size_200__20251201_203249,0.0,0.0,True
+Table 2,0.8,Facenet,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.8,Facenet512,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.8,OpenFace,exper__size_200__20251201_203249,1.0,1.0,True
+Table 2,0.8,ArcFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,0.8,SFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,Custom,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,VGG-Face,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,Facenet,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,Facenet512,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,OpenFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,ArcFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 2,1.0,SFace,exper__size_200__20251201_203249,0.5,0.5,True
+Table 3,0.0,Custom standard,exper__size_100__20251130_235656,100.0,100.0,True
+Table 3,0.0,Custom no background,exper__NO_BG__size_100__20251203_012434,100.0,100.0,True
+Table 3,0.05,Custom standard,exper__size_100__20251130_235656,100.0,100.0,True
+Table 3,0.05,Custom no background,exper__NO_BG__size_100__20251203_012434,100.0,100.0,True
+Table 3,0.1,Custom standard,exper__size_100__20251130_235656,99.0,99.0,True
+Table 3,0.1,Custom no background,exper__NO_BG__size_100__20251203_012434,97.0,97.0,True
+Table 3,0.15,Custom standard,exper__size_100__20251130_235656,96.0,96.0,True
+Table 3,0.15,Custom no background,exper__NO_BG__size_100__20251203_012434,82.0,82.0,True
+Table 3,0.2,Custom standard,exper__size_100__20251130_235656,90.0,90.0,True
+Table 3,0.2,Custom no background,exper__NO_BG__size_100__20251203_012434,56.0,56.0,True
+Table 3,0.25,Custom standard,exper__size_100__20251130_235656,82.0,81.0,False
+Table 3,0.25,Custom no background,exper__NO_BG__size_100__20251203_012434,45.0,44.0,False
+Table 3,0.3,Custom standard,exper__size_100__20251130_235656,73.0,73.0,True
+Table 3,0.3,Custom no background,exper__NO_BG__size_100__20251203_012434,33.0,33.0,True
+Table 3,0.4,Custom standard,exper__size_100__20251130_235656,50.0,50.0,True
+Table 3,0.4,Custom no background,exper__NO_BG__size_100__20251203_012434,17.0,17.0,True
+Table 3,0.5,Custom standard,exper__size_100__20251130_235656,31.0,31.0,True
+Table 3,0.5,Custom no background,exper__NO_BG__size_100__20251203_012434,10.0,10.0,True
+Table 3,0.6,Custom standard,exper__size_100__20251130_235656,18.0,18.0,True
+Table 3,0.6,Custom no background,exper__NO_BG__size_100__20251203_012434,6.0,6.0,True
+Table 4,0.0,VGG-Face standard,exper__size_100__20251130_235656,100.0,100.0,True
+Table 4,0.0,VGG-Face no background,exper__NO_BG__size_100__20251203_012434,100.0,100.0,True
+Table 4,0.05,VGG-Face standard,exper__size_100__20251130_235656,72.0,72.0,True
+Table 4,0.05,VGG-Face no background,exper__NO_BG__size_100__20251203_012434,42.0,42.0,True
+Table 4,0.1,VGG-Face standard,exper__size_100__20251130_235656,13.0,13.0,True
+Table 4,0.1,VGG-Face no background,exper__NO_BG__size_100__20251203_012434,9.0,9.0,True
+Table 4,0.2,VGG-Face standard,exper__size_100__20251130_235656,2.0,2.0,True
+Table 4,0.2,VGG-Face no background,exper__NO_BG__size_100__20251203_012434,4.0,4.0,True
+Table 4,0.3,VGG-Face standard,exper__size_100__20251130_235656,2.0,2.0,True
+Table 4,0.3,VGG-Face no background,exper__NO_BG__size_100__20251203_012434,3.0,3.0,True
+Table 4,0.5,VGG-Face standard,exper__size_100__20251130_235656,1.0,1.0,True
+Table 4,0.5,VGG-Face no background,exper__NO_BG__size_100__20251203_012434,3.0,3.0,True
+Table 5,0.0,Custom N=50,exper__size_50__20251201_192436,100.0,100.0,True
+Table 5,0.0,Custom N=100,exper__size_100__20251130_235656,100.0,100.0,True
+Table 5,0.0,Custom N=200,exper__size_200__20251201_203249,100.0,100.0,True
+Table 5,0.0,Custom N=500,exper__size_500__20251201_004627,100.0,100.0,True
+Table 5,0.0,Custom N=1000 (no result file),,100.0,,False
+Table 5,0.1,Custom N=50,exper__size_50__20251201_192436,100.0,100.0,True
+Table 5,0.1,Custom N=100,exper__size_100__20251130_235656,99.0,99.0,True
+Table 5,0.1,Custom N=200,exper__size_200__20251201_203249,95.5,95.5,True
+Table 5,0.1,Custom N=500,exper__size_500__20251201_004627,93.0,93.0,True
+Table 5,0.1,Custom N=1000 (no result file),,91.5,,False
+Table 5,0.2,Custom N=50,exper__size_50__20251201_192436,94.0,92.0,False
+Table 5,0.2,Custom N=100,exper__size_100__20251130_235656,90.0,90.0,True
+Table 5,0.2,Custom N=200,exper__size_200__20251201_203249,78.0,78.0,True
+Table 5,0.2,Custom N=500,exper__size_500__20251201_004627,71.0,73.2,False
+Table 5,0.2,Custom N=1000 (no result file),,65.0,,False
+Table 5,0.3,Custom N=50,exper__size_50__20251201_192436,82.0,76.0,False
+Table 5,0.3,Custom N=100,exper__size_100__20251130_235656,73.0,73.0,True
+Table 5,0.3,Custom N=200,exper__size_200__20251201_203249,59.5,59.5,True
+Table 5,0.3,Custom N=500,exper__size_500__20251201_004627,51.0,49.8,False
+Table 5,0.3,Custom N=1000 (no result file),,45.0,,False
+Table 5,0.5,Custom N=50,exper__size_50__20251201_192436,42.0,38.0,False
+Table 5,0.5,Custom N=100,exper__size_100__20251130_235656,31.0,31.0,True
+Table 5,0.5,Custom N=200,exper__size_200__20251201_203249,19.5,19.5,True
+Table 5,0.5,Custom N=500,exper__size_500__20251201_004627,14.0,13.0,False
+Table 5,0.5,Custom N=1000 (no result file),,9.0,,False

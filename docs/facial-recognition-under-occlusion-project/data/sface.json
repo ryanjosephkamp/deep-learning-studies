@@ -1,0 +1,234 @@
+{
+ "thresholds": [
+  {
+   "far": 0.01,
+   "cos": 0.31317776441574097
+  },
+  {
+   "far": 0.001,
+   "cos": 0.3845541477203369
+  }
+ ],
+ "threshold_source": "results/study/eval/sface/fixed_thresholds.json",
+ "detector": {
+  "file": "face_detection_yunet_2023mar.onnx",
+  "score_threshold": 0.7,
+  "nms": 0.3,
+  "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+  "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "bytes": 232589,
+  "runtime_bytes": 14927315
+ },
+ "recognizer": {
+  "file": "face_recognition_sface_2021dec.onnx",
+  "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_recognition_sface/face_recognition_sface_2021dec.onnx",
+  "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+  "bytes": 38696353
+ },
+ "crop": 112,
+ "landmarks": [
+  [
+   38.2946,
+   51.6963
+  ],
+  [
+   73.5318,
+   51.5014
+  ],
+  [
+   56.0252,
+   71.7366
+  ],
+  [
+   41.5493,
+   92.3655
+  ],
+  [
+   70.7299,
+   92.2041
+  ]
+ ],
+ "faces": [
+  {
+   "id": "portrait-1",
+   "name": "a woman in a straw hat",
+   "src": "portraits/portrait-1.webp",
+   "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos."
+  },
+  {
+   "id": "portrait-2",
+   "name": "a man with short dark hair",
+   "src": "portraits/portrait-2.webp",
+   "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos."
+  },
+  {
+   "id": "portrait-3",
+   "name": "a laughing older man with a white beard",
+   "src": "portraits/portrait-3.webp",
+   "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos."
+  },
+  {
+   "id": "portrait-4",
+   "name": "a woman with curly hair",
+   "src": "portraits/portrait-4.webp",
+   "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos."
+  },
+  {
+   "id": "portrait-5",
+   "name": "a man with a beard",
+   "src": "portraits/portrait-5.webp",
+   "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos."
+  },
+  {
+   "id": "portrait-6",
+   "name": "a smiling woman",
+   "src": "portraits/portrait-6.webp",
+   "credit": "A synthetic portrait of a person who doesn't exist, not one of the study's photos."
+  }
+ ],
+ "occluders": [
+  {
+   "id": "square_0.05",
+   "kind": "square",
+   "size": 5,
+   "label": "A centered black square over 5% of the crop",
+   "rect": [
+    43,
+    43,
+    25,
+    25
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.10",
+   "kind": "square",
+   "size": 10,
+   "label": "A centered black square over 10% of the crop",
+   "rect": [
+    38,
+    38,
+    35,
+    35
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.15",
+   "kind": "square",
+   "size": 15,
+   "label": "A centered black square over 15% of the crop",
+   "rect": [
+    34,
+    34,
+    43,
+    43
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.20",
+   "kind": "square",
+   "size": 20,
+   "label": "A centered black square over 20% of the crop",
+   "rect": [
+    31,
+    31,
+    50,
+    50
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.25",
+   "kind": "square",
+   "size": 25,
+   "label": "A centered black square over 25% of the crop",
+   "rect": [
+    28,
+    28,
+    56,
+    56
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.30",
+   "kind": "square",
+   "size": 30,
+   "label": "A centered black square over 30% of the crop",
+   "rect": [
+    25,
+    25,
+    61,
+    61
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.40",
+   "kind": "square",
+   "size": 40,
+   "label": "A centered black square over 40% of the crop",
+   "rect": [
+    21,
+    21,
+    70,
+    70
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.50",
+   "kind": "square",
+   "size": 50,
+   "label": "A centered black square over 50% of the crop",
+   "rect": [
+    16,
+    16,
+    79,
+    79
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "square_0.60",
+   "kind": "square",
+   "size": 60,
+   "label": "A centered black square over 60% of the crop",
+   "rect": [
+    13,
+    13,
+    86,
+    86
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "eyes_band",
+   "kind": "eye",
+   "size": 26,
+   "label": "A black band across the eyes (26% of the crop)",
+   "rect": [
+    0,
+    33,
+    112,
+    29
+   ],
+   "fill": "black"
+  },
+  {
+   "id": "lower_band",
+   "kind": "low",
+   "size": 40,
+   "label": "A black band across the lower face (40% of the crop)",
+   "rect": [
+    0,
+    67,
+    112,
+    45
+   ],
+   "fill": "black"
+  }
+ ]
+}

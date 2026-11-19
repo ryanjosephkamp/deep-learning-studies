@@ -1,0 +1,1036 @@
+contrast,protocol,condition,seed_a,seed_b,difference
+"attention, with augmentation",identity,eyes_band,0,0,-0.00211538461538463
+"attention, with augmentation",identity,eyes_band,0,1,0.00019230769230768607
+"attention, with augmentation",identity,eyes_band,0,2,-0.0025000000000000022
+"attention, with augmentation",identity,eyes_band,1,0,0.000576923076923086
+"attention, with augmentation",identity,eyes_band,1,1,0.002884615384615402
+"attention, with augmentation",identity,eyes_band,1,2,0.00019230769230771383
+"attention, with augmentation",identity,eyes_band,2,0,-0.0051923076923076905
+"attention, with augmentation",identity,eyes_band,2,1,-0.0028846153846153744
+"attention, with augmentation",identity,eyes_band,2,2,-0.005576923076923063
+"attention, with augmentation",identity,gray_square_0.20,0,0,-0.000576923076923086
+"attention, with augmentation",identity,gray_square_0.20,0,1,0.0051923076923076905
+"attention, with augmentation",identity,gray_square_0.20,0,2,-0.0019230769230769301
+"attention, with augmentation",identity,gray_square_0.20,1,0,0.0036538461538461464
+"attention, with augmentation",identity,gray_square_0.20,1,1,0.009423076923076923
+"attention, with augmentation",identity,gray_square_0.20,1,2,0.0023076923076923023
+"attention, with augmentation",identity,gray_square_0.20,2,0,-0.004038461538461546
+"attention, with augmentation",identity,gray_square_0.20,2,1,0.0017307692307692302
+"attention, with augmentation",identity,gray_square_0.20,2,2,-0.0053846153846153905
+"attention, with augmentation",identity,gray_square_0.40,0,0,0.014615384615384613
+"attention, with augmentation",identity,gray_square_0.40,0,1,0.011730769230769225
+"attention, with augmentation",identity,gray_square_0.40,0,2,0.015384615384615379
+"attention, with augmentation",identity,gray_square_0.40,1,0,0.008269230769230772
+"attention, with augmentation",identity,gray_square_0.40,1,1,0.0053846153846153835
+"attention, with augmentation",identity,gray_square_0.40,1,2,0.009038461538461537
+"attention, with augmentation",identity,gray_square_0.40,2,0,0.0028846153846153882
+"attention, with augmentation",identity,gray_square_0.40,2,1,0.0
+"attention, with augmentation",identity,gray_square_0.40,2,2,0.0036538461538461534
+"attention, with augmentation",identity,lower_band,0,0,-0.0030769230769230743
+"attention, with augmentation",identity,lower_band,0,1,-0.010000000000000002
+"attention, with augmentation",identity,lower_band,0,2,-0.013846153846153848
+"attention, with augmentation",identity,lower_band,1,0,-0.0057692307692307696
+"attention, with augmentation",identity,lower_band,1,1,-0.012692307692307697
+"attention, with augmentation",identity,lower_band,1,2,-0.016538461538461544
+"attention, with augmentation",identity,lower_band,2,0,-0.0051923076923076905
+"attention, with augmentation",identity,lower_band,2,1,-0.012115384615384618
+"attention, with augmentation",identity,lower_band,2,2,-0.015961538461538465
+"attention, with augmentation",identity,noise_square_0.20,0,0,0.1225
+"attention, with augmentation",identity,noise_square_0.20,0,1,0.12288461538461538
+"attention, with augmentation",identity,noise_square_0.20,0,2,0.1226923076923077
+"attention, with augmentation",identity,noise_square_0.20,1,0,0.13365384615384615
+"attention, with augmentation",identity,noise_square_0.20,1,1,0.13403846153846155
+"attention, with augmentation",identity,noise_square_0.20,1,2,0.13384615384615384
+"attention, with augmentation",identity,noise_square_0.20,2,0,0.12038461538461538
+"attention, with augmentation",identity,noise_square_0.20,2,1,0.12076923076923077
+"attention, with augmentation",identity,noise_square_0.20,2,2,0.12057692307692308
+"attention, with augmentation",identity,noise_square_0.40,0,0,0.06846153846153846
+"attention, with augmentation",identity,noise_square_0.40,0,1,0.06846153846153846
+"attention, with augmentation",identity,noise_square_0.40,0,2,0.06846153846153846
+"attention, with augmentation",identity,noise_square_0.40,1,0,0.08730769230769231
+"attention, with augmentation",identity,noise_square_0.40,1,1,0.08730769230769231
+"attention, with augmentation",identity,noise_square_0.40,1,2,0.08730769230769231
+"attention, with augmentation",identity,noise_square_0.40,2,0,0.06442307692307693
+"attention, with augmentation",identity,noise_square_0.40,2,1,0.06442307692307693
+"attention, with augmentation",identity,noise_square_0.40,2,2,0.06442307692307693
+"attention, with augmentation",identity,random_square_0.20,0,0,-0.012307692307692297
+"attention, with augmentation",identity,random_square_0.20,0,1,-0.018461538461538446
+"attention, with augmentation",identity,random_square_0.20,0,2,-0.013653846153846155
+"attention, with augmentation",identity,random_square_0.20,1,0,-0.012499999999999983
+"attention, with augmentation",identity,random_square_0.20,1,1,-0.018653846153846132
+"attention, with augmentation",identity,random_square_0.20,1,2,-0.013846153846153841
+"attention, with augmentation",identity,random_square_0.20,2,0,-0.015384615384615385
+"attention, with augmentation",identity,random_square_0.20,2,1,-0.021538461538461534
+"attention, with augmentation",identity,random_square_0.20,2,2,-0.016730769230769243
+"attention, with augmentation",identity,square_0.00,0,0,-0.030961538461538457
+"attention, with augmentation",identity,square_0.00,0,1,-0.03384615384615383
+"attention, with augmentation",identity,square_0.00,0,2,-0.023076923076923078
+"attention, with augmentation",identity,square_0.00,1,0,-0.02653846153846154
+"attention, with augmentation",identity,square_0.00,1,1,-0.029423076923076913
+"attention, with augmentation",identity,square_0.00,1,2,-0.01865384615384616
+"attention, with augmentation",identity,square_0.00,2,0,-0.029615384615384627
+"attention, with augmentation",identity,square_0.00,2,1,-0.0325
+"attention, with augmentation",identity,square_0.00,2,2,-0.021730769230769248
+"attention, with augmentation",identity,square_0.05,0,0,-0.02615384615384614
+"attention, with augmentation",identity,square_0.05,0,1,-0.028461538461538455
+"attention, with augmentation",identity,square_0.05,0,2,-0.02384615384615385
+"attention, with augmentation",identity,square_0.05,1,0,-0.02173076923076922
+"attention, with augmentation",identity,square_0.05,1,1,-0.024038461538461536
+"attention, with augmentation",identity,square_0.05,1,2,-0.019423076923076932
+"attention, with augmentation",identity,square_0.05,2,0,-0.02653846153846154
+"attention, with augmentation",identity,square_0.05,2,1,-0.028846153846153855
+"attention, with augmentation",identity,square_0.05,2,2,-0.02423076923076925
+"attention, with augmentation",identity,square_0.10,0,0,-0.02557692307692308
+"attention, with augmentation",identity,square_0.10,0,1,-0.02730769230769231
+"attention, with augmentation",identity,square_0.10,0,2,-0.019807692307692304
+"attention, with augmentation",identity,square_0.10,1,0,-0.02038461538461539
+"attention, with augmentation",identity,square_0.10,1,1,-0.02211538461538462
+"attention, with augmentation",identity,square_0.10,1,2,-0.014615384615384613
+"attention, with augmentation",identity,square_0.10,2,0,-0.022692307692307706
+"attention, with augmentation",identity,square_0.10,2,1,-0.024423076923076936
+"attention, with augmentation",identity,square_0.10,2,2,-0.01692307692307693
+"attention, with augmentation",identity,square_0.15,0,0,-0.021923076923076934
+"attention, with augmentation",identity,square_0.15,0,1,-0.023269230769230764
+"attention, with augmentation",identity,square_0.15,0,2,-0.012692307692307697
+"attention, with augmentation",identity,square_0.15,1,0,-0.013846153846153841
+"attention, with augmentation",identity,square_0.15,1,1,-0.015192307692307672
+"attention, with augmentation",identity,square_0.15,1,2,-0.0046153846153846045
+"attention, with augmentation",identity,square_0.15,2,0,-0.020961538461538476
+"attention, with augmentation",identity,square_0.15,2,1,-0.022307692307692306
+"attention, with augmentation",identity,square_0.15,2,2,-0.011730769230769239
+"attention, with augmentation",identity,square_0.20,0,0,-0.014999999999999986
+"attention, with augmentation",identity,square_0.20,0,1,-0.014038461538461527
+"attention, with augmentation",identity,square_0.20,0,2,-0.011730769230769211
+"attention, with augmentation",identity,square_0.20,1,0,-0.007307692307692293
+"attention, with augmentation",identity,square_0.20,1,1,-0.006346153846153835
+"attention, with augmentation",identity,square_0.20,1,2,-0.0040384615384615186
+"attention, with augmentation",identity,square_0.20,2,0,-0.01307692307692307
+"attention, with augmentation",identity,square_0.20,2,1,-0.012115384615384611
+"attention, with augmentation",identity,square_0.20,2,2,-0.009807692307692295
+"attention, with augmentation",identity,square_0.25,0,0,-0.010576923076923067
+"attention, with augmentation",identity,square_0.25,0,1,-0.010192307692307695
+"attention, with augmentation",identity,square_0.25,0,2,-0.00865384615384615
+"attention, with augmentation",identity,square_0.25,1,0,-0.009230769230769237
+"attention, with augmentation",identity,square_0.25,1,1,-0.008846153846153865
+"attention, with augmentation",identity,square_0.25,1,2,-0.007307692307692321
+"attention, with augmentation",identity,square_0.25,2,0,-0.01307692307692307
+"attention, with augmentation",identity,square_0.25,2,1,-0.012692307692307697
+"attention, with augmentation",identity,square_0.25,2,2,-0.011153846153846153
+"attention, with augmentation",identity,square_0.30,0,0,-0.0063461538461538625
+"attention, with augmentation",identity,square_0.30,0,1,-0.004615384615384632
+"attention, with augmentation",identity,square_0.30,0,2,-0.0038461538461538602
+"attention, with augmentation",identity,square_0.30,1,0,-0.004615384615384632
+"attention, with augmentation",identity,square_0.30,1,1,-0.002884615384615402
+"attention, with augmentation",identity,square_0.30,1,2,-0.00211538461538463
+"attention, with augmentation",identity,square_0.30,2,0,-0.011730769230769239
+"attention, with augmentation",identity,square_0.30,2,1,-0.010000000000000009
+"attention, with augmentation",identity,square_0.30,2,2,-0.009230769230769237
+"attention, with augmentation",identity,square_0.40,0,0,-0.0026923076923076883
+"attention, with augmentation",identity,square_0.40,0,1,-0.003076923076923088
+"attention, with augmentation",identity,square_0.40,0,2,-0.005384615384615377
+"attention, with augmentation",identity,square_0.40,1,0,-0.0023076923076923023
+"attention, with augmentation",identity,square_0.40,1,1,-0.002692307692307702
+"attention, with augmentation",identity,square_0.40,1,2,-0.0049999999999999906
+"attention, with augmentation",identity,square_0.40,2,0,-0.0036538461538461464
+"attention, with augmentation",identity,square_0.40,2,1,-0.004038461538461546
+"attention, with augmentation",identity,square_0.40,2,2,-0.006346153846153835
+"attention, with augmentation",identity,square_0.50,0,0,-0.0013461538461538441
+"attention, with augmentation",identity,square_0.50,0,1,-0.004230769230769232
+"attention, with augmentation",identity,square_0.50,0,2,-0.0048076923076923045
+"attention, with augmentation",identity,square_0.50,1,0,-0.002115384615384616
+"attention, with augmentation",identity,square_0.50,1,1,-0.0050000000000000044
+"attention, with augmentation",identity,square_0.50,1,2,-0.0055769230769230765
+"attention, with augmentation",identity,square_0.50,2,0,0.0028846153846153882
+"attention, with augmentation",identity,square_0.50,2,1,0.0
+"attention, with augmentation",identity,square_0.50,2,2,-0.0005769230769230721
+"attention, with augmentation",identity,square_0.60,0,0,-0.002115384615384616
+"attention, with augmentation",identity,square_0.60,0,1,0.0030769230769230743
+"attention, with augmentation",identity,square_0.60,0,2,-0.0017307692307692302
+"attention, with augmentation",identity,square_0.60,1,0,-0.0023076923076923023
+"attention, with augmentation",identity,square_0.60,1,1,0.0028846153846153882
+"attention, with augmentation",identity,square_0.60,1,2,-0.0019230769230769162
+"attention, with augmentation",identity,square_0.60,2,0,-0.0051923076923076905
+"attention, with augmentation",identity,square_0.60,2,1,0.0
+"attention, with augmentation",identity,square_0.60,2,2,-0.0048076923076923045
+"attention, with augmentation",same_image,square_0.00,0,0,0.0
+"attention, with augmentation",same_image,square_0.00,0,1,0.0
+"attention, with augmentation",same_image,square_0.00,0,2,0.0
+"attention, with augmentation",same_image,square_0.00,1,0,0.0
+"attention, with augmentation",same_image,square_0.00,1,1,0.0
+"attention, with augmentation",same_image,square_0.00,1,2,0.0
+"attention, with augmentation",same_image,square_0.00,2,0,0.0
+"attention, with augmentation",same_image,square_0.00,2,1,0.0
+"attention, with augmentation",same_image,square_0.00,2,2,0.0
+"attention, with augmentation",same_image,square_0.05,0,0,0.0
+"attention, with augmentation",same_image,square_0.05,0,1,0.0
+"attention, with augmentation",same_image,square_0.05,0,2,0.0
+"attention, with augmentation",same_image,square_0.05,1,0,0.0
+"attention, with augmentation",same_image,square_0.05,1,1,0.0
+"attention, with augmentation",same_image,square_0.05,1,2,0.0
+"attention, with augmentation",same_image,square_0.05,2,0,0.0
+"attention, with augmentation",same_image,square_0.05,2,1,0.0
+"attention, with augmentation",same_image,square_0.05,2,2,0.0
+"attention, with augmentation",same_image,square_0.10,0,0,0.0
+"attention, with augmentation",same_image,square_0.10,0,1,0.0
+"attention, with augmentation",same_image,square_0.10,0,2,0.0
+"attention, with augmentation",same_image,square_0.10,1,0,0.0
+"attention, with augmentation",same_image,square_0.10,1,1,0.0
+"attention, with augmentation",same_image,square_0.10,1,2,0.0
+"attention, with augmentation",same_image,square_0.10,2,0,0.0
+"attention, with augmentation",same_image,square_0.10,2,1,0.0
+"attention, with augmentation",same_image,square_0.10,2,2,0.0
+"attention, with augmentation",same_image,square_0.20,0,0,0.0
+"attention, with augmentation",same_image,square_0.20,0,1,0.0
+"attention, with augmentation",same_image,square_0.20,0,2,0.0
+"attention, with augmentation",same_image,square_0.20,1,0,0.0
+"attention, with augmentation",same_image,square_0.20,1,1,0.0
+"attention, with augmentation",same_image,square_0.20,1,2,0.0
+"attention, with augmentation",same_image,square_0.20,2,0,0.0
+"attention, with augmentation",same_image,square_0.20,2,1,0.0
+"attention, with augmentation",same_image,square_0.20,2,2,0.0
+"attention, with augmentation",same_image,square_0.30,0,0,0.0
+"attention, with augmentation",same_image,square_0.30,0,1,0.0
+"attention, with augmentation",same_image,square_0.30,0,2,0.0
+"attention, with augmentation",same_image,square_0.30,1,0,0.0
+"attention, with augmentation",same_image,square_0.30,1,1,0.0
+"attention, with augmentation",same_image,square_0.30,1,2,0.0
+"attention, with augmentation",same_image,square_0.30,2,0,0.0
+"attention, with augmentation",same_image,square_0.30,2,1,0.0
+"attention, with augmentation",same_image,square_0.30,2,2,0.0
+"attention, with augmentation",same_image,square_0.50,0,0,0.0
+"attention, with augmentation",same_image,square_0.50,0,1,0.0
+"attention, with augmentation",same_image,square_0.50,0,2,0.0
+"attention, with augmentation",same_image,square_0.50,1,0,0.0
+"attention, with augmentation",same_image,square_0.50,1,1,0.0
+"attention, with augmentation",same_image,square_0.50,1,2,0.0
+"attention, with augmentation",same_image,square_0.50,2,0,0.0
+"attention, with augmentation",same_image,square_0.50,2,1,0.0
+"attention, with augmentation",same_image,square_0.50,2,2,0.0
+"attention, without augmentation",identity,eyes_band,0,0,0.007692307692307693
+"attention, without augmentation",identity,eyes_band,0,1,0.007115384615384615
+"attention, without augmentation",identity,eyes_band,0,2,-0.0024999999999999988
+"attention, without augmentation",identity,eyes_band,1,0,0.010384615384615384
+"attention, without augmentation",identity,eyes_band,1,1,0.009807692307692307
+"attention, without augmentation",identity,eyes_band,1,2,0.000192307692307693
+"attention, without augmentation",identity,eyes_band,2,0,0.00019230769230769214
+"attention, without augmentation",identity,eyes_band,2,1,-0.0003846153846153847
+"attention, without augmentation",identity,eyes_band,2,2,-0.009999999999999998
+"attention, without augmentation",identity,gray_square_0.20,0,0,-0.000769230769230772
+"attention, without augmentation",identity,gray_square_0.20,0,1,0.00923076923076923
+"attention, without augmentation",identity,gray_square_0.20,0,2,0.00903846153846154
+"attention, without augmentation",identity,gray_square_0.20,1,0,-0.011538461538461543
+"attention, without augmentation",identity,gray_square_0.20,1,1,-0.0015384615384615406
+"attention, without augmentation",identity,gray_square_0.20,1,2,-0.0017307692307692302
+"attention, without augmentation",identity,gray_square_0.20,2,0,-0.012115384615384618
+"attention, without augmentation",identity,gray_square_0.20,2,1,-0.002115384615384616
+"attention, without augmentation",identity,gray_square_0.20,2,2,-0.0023076923076923057
+"attention, without augmentation",identity,gray_square_0.40,0,0,-0.00038461538461538516
+"attention, without augmentation",identity,gray_square_0.40,0,1,0.0003846153846153843
+"attention, without augmentation",identity,gray_square_0.40,0,2,0.0009615384615384616
+"attention, without augmentation",identity,gray_square_0.40,1,0,-0.0036538461538461542
+"attention, without augmentation",identity,gray_square_0.40,1,1,-0.0028846153846153848
+"attention, without augmentation",identity,gray_square_0.40,1,2,-0.0023076923076923075
+"attention, without augmentation",identity,gray_square_0.40,2,0,-0.0028846153846153848
+"attention, without augmentation",identity,gray_square_0.40,2,1,-0.0021153846153846153
+"attention, without augmentation",identity,gray_square_0.40,2,2,-0.001538461538461538
+"attention, without augmentation",identity,lower_band,0,0,0.1025
+"attention, without augmentation",identity,lower_band,0,1,0.09634615384615385
+"attention, without augmentation",identity,lower_band,0,2,0.08673076923076922
+"attention, without augmentation",identity,lower_band,1,0,0.07423076923076923
+"attention, without augmentation",identity,lower_band,1,1,0.06807692307692308
+"attention, without augmentation",identity,lower_band,1,2,0.05846153846153846
+"attention, without augmentation",identity,lower_band,2,0,0.08865384615384615
+"attention, without augmentation",identity,lower_band,2,1,0.0825
+"attention, without augmentation",identity,lower_band,2,2,0.07288461538461538
+"attention, without augmentation",identity,noise_square_0.20,0,0,0.03230769230769231
+"attention, without augmentation",identity,noise_square_0.20,0,1,0.035576923076923075
+"attention, without augmentation",identity,noise_square_0.20,0,2,0.0275
+"attention, without augmentation",identity,noise_square_0.20,1,0,0.013846153846153848
+"attention, without augmentation",identity,noise_square_0.20,1,1,0.017115384615384616
+"attention, without augmentation",identity,noise_square_0.20,1,2,0.00903846153846154
+"attention, without augmentation",identity,noise_square_0.20,2,0,0.025576923076923077
+"attention, without augmentation",identity,noise_square_0.20,2,1,0.028846153846153844
+"attention, without augmentation",identity,noise_square_0.20,2,2,0.02076923076923077
+"attention, without augmentation",identity,noise_square_0.40,0,0,0.00826923076923077
+"attention, without augmentation",identity,noise_square_0.40,0,1,0.008846153846153846
+"attention, without augmentation",identity,noise_square_0.40,0,2,0.007884615384615384
+"attention, without augmentation",identity,noise_square_0.40,1,0,0.001923076923076923
+"attention, without augmentation",identity,noise_square_0.40,1,1,0.0025
+"attention, without augmentation",identity,noise_square_0.40,1,2,0.0015384615384615382
+"attention, without augmentation",identity,noise_square_0.40,2,0,0.004615384615384615
+"attention, without augmentation",identity,noise_square_0.40,2,1,0.005192307692307692
+"attention, without augmentation",identity,noise_square_0.40,2,2,0.004230769230769231
+"attention, without augmentation",identity,random_square_0.20,0,0,0.03865384615384615
+"attention, without augmentation",identity,random_square_0.20,0,1,0.02711538461538461
+"attention, without augmentation",identity,random_square_0.20,0,2,0.024038461538461536
+"attention, without augmentation",identity,random_square_0.20,1,0,0.028076923076923083
+"attention, without augmentation",identity,random_square_0.20,1,1,0.016538461538461544
+"attention, without augmentation",identity,random_square_0.20,1,2,0.01346153846153847
+"attention, without augmentation",identity,random_square_0.20,2,0,0.012307692307692311
+"attention, without augmentation",identity,random_square_0.20,2,1,0.000769230769230772
+"attention, without augmentation",identity,random_square_0.20,2,2,-0.0023076923076923023
+"attention, without augmentation",identity,square_0.00,0,0,-0.020576923076923104
+"attention, without augmentation",identity,square_0.00,0,1,-0.02038461538461539
+"attention, without augmentation",identity,square_0.00,0,2,-0.012884615384615383
+"attention, without augmentation",identity,square_0.00,1,0,-0.01769230769230773
+"attention, without augmentation",identity,square_0.00,1,1,-0.017500000000000016
+"attention, without augmentation",identity,square_0.00,1,2,-0.010000000000000009
+"attention, without augmentation",identity,square_0.00,2,0,-0.022115384615384648
+"attention, without augmentation",identity,square_0.00,2,1,-0.021923076923076934
+"attention, without augmentation",identity,square_0.00,2,2,-0.014423076923076927
+"attention, without augmentation",identity,square_0.05,0,0,0.04076923076923078
+"attention, without augmentation",identity,square_0.05,0,1,0.002307692307692316
+"attention, without augmentation",identity,square_0.05,0,2,0.013269230769230783
+"attention, without augmentation",identity,square_0.05,1,0,0.05346153846153848
+"attention, without augmentation",identity,square_0.05,1,1,0.015000000000000013
+"attention, without augmentation",identity,square_0.05,1,2,0.02596153846153848
+"attention, without augmentation",identity,square_0.05,2,0,0.05153846153846153
+"attention, without augmentation",identity,square_0.05,2,1,0.01307692307692307
+"attention, without augmentation",identity,square_0.05,2,2,0.024038461538461536
+"attention, without augmentation",identity,square_0.10,0,0,0.05557692307692308
+"attention, without augmentation",identity,square_0.10,0,1,0.03365384615384616
+"attention, without augmentation",identity,square_0.10,0,2,0.038461538461538464
+"attention, without augmentation",identity,square_0.10,1,0,0.0017307692307692302
+"attention, without augmentation",identity,square_0.10,1,1,-0.02019230769230769
+"attention, without augmentation",identity,square_0.10,1,2,-0.015384615384615385
+"attention, without augmentation",identity,square_0.10,2,0,0.033653846153846145
+"attention, without augmentation",identity,square_0.10,2,1,0.011730769230769225
+"attention, without augmentation",identity,square_0.10,2,2,0.01653846153846153
+"attention, without augmentation",identity,square_0.15,0,0,0.026153846153846156
+"attention, without augmentation",identity,square_0.15,0,1,0.02903846153846154
+"attention, without augmentation",identity,square_0.15,0,2,0.01865384615384616
+"attention, without augmentation",identity,square_0.15,1,0,-0.004230769230769232
+"attention, without augmentation",identity,square_0.15,1,1,-0.0013461538461538476
+"attention, without augmentation",identity,square_0.15,1,2,-0.011730769230769229
+"attention, without augmentation",identity,square_0.15,2,0,-0.008461538461538461
+"attention, without augmentation",identity,square_0.15,2,1,-0.0055769230769230765
+"attention, without augmentation",identity,square_0.15,2,2,-0.015961538461538458
+"attention, without augmentation",identity,square_0.20,0,0,0.02019230769230769
+"attention, without augmentation",identity,square_0.20,0,1,0.022115384615384613
+"attention, without augmentation",identity,square_0.20,0,2,0.021346153846153845
+"attention, without augmentation",identity,square_0.20,1,0,0.014615384615384617
+"attention, without augmentation",identity,square_0.20,1,1,0.01653846153846154
+"attention, without augmentation",identity,square_0.20,1,2,0.01576923076923077
+"attention, without augmentation",identity,square_0.20,2,0,-0.0003846153846153843
+"attention, without augmentation",identity,square_0.20,2,1,0.001538461538461539
+"attention, without augmentation",identity,square_0.20,2,2,0.0007692307692307703
+"attention, without augmentation",identity,square_0.25,0,0,0.010576923076923076
+"attention, without augmentation",identity,square_0.25,0,1,0.006153846153846153
+"attention, without augmentation",identity,square_0.25,0,2,0.0019230769230769232
+"attention, without augmentation",identity,square_0.25,1,0,0.0017307692307692306
+"attention, without augmentation",identity,square_0.25,1,1,-0.0026923076923076926
+"attention, without augmentation",identity,square_0.25,1,2,-0.006923076923076922
+"attention, without augmentation",identity,square_0.25,2,0,0.008461538461538461
+"attention, without augmentation",identity,square_0.25,2,1,0.0040384615384615385
+"attention, without augmentation",identity,square_0.25,2,2,-0.00019230769230769128
+"attention, without augmentation",identity,square_0.30,0,0,0.005961538461538462
+"attention, without augmentation",identity,square_0.30,0,1,0.007500000000000001
+"attention, without augmentation",identity,square_0.30,0,2,0.0009615384615384616
+"attention, without augmentation",identity,square_0.30,1,0,0.005769230769230769
+"attention, without augmentation",identity,square_0.30,1,1,0.007307692307692308
+"attention, without augmentation",identity,square_0.30,1,2,0.0007692307692307686
+"attention, without augmentation",identity,square_0.30,2,0,0.0011538461538461537
+"attention, without augmentation",identity,square_0.30,2,1,0.0026923076923076926
+"attention, without augmentation",identity,square_0.30,2,2,-0.0038461538461538464
+"attention, without augmentation",identity,square_0.40,0,0,0.004230769230769231
+"attention, without augmentation",identity,square_0.40,0,1,0.004038461538461538
+"attention, without augmentation",identity,square_0.40,0,2,0.0005769230769230764
+"attention, without augmentation",identity,square_0.40,1,0,0.006538461538461538
+"attention, without augmentation",identity,square_0.40,1,1,0.006346153846153845
+"attention, without augmentation",identity,square_0.40,1,2,0.002884615384615384
+"attention, without augmentation",identity,square_0.40,2,0,0.0003846153846153843
+"attention, without augmentation",identity,square_0.40,2,1,0.00019230769230769214
+"attention, without augmentation",identity,square_0.40,2,2,-0.0032692307692307695
+"attention, without augmentation",identity,square_0.50,0,0,-0.00019230769230769236
+"attention, without augmentation",identity,square_0.50,0,1,-0.0013461538461538463
+"attention, without augmentation",identity,square_0.50,0,2,-0.00019230769230769236
+"attention, without augmentation",identity,square_0.50,1,0,0.0005769230769230771
+"attention, without augmentation",identity,square_0.50,1,1,-0.0005769230769230769
+"attention, without augmentation",identity,square_0.50,1,2,0.0005769230769230771
+"attention, without augmentation",identity,square_0.50,2,0,0.0007692307692307692
+"attention, without augmentation",identity,square_0.50,2,1,-0.0003846153846153847
+"attention, without augmentation",identity,square_0.50,2,2,0.0007692307692307692
+"attention, without augmentation",identity,square_0.60,0,0,-0.0005769230769230769
+"attention, without augmentation",identity,square_0.60,0,1,-0.0007692307692307692
+"attention, without augmentation",identity,square_0.60,0,2,-0.00019230769230769236
+"attention, without augmentation",identity,square_0.60,1,0,0.00019230769230769236
+"attention, without augmentation",identity,square_0.60,1,1,0.0
+"attention, without augmentation",identity,square_0.60,1,2,0.0005769230769230769
+"attention, without augmentation",identity,square_0.60,2,0,-0.0003846153846153845
+"attention, without augmentation",identity,square_0.60,2,1,-0.0005769230769230769
+"attention, without augmentation",identity,square_0.60,2,2,0.0
+"attention, without augmentation",same_image,square_0.00,0,0,0.0
+"attention, without augmentation",same_image,square_0.00,0,1,0.0
+"attention, without augmentation",same_image,square_0.00,0,2,0.0
+"attention, without augmentation",same_image,square_0.00,1,0,0.0
+"attention, without augmentation",same_image,square_0.00,1,1,0.0
+"attention, without augmentation",same_image,square_0.00,1,2,0.0
+"attention, without augmentation",same_image,square_0.00,2,0,0.0
+"attention, without augmentation",same_image,square_0.00,2,1,0.0
+"attention, without augmentation",same_image,square_0.00,2,2,0.0
+"attention, without augmentation",same_image,square_0.05,0,0,0.0
+"attention, without augmentation",same_image,square_0.05,0,1,0.0
+"attention, without augmentation",same_image,square_0.05,0,2,0.0
+"attention, without augmentation",same_image,square_0.05,1,0,0.0
+"attention, without augmentation",same_image,square_0.05,1,1,0.0
+"attention, without augmentation",same_image,square_0.05,1,2,0.0
+"attention, without augmentation",same_image,square_0.05,2,0,0.0
+"attention, without augmentation",same_image,square_0.05,2,1,0.0
+"attention, without augmentation",same_image,square_0.05,2,2,0.0
+"attention, without augmentation",same_image,square_0.10,0,0,0.134
+"attention, without augmentation",same_image,square_0.10,0,1,0.07599999999999996
+"attention, without augmentation",same_image,square_0.10,0,2,0.07099999999999995
+"attention, without augmentation",same_image,square_0.10,1,0,-0.039000000000000035
+"attention, without augmentation",same_image,square_0.10,1,1,-0.09700000000000009
+"attention, without augmentation",same_image,square_0.10,1,2,-0.10200000000000009
+"attention, without augmentation",same_image,square_0.10,2,0,0.08499999999999996
+"attention, without augmentation",same_image,square_0.10,2,1,0.026999999999999913
+"attention, without augmentation",same_image,square_0.10,2,2,0.02199999999999991
+"attention, without augmentation",same_image,square_0.20,0,0,0.296
+"attention, without augmentation",same_image,square_0.20,0,1,0.31899999999999995
+"attention, without augmentation",same_image,square_0.20,0,2,0.309
+"attention, without augmentation",same_image,square_0.20,1,0,0.323
+"attention, without augmentation",same_image,square_0.20,1,1,0.346
+"attention, without augmentation",same_image,square_0.20,1,2,0.336
+"attention, without augmentation",same_image,square_0.20,2,0,-0.022999999999999965
+"attention, without augmentation",same_image,square_0.20,2,1,0.0
+"attention, without augmentation",same_image,square_0.20,2,2,-0.009999999999999953
+"attention, without augmentation",same_image,square_0.30,0,0,0.268
+"attention, without augmentation",same_image,square_0.30,0,1,0.258
+"attention, without augmentation",same_image,square_0.30,0,2,0.16100000000000003
+"attention, without augmentation",same_image,square_0.30,1,0,0.14400000000000002
+"attention, without augmentation",same_image,square_0.30,1,1,0.13400000000000004
+"attention, without augmentation",same_image,square_0.30,1,2,0.03700000000000003
+"attention, without augmentation",same_image,square_0.30,2,0,0.08399999999999999
+"attention, without augmentation",same_image,square_0.30,2,1,0.07400000000000001
+"attention, without augmentation",same_image,square_0.30,2,2,-0.022999999999999993
+"attention, without augmentation",same_image,square_0.50,0,0,0.021000000000000005
+"attention, without augmentation",same_image,square_0.50,0,1,0.026000000000000002
+"attention, without augmentation",same_image,square_0.50,0,2,0.015
+"attention, without augmentation",same_image,square_0.50,1,0,0.0020000000000000018
+"attention, without augmentation",same_image,square_0.50,1,1,0.006999999999999999
+"attention, without augmentation",same_image,square_0.50,1,2,-0.0040000000000000036
+"attention, without augmentation",same_image,square_0.50,2,0,0.0020000000000000018
+"attention, without augmentation",same_image,square_0.50,2,1,0.006999999999999999
+"attention, without augmentation",same_image,square_0.50,2,2,-0.0040000000000000036
+"augmentation, with attention",identity,eyes_band,0,0,0.12076923076923075
+"augmentation, with attention",identity,eyes_band,0,1,0.11807692307692307
+"augmentation, with attention",identity,eyes_band,0,2,0.12826923076923075
+"augmentation, with attention",identity,eyes_band,1,0,0.12346153846153847
+"augmentation, with attention",identity,eyes_band,1,1,0.12076923076923078
+"augmentation, with attention",identity,eyes_band,1,2,0.13096153846153846
+"augmentation, with attention",identity,eyes_band,2,0,0.1176923076923077
+"augmentation, with attention",identity,eyes_band,2,1,0.115
+"augmentation, with attention",identity,eyes_band,2,2,0.12519230769230769
+"augmentation, with attention",identity,gray_square_0.20,0,0,0.07749999999999999
+"augmentation, with attention",identity,gray_square_0.20,0,1,0.08826923076923077
+"augmentation, with attention",identity,gray_square_0.20,0,2,0.08884615384615384
+"augmentation, with attention",identity,gray_square_0.20,1,0,0.08173076923076922
+"augmentation, with attention",identity,gray_square_0.20,1,1,0.0925
+"augmentation, with attention",identity,gray_square_0.20,1,2,0.09307692307692307
+"augmentation, with attention",identity,gray_square_0.20,2,0,0.07403846153846153
+"augmentation, with attention",identity,gray_square_0.20,2,1,0.0848076923076923
+"augmentation, with attention",identity,gray_square_0.20,2,2,0.08538461538461538
+"augmentation, with attention",identity,gray_square_0.40,0,0,0.043653846153846154
+"augmentation, with attention",identity,gray_square_0.40,0,1,0.04692307692307692
+"augmentation, with attention",identity,gray_square_0.40,0,2,0.04615384615384615
+"augmentation, with attention",identity,gray_square_0.40,1,0,0.037307692307692306
+"augmentation, with attention",identity,gray_square_0.40,1,1,0.04057692307692308
+"augmentation, with attention",identity,gray_square_0.40,1,2,0.03980769230769231
+"augmentation, with attention",identity,gray_square_0.40,2,0,0.03192307692307693
+"augmentation, with attention",identity,gray_square_0.40,2,1,0.035192307692307696
+"augmentation, with attention",identity,gray_square_0.40,2,2,0.034423076923076924
+"augmentation, with attention",identity,lower_band,0,0,-0.07096153846153846
+"augmentation, with attention",identity,lower_band,0,1,-0.04269230769230769
+"augmentation, with attention",identity,lower_band,0,2,-0.057115384615384616
+"augmentation, with attention",identity,lower_band,1,0,-0.07365384615384615
+"augmentation, with attention",identity,lower_band,1,1,-0.045384615384615384
+"augmentation, with attention",identity,lower_band,1,2,-0.05980769230769231
+"augmentation, with attention",identity,lower_band,2,0,-0.07307692307692307
+"augmentation, with attention",identity,lower_band,2,1,-0.044807692307692305
+"augmentation, with attention",identity,lower_band,2,2,-0.05923076923076923
+"augmentation, with attention",identity,noise_square_0.20,0,0,0.08730769230769231
+"augmentation, with attention",identity,noise_square_0.20,0,1,0.10576923076923077
+"augmentation, with attention",identity,noise_square_0.20,0,2,0.09403846153846154
+"augmentation, with attention",identity,noise_square_0.20,1,0,0.09846153846153846
+"augmentation, with attention",identity,noise_square_0.20,1,1,0.11692307692307692
+"augmentation, with attention",identity,noise_square_0.20,1,2,0.1051923076923077
+"augmentation, with attention",identity,noise_square_0.20,2,0,0.08519230769230769
+"augmentation, with attention",identity,noise_square_0.20,2,1,0.10365384615384615
+"augmentation, with attention",identity,noise_square_0.20,2,2,0.09192307692307693
+"augmentation, with attention",identity,noise_square_0.40,0,0,0.05961538461538461
+"augmentation, with attention",identity,noise_square_0.40,0,1,0.06596153846153846
+"augmentation, with attention",identity,noise_square_0.40,0,2,0.06326923076923076
+"augmentation, with attention",identity,noise_square_0.40,1,0,0.07846153846153846
+"augmentation, with attention",identity,noise_square_0.40,1,1,0.0848076923076923
+"augmentation, with attention",identity,noise_square_0.40,1,2,0.0821153846153846
+"augmentation, with attention",identity,noise_square_0.40,2,0,0.05557692307692308
+"augmentation, with attention",identity,noise_square_0.40,2,1,0.06192307692307692
+"augmentation, with attention",identity,noise_square_0.40,2,2,0.05923076923076923
+"augmentation, with attention",identity,random_square_0.20,0,0,0.027115384615384625
+"augmentation, with attention",identity,random_square_0.20,0,1,0.03769230769230769
+"augmentation, with attention",identity,random_square_0.20,0,2,0.05346153846153846
+"augmentation, with attention",identity,random_square_0.20,1,0,0.02692307692307694
+"augmentation, with attention",identity,random_square_0.20,1,1,0.037500000000000006
+"augmentation, with attention",identity,random_square_0.20,1,2,0.05326923076923078
+"augmentation, with attention",identity,random_square_0.20,2,0,0.024038461538461536
+"augmentation, with attention",identity,random_square_0.20,2,1,0.0346153846153846
+"augmentation, with attention",identity,random_square_0.20,2,2,0.050384615384615375
+"augmentation, with attention",identity,square_0.00,0,0,-0.14057692307692307
+"augmentation, with attention",identity,square_0.00,0,1,-0.14346153846153845
+"augmentation, with attention",identity,square_0.00,0,2,-0.13903846153846153
+"augmentation, with attention",identity,square_0.00,1,0,-0.13615384615384615
+"augmentation, with attention",identity,square_0.00,1,1,-0.13903846153846153
+"augmentation, with attention",identity,square_0.00,1,2,-0.1346153846153846
+"augmentation, with attention",identity,square_0.00,2,0,-0.13923076923076924
+"augmentation, with attention",identity,square_0.00,2,1,-0.14211538461538462
+"augmentation, with attention",identity,square_0.00,2,2,-0.1376923076923077
+"augmentation, with attention",identity,square_0.05,0,0,-0.02826923076923077
+"augmentation, with attention",identity,square_0.05,0,1,-0.040961538461538466
+"augmentation, with attention",identity,square_0.05,0,2,-0.03903846153846152
+"augmentation, with attention",identity,square_0.05,1,0,-0.02384615384615385
+"augmentation, with attention",identity,square_0.05,1,1,-0.03653846153846155
+"augmentation, with attention",identity,square_0.05,1,2,-0.0346153846153846
+"augmentation, with attention",identity,square_0.05,2,0,-0.02865384615384617
+"augmentation, with attention",identity,square_0.05,2,1,-0.041346153846153866
+"augmentation, with attention",identity,square_0.05,2,2,-0.03942307692307692
+"augmentation, with attention",identity,square_0.10,0,0,0.05288461538461538
+"augmentation, with attention",identity,square_0.10,0,1,0.10673076923076923
+"augmentation, with attention",identity,square_0.10,0,2,0.07480769230769231
+"augmentation, with attention",identity,square_0.10,1,0,0.05807692307692307
+"augmentation, with attention",identity,square_0.10,1,1,0.11192307692307692
+"augmentation, with attention",identity,square_0.10,1,2,0.08
+"augmentation, with attention",identity,square_0.10,2,0,0.05576923076923075
+"augmentation, with attention",identity,square_0.10,2,1,0.1096153846153846
+"augmentation, with attention",identity,square_0.10,2,2,0.07769230769230769
+"augmentation, with attention",identity,square_0.15,0,0,0.09403846153846153
+"augmentation, with attention",identity,square_0.15,0,1,0.12442307692307691
+"augmentation, with attention",identity,square_0.15,0,2,0.12865384615384615
+"augmentation, with attention",identity,square_0.15,1,0,0.10211538461538462
+"augmentation, with attention",identity,square_0.15,1,1,0.1325
+"augmentation, with attention",identity,square_0.15,1,2,0.13673076923076924
+"augmentation, with attention",identity,square_0.15,2,0,0.09499999999999999
+"augmentation, with attention",identity,square_0.15,2,1,0.12538461538461537
+"augmentation, with attention",identity,square_0.15,2,2,0.1296153846153846
+"augmentation, with attention",identity,square_0.20,0,0,0.10634615384615387
+"augmentation, with attention",identity,square_0.20,0,1,0.11192307692307693
+"augmentation, with attention",identity,square_0.20,0,2,0.12692307692307694
+"augmentation, with attention",identity,square_0.20,1,0,0.11403846153846156
+"augmentation, with attention",identity,square_0.20,1,1,0.11961538461538462
+"augmentation, with attention",identity,square_0.20,1,2,0.13461538461538464
+"augmentation, with attention",identity,square_0.20,2,0,0.10826923076923078
+"augmentation, with attention",identity,square_0.20,2,1,0.11384615384615385
+"augmentation, with attention",identity,square_0.20,2,2,0.12884615384615386
+"augmentation, with attention",identity,square_0.25,0,0,0.1253846153846154
+"augmentation, with attention",identity,square_0.25,0,1,0.13423076923076924
+"augmentation, with attention",identity,square_0.25,0,2,0.1275
+"augmentation, with attention",identity,square_0.25,1,0,0.12673076923076923
+"augmentation, with attention",identity,square_0.25,1,1,0.13557692307692307
+"augmentation, with attention",identity,square_0.25,1,2,0.12884615384615383
+"augmentation, with attention",identity,square_0.25,2,0,0.1228846153846154
+"augmentation, with attention",identity,square_0.25,2,1,0.13173076923076923
+"augmentation, with attention",identity,square_0.25,2,2,0.125
+"augmentation, with attention",identity,square_0.30,0,0,0.12403846153846153
+"augmentation, with attention",identity,square_0.30,0,1,0.12423076923076923
+"augmentation, with attention",identity,square_0.30,0,2,0.12884615384615383
+"augmentation, with attention",identity,square_0.30,1,0,0.12576923076923077
+"augmentation, with attention",identity,square_0.30,1,1,0.12596153846153846
+"augmentation, with attention",identity,square_0.30,1,2,0.13057692307692306
+"augmentation, with attention",identity,square_0.30,2,0,0.11865384615384615
+"augmentation, with attention",identity,square_0.30,2,1,0.11884615384615385
+"augmentation, with attention",identity,square_0.30,2,2,0.12346153846153846
+"augmentation, with attention",identity,square_0.40,0,0,0.11692307692307692
+"augmentation, with attention",identity,square_0.40,0,1,0.1146153846153846
+"augmentation, with attention",identity,square_0.40,0,2,0.12076923076923077
+"augmentation, with attention",identity,square_0.40,1,0,0.11730769230769231
+"augmentation, with attention",identity,square_0.40,1,1,0.11499999999999999
+"augmentation, with attention",identity,square_0.40,1,2,0.12115384615384615
+"augmentation, with attention",identity,square_0.40,2,0,0.11596153846153846
+"augmentation, with attention",identity,square_0.40,2,1,0.11365384615384615
+"augmentation, with attention",identity,square_0.40,2,2,0.11980769230769231
+"augmentation, with attention",identity,square_0.50,0,0,0.10423076923076922
+"augmentation, with attention",identity,square_0.50,0,1,0.10346153846153847
+"augmentation, with attention",identity,square_0.50,0,2,0.10326923076923077
+"augmentation, with attention",identity,square_0.50,1,0,0.10346153846153845
+"augmentation, with attention",identity,square_0.50,1,1,0.1026923076923077
+"augmentation, with attention",identity,square_0.50,1,2,0.1025
+"augmentation, with attention",identity,square_0.50,2,0,0.10846153846153846
+"augmentation, with attention",identity,square_0.50,2,1,0.1076923076923077
+"augmentation, with attention",identity,square_0.50,2,2,0.1075
+"augmentation, with attention",identity,square_0.60,0,0,0.06673076923076923
+"augmentation, with attention",identity,square_0.60,0,1,0.06596153846153846
+"augmentation, with attention",identity,square_0.60,0,2,0.06653846153846153
+"augmentation, with attention",identity,square_0.60,1,0,0.06653846153846155
+"augmentation, with attention",identity,square_0.60,1,1,0.06576923076923077
+"augmentation, with attention",identity,square_0.60,1,2,0.06634615384615385
+"augmentation, with attention",identity,square_0.60,2,0,0.06365384615384616
+"augmentation, with attention",identity,square_0.60,2,1,0.06288461538461539
+"augmentation, with attention",identity,square_0.60,2,2,0.06346153846153846
+"augmentation, with attention",same_image,square_0.00,0,0,0.0
+"augmentation, with attention",same_image,square_0.00,0,1,0.0
+"augmentation, with attention",same_image,square_0.00,0,2,0.0
+"augmentation, with attention",same_image,square_0.00,1,0,0.0
+"augmentation, with attention",same_image,square_0.00,1,1,0.0
+"augmentation, with attention",same_image,square_0.00,1,2,0.0
+"augmentation, with attention",same_image,square_0.00,2,0,0.0
+"augmentation, with attention",same_image,square_0.00,2,1,0.0
+"augmentation, with attention",same_image,square_0.00,2,2,0.0
+"augmentation, with attention",same_image,square_0.05,0,0,0.0
+"augmentation, with attention",same_image,square_0.05,0,1,0.0
+"augmentation, with attention",same_image,square_0.05,0,2,0.0
+"augmentation, with attention",same_image,square_0.05,1,0,0.0
+"augmentation, with attention",same_image,square_0.05,1,1,0.0
+"augmentation, with attention",same_image,square_0.05,1,2,0.0
+"augmentation, with attention",same_image,square_0.05,2,0,0.0
+"augmentation, with attention",same_image,square_0.05,2,1,0.0
+"augmentation, with attention",same_image,square_0.05,2,2,0.0
+"augmentation, with attention",same_image,square_0.10,0,0,0.01100000000000001
+"augmentation, with attention",same_image,square_0.10,0,1,0.18400000000000005
+"augmentation, with attention",same_image,square_0.10,0,2,0.06000000000000005
+"augmentation, with attention",same_image,square_0.10,1,0,0.01100000000000001
+"augmentation, with attention",same_image,square_0.10,1,1,0.18400000000000005
+"augmentation, with attention",same_image,square_0.10,1,2,0.06000000000000005
+"augmentation, with attention",same_image,square_0.10,2,0,0.01100000000000001
+"augmentation, with attention",same_image,square_0.10,2,1,0.18400000000000005
+"augmentation, with attention",same_image,square_0.10,2,2,0.06000000000000005
+"augmentation, with attention",same_image,square_0.20,0,0,0.275
+"augmentation, with attention",same_image,square_0.20,0,1,0.248
+"augmentation, with attention",same_image,square_0.20,0,2,0.594
+"augmentation, with attention",same_image,square_0.20,1,0,0.275
+"augmentation, with attention",same_image,square_0.20,1,1,0.248
+"augmentation, with attention",same_image,square_0.20,1,2,0.594
+"augmentation, with attention",same_image,square_0.20,2,0,0.275
+"augmentation, with attention",same_image,square_0.20,2,1,0.248
+"augmentation, with attention",same_image,square_0.20,2,2,0.594
+"augmentation, with attention",same_image,square_0.30,0,0,0.6
+"augmentation, with attention",same_image,square_0.30,0,1,0.724
+"augmentation, with attention",same_image,square_0.30,0,2,0.784
+"augmentation, with attention",same_image,square_0.30,1,0,0.6
+"augmentation, with attention",same_image,square_0.30,1,1,0.724
+"augmentation, with attention",same_image,square_0.30,1,2,0.784
+"augmentation, with attention",same_image,square_0.30,2,0,0.6
+"augmentation, with attention",same_image,square_0.30,2,1,0.724
+"augmentation, with attention",same_image,square_0.30,2,2,0.784
+"augmentation, with attention",same_image,square_0.50,0,0,0.943
+"augmentation, with attention",same_image,square_0.50,0,1,0.962
+"augmentation, with attention",same_image,square_0.50,0,2,0.962
+"augmentation, with attention",same_image,square_0.50,1,0,0.943
+"augmentation, with attention",same_image,square_0.50,1,1,0.962
+"augmentation, with attention",same_image,square_0.50,1,2,0.962
+"augmentation, with attention",same_image,square_0.50,2,0,0.943
+"augmentation, with attention",same_image,square_0.50,2,1,0.962
+"augmentation, with attention",same_image,square_0.50,2,2,0.962
+"augmentation, without attention",identity,eyes_band,0,0,0.1305769230769231
+"augmentation, without attention",identity,eyes_band,0,1,0.13
+"augmentation, without attention",identity,eyes_band,0,2,0.1203846153846154
+"augmentation, without attention",identity,eyes_band,1,0,0.12826923076923077
+"augmentation, without attention",identity,eyes_band,1,1,0.1276923076923077
+"augmentation, without attention",identity,eyes_band,1,2,0.11807692307692308
+"augmentation, without attention",identity,eyes_band,2,0,0.13096153846153846
+"augmentation, without attention",identity,eyes_band,2,1,0.13038461538461538
+"augmentation, without attention",identity,eyes_band,2,2,0.12076923076923077
+"augmentation, without attention",identity,gray_square_0.20,0,0,0.0773076923076923
+"augmentation, without attention",identity,gray_square_0.20,0,1,0.08730769230769231
+"augmentation, without attention",identity,gray_square_0.20,0,2,0.08711538461538462
+"augmentation, without attention",identity,gray_square_0.20,1,0,0.07153846153846152
+"augmentation, without attention",identity,gray_square_0.20,1,1,0.08153846153846153
+"augmentation, without attention",identity,gray_square_0.20,1,2,0.08134615384615385
+"augmentation, without attention",identity,gray_square_0.20,2,0,0.07865384615384616
+"augmentation, without attention",identity,gray_square_0.20,2,1,0.08865384615384615
+"augmentation, without attention",identity,gray_square_0.20,2,2,0.08846153846153847
+"augmentation, without attention",identity,gray_square_0.40,0,0,0.02865384615384615
+"augmentation, without attention",identity,gray_square_0.40,0,1,0.02942307692307692
+"augmentation, without attention",identity,gray_square_0.40,0,2,0.03
+"augmentation, without attention",identity,gray_square_0.40,1,0,0.03153846153846154
+"augmentation, without attention",identity,gray_square_0.40,1,1,0.03230769230769231
+"augmentation, without attention",identity,gray_square_0.40,1,2,0.03288461538461539
+"augmentation, without attention",identity,gray_square_0.40,2,0,0.027884615384615386
+"augmentation, without attention",identity,gray_square_0.40,2,1,0.028653846153846155
+"augmentation, without attention",identity,gray_square_0.40,2,2,0.029230769230769234
+"augmentation, without attention",identity,lower_band,0,0,0.03461538461538462
+"augmentation, without attention",identity,lower_band,0,1,0.028461538461538458
+"augmentation, without attention",identity,lower_band,0,2,0.018846153846153846
+"augmentation, without attention",identity,lower_band,1,0,0.04153846153846154
+"augmentation, without attention",identity,lower_band,1,1,0.03538461538461539
+"augmentation, without attention",identity,lower_band,1,2,0.025769230769230773
+"augmentation, without attention",identity,lower_band,2,0,0.045384615384615384
+"augmentation, without attention",identity,lower_band,2,1,0.039230769230769236
+"augmentation, without attention",identity,lower_band,2,2,0.02961538461538462
+"augmentation, without attention",identity,noise_square_0.20,0,0,-0.0028846153846153848
+"augmentation, without attention",identity,noise_square_0.20,0,1,0.0003846153846153846
+"augmentation, without attention",identity,noise_square_0.20,0,2,-0.007692307692307692
+"augmentation, without attention",identity,noise_square_0.20,1,0,-0.003269230769230769
+"augmentation, without attention",identity,noise_square_0.20,1,1,0.0
+"augmentation, without attention",identity,noise_square_0.20,1,2,-0.008076923076923077
+"augmentation, without attention",identity,noise_square_0.20,2,0,-0.003076923076923077
+"augmentation, without attention",identity,noise_square_0.20,2,1,0.00019230769230769236
+"augmentation, without attention",identity,noise_square_0.20,2,2,-0.007884615384615384
+"augmentation, without attention",identity,noise_square_0.40,0,0,-0.0005769230769230769
+"augmentation, without attention",identity,noise_square_0.40,0,1,0.0
+"augmentation, without attention",identity,noise_square_0.40,0,2,-0.0009615384615384616
+"augmentation, without attention",identity,noise_square_0.40,1,0,-0.0005769230769230769
+"augmentation, without attention",identity,noise_square_0.40,1,1,0.0
+"augmentation, without attention",identity,noise_square_0.40,1,2,-0.0009615384615384616
+"augmentation, without attention",identity,noise_square_0.40,2,0,-0.0005769230769230769
+"augmentation, without attention",identity,noise_square_0.40,2,1,0.0
+"augmentation, without attention",identity,noise_square_0.40,2,2,-0.0009615384615384616
+"augmentation, without attention",identity,random_square_0.20,0,0,0.07807692307692307
+"augmentation, without attention",identity,random_square_0.20,0,1,0.06653846153846153
+"augmentation, without attention",identity,random_square_0.20,0,2,0.06346153846153846
+"augmentation, without attention",identity,random_square_0.20,1,0,0.08423076923076922
+"augmentation, without attention",identity,random_square_0.20,1,1,0.07269230769230768
+"augmentation, without attention",identity,random_square_0.20,1,2,0.0696153846153846
+"augmentation, without attention",identity,random_square_0.20,2,0,0.07942307692307693
+"augmentation, without attention",identity,random_square_0.20,2,1,0.06788461538461539
+"augmentation, without attention",identity,random_square_0.20,2,2,0.06480769230769232
+"augmentation, without attention",identity,square_0.00,0,0,-0.13019230769230772
+"augmentation, without attention",identity,square_0.00,0,1,-0.13
+"augmentation, without attention",identity,square_0.00,0,2,-0.1225
+"augmentation, without attention",identity,square_0.00,1,0,-0.12730769230769234
+"augmentation, without attention",identity,square_0.00,1,1,-0.12711538461538463
+"augmentation, without attention",identity,square_0.00,1,2,-0.11961538461538462
+"augmentation, without attention",identity,square_0.00,2,0,-0.1380769230769231
+"augmentation, without attention",identity,square_0.00,2,1,-0.13788461538461538
+"augmentation, without attention",identity,square_0.00,2,2,-0.13038461538461538
+"augmentation, without attention",identity,square_0.05,0,0,0.03865384615384615
+"augmentation, without attention",identity,square_0.05,0,1,0.00019230769230768607
+"augmentation, without attention",identity,square_0.05,0,2,0.011153846153846153
+"augmentation, without attention",identity,square_0.05,1,0,0.040961538461538466
+"augmentation, without attention",identity,square_0.05,1,1,0.0025000000000000022
+"augmentation, without attention",identity,square_0.05,1,2,0.01346153846153847
+"augmentation, without attention",identity,square_0.05,2,0,0.03634615384615386
+"augmentation, without attention",identity,square_0.05,2,1,-0.0021153846153846023
+"augmentation, without attention",identity,square_0.05,2,2,0.008846153846153865
+"augmentation, without attention",identity,square_0.10,0,0,0.13403846153846155
+"augmentation, without attention",identity,square_0.10,0,1,0.11211538461538462
+"augmentation, without attention",identity,square_0.10,0,2,0.11692307692307692
+"augmentation, without attention",identity,square_0.10,1,0,0.13576923076923075
+"augmentation, without attention",identity,square_0.10,1,1,0.11384615384615385
+"augmentation, without attention",identity,square_0.10,1,2,0.11865384615384615
+"augmentation, without attention",identity,square_0.10,2,0,0.12826923076923075
+"augmentation, without attention",identity,square_0.10,2,1,0.10634615384615384
+"augmentation, without attention",identity,square_0.10,2,2,0.11115384615384614
+"augmentation, without attention",identity,square_0.15,0,0,0.14211538461538462
+"augmentation, without attention",identity,square_0.15,0,1,0.14500000000000002
+"augmentation, without attention",identity,square_0.15,0,2,0.13461538461538464
+"augmentation, without attention",identity,square_0.15,1,0,0.14346153846153845
+"augmentation, without attention",identity,square_0.15,1,1,0.14634615384615385
+"augmentation, without attention",identity,square_0.15,1,2,0.13596153846153847
+"augmentation, without attention",identity,square_0.15,2,0,0.13288461538461538
+"augmentation, without attention",identity,square_0.15,2,1,0.13576923076923075
+"augmentation, without attention",identity,square_0.15,2,2,0.12538461538461537
+"augmentation, without attention",identity,square_0.20,0,0,0.14153846153846153
+"augmentation, without attention",identity,square_0.20,0,1,0.14346153846153847
+"augmentation, without attention",identity,square_0.20,0,2,0.1426923076923077
+"augmentation, without attention",identity,square_0.20,1,0,0.14057692307692307
+"augmentation, without attention",identity,square_0.20,1,1,0.14250000000000002
+"augmentation, without attention",identity,square_0.20,1,2,0.14173076923076924
+"augmentation, without attention",identity,square_0.20,2,0,0.13826923076923076
+"augmentation, without attention",identity,square_0.20,2,1,0.14019230769230767
+"augmentation, without attention",identity,square_0.20,2,2,0.13942307692307693
+"augmentation, without attention",identity,square_0.25,0,0,0.14653846153846153
+"augmentation, without attention",identity,square_0.25,0,1,0.14211538461538462
+"augmentation, without attention",identity,square_0.25,0,2,0.13788461538461538
+"augmentation, without attention",identity,square_0.25,1,0,0.14615384615384616
+"augmentation, without attention",identity,square_0.25,1,1,0.14173076923076924
+"augmentation, without attention",identity,square_0.25,1,2,0.1375
+"augmentation, without attention",identity,square_0.25,2,0,0.14461538461538462
+"augmentation, without attention",identity,square_0.25,2,1,0.1401923076923077
+"augmentation, without attention",identity,square_0.25,2,2,0.13596153846153847
+"augmentation, without attention",identity,square_0.30,0,0,0.13634615384615387
+"augmentation, without attention",identity,square_0.30,0,1,0.13788461538461538
+"augmentation, without attention",identity,square_0.30,0,2,0.13134615384615386
+"augmentation, without attention",identity,square_0.30,1,0,0.13461538461538464
+"augmentation, without attention",identity,square_0.30,1,1,0.13615384615384615
+"augmentation, without attention",identity,square_0.30,1,2,0.12961538461538463
+"augmentation, without attention",identity,square_0.30,2,0,0.13384615384615386
+"augmentation, without attention",identity,square_0.30,2,1,0.13538461538461538
+"augmentation, without attention",identity,square_0.30,2,2,0.12884615384615386
+"augmentation, without attention",identity,square_0.40,0,0,0.12384615384615384
+"augmentation, without attention",identity,square_0.40,0,1,0.12365384615384614
+"augmentation, without attention",identity,square_0.40,0,2,0.12019230769230768
+"augmentation, without attention",identity,square_0.40,1,0,0.12423076923076924
+"augmentation, without attention",identity,square_0.40,1,1,0.12403846153846154
+"augmentation, without attention",identity,square_0.40,1,2,0.12057692307692308
+"augmentation, without attention",identity,square_0.40,2,0,0.12653846153846152
+"augmentation, without attention",identity,square_0.40,2,1,0.12634615384615383
+"augmentation, without attention",identity,square_0.40,2,2,0.12288461538461537
+"augmentation, without attention",identity,square_0.50,0,0,0.10538461538461538
+"augmentation, without attention",identity,square_0.50,0,1,0.10423076923076922
+"augmentation, without attention",identity,square_0.50,0,2,0.10538461538461538
+"augmentation, without attention",identity,square_0.50,1,0,0.10826923076923077
+"augmentation, without attention",identity,square_0.50,1,1,0.10711538461538461
+"augmentation, without attention",identity,square_0.50,1,2,0.10826923076923077
+"augmentation, without attention",identity,square_0.50,2,0,0.10884615384615384
+"augmentation, without attention",identity,square_0.50,2,1,0.10769230769230768
+"augmentation, without attention",identity,square_0.50,2,2,0.10884615384615384
+"augmentation, without attention",identity,square_0.60,0,0,0.06826923076923076
+"augmentation, without attention",identity,square_0.60,0,1,0.06807692307692308
+"augmentation, without attention",identity,square_0.60,0,2,0.06865384615384615
+"augmentation, without attention",identity,square_0.60,1,0,0.06307692307692307
+"augmentation, without attention",identity,square_0.60,1,1,0.06288461538461539
+"augmentation, without attention",identity,square_0.60,1,2,0.06346153846153846
+"augmentation, without attention",identity,square_0.60,2,0,0.06788461538461538
+"augmentation, without attention",identity,square_0.60,2,1,0.06769230769230769
+"augmentation, without attention",identity,square_0.60,2,2,0.06826923076923076
+"augmentation, without attention",same_image,square_0.00,0,0,0.0
+"augmentation, without attention",same_image,square_0.00,0,1,0.0
+"augmentation, without attention",same_image,square_0.00,0,2,0.0
+"augmentation, without attention",same_image,square_0.00,1,0,0.0
+"augmentation, without attention",same_image,square_0.00,1,1,0.0
+"augmentation, without attention",same_image,square_0.00,1,2,0.0
+"augmentation, without attention",same_image,square_0.00,2,0,0.0
+"augmentation, without attention",same_image,square_0.00,2,1,0.0
+"augmentation, without attention",same_image,square_0.00,2,2,0.0
+"augmentation, without attention",same_image,square_0.05,0,0,0.0
+"augmentation, without attention",same_image,square_0.05,0,1,0.0
+"augmentation, without attention",same_image,square_0.05,0,2,0.0
+"augmentation, without attention",same_image,square_0.05,1,0,0.0
+"augmentation, without attention",same_image,square_0.05,1,1,0.0
+"augmentation, without attention",same_image,square_0.05,1,2,0.0
+"augmentation, without attention",same_image,square_0.05,2,0,0.0
+"augmentation, without attention",same_image,square_0.05,2,1,0.0
+"augmentation, without attention",same_image,square_0.05,2,2,0.0
+"augmentation, without attention",same_image,square_0.10,0,0,0.14500000000000002
+"augmentation, without attention",same_image,square_0.10,0,1,0.08699999999999997
+"augmentation, without attention",same_image,square_0.10,0,2,0.08199999999999996
+"augmentation, without attention",same_image,square_0.10,1,0,0.14500000000000002
+"augmentation, without attention",same_image,square_0.10,1,1,0.08699999999999997
+"augmentation, without attention",same_image,square_0.10,1,2,0.08199999999999996
+"augmentation, without attention",same_image,square_0.10,2,0,0.14500000000000002
+"augmentation, without attention",same_image,square_0.10,2,1,0.08699999999999997
+"augmentation, without attention",same_image,square_0.10,2,2,0.08199999999999996
+"augmentation, without attention",same_image,square_0.20,0,0,0.571
+"augmentation, without attention",same_image,square_0.20,0,1,0.594
+"augmentation, without attention",same_image,square_0.20,0,2,0.5840000000000001
+"augmentation, without attention",same_image,square_0.20,1,0,0.571
+"augmentation, without attention",same_image,square_0.20,1,1,0.594
+"augmentation, without attention",same_image,square_0.20,1,2,0.5840000000000001
+"augmentation, without attention",same_image,square_0.20,2,0,0.571
+"augmentation, without attention",same_image,square_0.20,2,1,0.594
+"augmentation, without attention",same_image,square_0.20,2,2,0.5840000000000001
+"augmentation, without attention",same_image,square_0.30,0,0,0.868
+"augmentation, without attention",same_image,square_0.30,0,1,0.858
+"augmentation, without attention",same_image,square_0.30,0,2,0.761
+"augmentation, without attention",same_image,square_0.30,1,0,0.868
+"augmentation, without attention",same_image,square_0.30,1,1,0.858
+"augmentation, without attention",same_image,square_0.30,1,2,0.761
+"augmentation, without attention",same_image,square_0.30,2,0,0.868
+"augmentation, without attention",same_image,square_0.30,2,1,0.858
+"augmentation, without attention",same_image,square_0.30,2,2,0.761
+"augmentation, without attention",same_image,square_0.50,0,0,0.964
+"augmentation, without attention",same_image,square_0.50,0,1,0.969
+"augmentation, without attention",same_image,square_0.50,0,2,0.958
+"augmentation, without attention",same_image,square_0.50,1,0,0.964
+"augmentation, without attention",same_image,square_0.50,1,1,0.969
+"augmentation, without attention",same_image,square_0.50,1,2,0.958
+"augmentation, without attention",same_image,square_0.50,2,0,0.964
+"augmentation, without attention",same_image,square_0.50,2,1,0.969
+"augmentation, without attention",same_image,square_0.50,2,2,0.958
+CosFace minus batch-hard triplet,identity,eyes_band,0,0,0.12326923076923076
+CosFace minus batch-hard triplet,identity,eyes_band,0,1,0.12173076923076923
+CosFace minus batch-hard triplet,identity,eyes_band,0,2,0.12346153846153846
+CosFace minus batch-hard triplet,identity,eyes_band,1,0,0.12596153846153849
+CosFace minus batch-hard triplet,identity,eyes_band,1,1,0.12442307692307694
+CosFace minus batch-hard triplet,identity,eyes_band,1,2,0.12615384615384617
+CosFace minus batch-hard triplet,identity,eyes_band,2,0,0.1201923076923077
+CosFace minus batch-hard triplet,identity,eyes_band,2,1,0.11865384615384617
+CosFace minus batch-hard triplet,identity,eyes_band,2,2,0.1203846153846154
+CosFace minus batch-hard triplet,identity,gray_square_0.20,0,0,0.10653846153846153
+CosFace minus batch-hard triplet,identity,gray_square_0.20,0,1,0.10576923076923077
+CosFace minus batch-hard triplet,identity,gray_square_0.20,0,2,0.10461538461538461
+CosFace minus batch-hard triplet,identity,gray_square_0.20,1,0,0.11076923076923076
+CosFace minus batch-hard triplet,identity,gray_square_0.20,1,1,0.11
+CosFace minus batch-hard triplet,identity,gray_square_0.20,1,2,0.10884615384615384
+CosFace minus batch-hard triplet,identity,gray_square_0.20,2,0,0.10307692307692307
+CosFace minus batch-hard triplet,identity,gray_square_0.20,2,1,0.10230769230769231
+CosFace minus batch-hard triplet,identity,gray_square_0.20,2,2,0.10115384615384615
+CosFace minus batch-hard triplet,identity,gray_square_0.40,0,0,0.04576923076923076
+CosFace minus batch-hard triplet,identity,gray_square_0.40,0,1,0.041346153846153845
+CosFace minus batch-hard triplet,identity,gray_square_0.40,0,2,0.043653846153846154
+CosFace minus batch-hard triplet,identity,gray_square_0.40,1,0,0.03942307692307692
+CosFace minus batch-hard triplet,identity,gray_square_0.40,1,1,0.035
+CosFace minus batch-hard triplet,identity,gray_square_0.40,1,2,0.037307692307692306
+CosFace minus batch-hard triplet,identity,gray_square_0.40,2,0,0.03403846153846154
+CosFace minus batch-hard triplet,identity,gray_square_0.40,2,1,0.02961538461538462
+CosFace minus batch-hard triplet,identity,gray_square_0.40,2,2,0.03192307692307693
+CosFace minus batch-hard triplet,identity,lower_band,0,0,0.05019230769230769
+CosFace minus batch-hard triplet,identity,lower_band,0,1,0.049423076923076924
+CosFace minus batch-hard triplet,identity,lower_band,0,2,0.048269230769230766
+CosFace minus batch-hard triplet,identity,lower_band,1,0,0.047499999999999994
+CosFace minus batch-hard triplet,identity,lower_band,1,1,0.04673076923076923
+CosFace minus batch-hard triplet,identity,lower_band,1,2,0.04557692307692307
+CosFace minus batch-hard triplet,identity,lower_band,2,0,0.04807692307692307
+CosFace minus batch-hard triplet,identity,lower_band,2,1,0.04730769230769231
+CosFace minus batch-hard triplet,identity,lower_band,2,2,0.04615384615384615
+CosFace minus batch-hard triplet,identity,noise_square_0.20,0,0,0.11423076923076923
+CosFace minus batch-hard triplet,identity,noise_square_0.20,0,1,0.11326923076923077
+CosFace minus batch-hard triplet,identity,noise_square_0.20,0,2,0.10961538461538461
+CosFace minus batch-hard triplet,identity,noise_square_0.20,1,0,0.12538461538461537
+CosFace minus batch-hard triplet,identity,noise_square_0.20,1,1,0.12442307692307693
+CosFace minus batch-hard triplet,identity,noise_square_0.20,1,2,0.12076923076923077
+CosFace minus batch-hard triplet,identity,noise_square_0.20,2,0,0.11211538461538462
+CosFace minus batch-hard triplet,identity,noise_square_0.20,2,1,0.11115384615384616
+CosFace minus batch-hard triplet,identity,noise_square_0.20,2,2,0.1075
+CosFace minus batch-hard triplet,identity,noise_square_0.40,0,0,0.06365384615384614
+CosFace minus batch-hard triplet,identity,noise_square_0.40,0,1,0.0623076923076923
+CosFace minus batch-hard triplet,identity,noise_square_0.40,0,2,0.061923076923076914
+CosFace minus batch-hard triplet,identity,noise_square_0.40,1,0,0.08249999999999999
+CosFace minus batch-hard triplet,identity,noise_square_0.40,1,1,0.08115384615384615
+CosFace minus batch-hard triplet,identity,noise_square_0.40,1,2,0.08076923076923076
+CosFace minus batch-hard triplet,identity,noise_square_0.40,2,0,0.05961538461538462
+CosFace minus batch-hard triplet,identity,noise_square_0.40,2,1,0.05826923076923077
+CosFace minus batch-hard triplet,identity,noise_square_0.40,2,2,0.05788461538461538
+CosFace minus batch-hard triplet,identity,random_square_0.20,0,0,0.12173076923076924
+CosFace minus batch-hard triplet,identity,random_square_0.20,0,1,0.11711538461538462
+CosFace minus batch-hard triplet,identity,random_square_0.20,0,2,0.11884615384615385
+CosFace minus batch-hard triplet,identity,random_square_0.20,1,0,0.12153846153846155
+CosFace minus batch-hard triplet,identity,random_square_0.20,1,1,0.11692307692307694
+CosFace minus batch-hard triplet,identity,random_square_0.20,1,2,0.11865384615384617
+CosFace minus batch-hard triplet,identity,random_square_0.20,2,0,0.11865384615384615
+CosFace minus batch-hard triplet,identity,random_square_0.20,2,1,0.11403846153846153
+CosFace minus batch-hard triplet,identity,random_square_0.20,2,2,0.11576923076923076
+CosFace minus batch-hard triplet,identity,square_0.00,0,0,0.14076923076923076
+CosFace minus batch-hard triplet,identity,square_0.00,0,1,0.14057692307692307
+CosFace minus batch-hard triplet,identity,square_0.00,0,2,0.14192307692307693
+CosFace minus batch-hard triplet,identity,square_0.00,1,0,0.14519230769230768
+CosFace minus batch-hard triplet,identity,square_0.00,1,1,0.145
+CosFace minus batch-hard triplet,identity,square_0.00,1,2,0.14634615384615385
+CosFace minus batch-hard triplet,identity,square_0.00,2,0,0.1421153846153846
+CosFace minus batch-hard triplet,identity,square_0.00,2,1,0.1419230769230769
+CosFace minus batch-hard triplet,identity,square_0.00,2,2,0.14326923076923076
+CosFace minus batch-hard triplet,identity,square_0.05,0,0,0.1432692307692308
+CosFace minus batch-hard triplet,identity,square_0.05,0,1,0.1380769230769231
+CosFace minus batch-hard triplet,identity,square_0.05,0,2,0.1428846153846154
+CosFace minus batch-hard triplet,identity,square_0.05,1,0,0.1476923076923077
+CosFace minus batch-hard triplet,identity,square_0.05,1,1,0.14250000000000002
+CosFace minus batch-hard triplet,identity,square_0.05,1,2,0.1473076923076923
+CosFace minus batch-hard triplet,identity,square_0.05,2,0,0.1428846153846154
+CosFace minus batch-hard triplet,identity,square_0.05,2,1,0.1376923076923077
+CosFace minus batch-hard triplet,identity,square_0.05,2,2,0.1425
+CosFace minus batch-hard triplet,identity,square_0.10,0,0,0.14038461538461539
+CosFace minus batch-hard triplet,identity,square_0.10,0,1,0.13673076923076924
+CosFace minus batch-hard triplet,identity,square_0.10,0,2,0.1376923076923077
+CosFace minus batch-hard triplet,identity,square_0.10,1,0,0.14557692307692308
+CosFace minus batch-hard triplet,identity,square_0.10,1,1,0.14192307692307693
+CosFace minus batch-hard triplet,identity,square_0.10,1,2,0.1428846153846154
+CosFace minus batch-hard triplet,identity,square_0.10,2,0,0.14326923076923076
+CosFace minus batch-hard triplet,identity,square_0.10,2,1,0.1396153846153846
+CosFace minus batch-hard triplet,identity,square_0.10,2,2,0.14057692307692307
+CosFace minus batch-hard triplet,identity,square_0.15,0,0,0.1348076923076923
+CosFace minus batch-hard triplet,identity,square_0.15,0,1,0.1326923076923077
+CosFace minus batch-hard triplet,identity,square_0.15,0,2,0.13288461538461538
+CosFace minus batch-hard triplet,identity,square_0.15,1,0,0.1428846153846154
+CosFace minus batch-hard triplet,identity,square_0.15,1,1,0.14076923076923079
+CosFace minus batch-hard triplet,identity,square_0.15,1,2,0.14096153846153847
+CosFace minus batch-hard triplet,identity,square_0.15,2,0,0.13576923076923075
+CosFace minus batch-hard triplet,identity,square_0.15,2,1,0.13365384615384615
+CosFace minus batch-hard triplet,identity,square_0.15,2,2,0.13384615384615384
+CosFace minus batch-hard triplet,identity,square_0.20,0,0,0.13173076923076923
+CosFace minus batch-hard triplet,identity,square_0.20,0,1,0.13153846153846155
+CosFace minus batch-hard triplet,identity,square_0.20,0,2,0.13019230769230772
+CosFace minus batch-hard triplet,identity,square_0.20,1,0,0.13942307692307693
+CosFace minus batch-hard triplet,identity,square_0.20,1,1,0.13923076923076924
+CosFace minus batch-hard triplet,identity,square_0.20,1,2,0.13788461538461538
+CosFace minus batch-hard triplet,identity,square_0.20,2,0,0.13365384615384615
+CosFace minus batch-hard triplet,identity,square_0.20,2,1,0.13346153846153846
+CosFace minus batch-hard triplet,identity,square_0.20,2,2,0.13211538461538463
+CosFace minus batch-hard triplet,identity,square_0.25,0,0,0.1301923076923077
+CosFace minus batch-hard triplet,identity,square_0.25,0,1,0.12692307692307692
+CosFace minus batch-hard triplet,identity,square_0.25,0,2,0.12730769230769232
+CosFace minus batch-hard triplet,identity,square_0.25,1,0,0.13153846153846152
+CosFace minus batch-hard triplet,identity,square_0.25,1,1,0.12826923076923075
+CosFace minus batch-hard triplet,identity,square_0.25,1,2,0.12865384615384615
+CosFace minus batch-hard triplet,identity,square_0.25,2,0,0.1276923076923077
+CosFace minus batch-hard triplet,identity,square_0.25,2,1,0.12442307692307693
+CosFace minus batch-hard triplet,identity,square_0.25,2,2,0.12480769230769231
+CosFace minus batch-hard triplet,identity,square_0.30,0,0,0.12423076923076923
+CosFace minus batch-hard triplet,identity,square_0.30,0,1,0.12288461538461538
+CosFace minus batch-hard triplet,identity,square_0.30,0,2,0.12692307692307692
+CosFace minus batch-hard triplet,identity,square_0.30,1,0,0.12596153846153846
+CosFace minus batch-hard triplet,identity,square_0.30,1,1,0.12461538461538461
+CosFace minus batch-hard triplet,identity,square_0.30,1,2,0.12865384615384615
+CosFace minus batch-hard triplet,identity,square_0.30,2,0,0.11884615384615385
+CosFace minus batch-hard triplet,identity,square_0.30,2,1,0.11750000000000001
+CosFace minus batch-hard triplet,identity,square_0.30,2,2,0.12153846153846154
+CosFace minus batch-hard triplet,identity,square_0.40,0,0,0.11538461538461538
+CosFace minus batch-hard triplet,identity,square_0.40,0,1,0.11115384615384614
+CosFace minus batch-hard triplet,identity,square_0.40,0,2,0.11384615384615385
+CosFace minus batch-hard triplet,identity,square_0.40,1,0,0.11576923076923076
+CosFace minus batch-hard triplet,identity,square_0.40,1,1,0.11153846153846153
+CosFace minus batch-hard triplet,identity,square_0.40,1,2,0.11423076923076922
+CosFace minus batch-hard triplet,identity,square_0.40,2,0,0.11442307692307692
+CosFace minus batch-hard triplet,identity,square_0.40,2,1,0.11019230769230769
+CosFace minus batch-hard triplet,identity,square_0.40,2,2,0.11288461538461539
+CosFace minus batch-hard triplet,identity,square_0.50,0,0,0.1
+CosFace minus batch-hard triplet,identity,square_0.50,0,1,0.09942307692307692
+CosFace minus batch-hard triplet,identity,square_0.50,0,2,0.10019230769230769
+CosFace minus batch-hard triplet,identity,square_0.50,1,0,0.09923076923076923
+CosFace minus batch-hard triplet,identity,square_0.50,1,1,0.09865384615384615
+CosFace minus batch-hard triplet,identity,square_0.50,1,2,0.09942307692307692
+CosFace minus batch-hard triplet,identity,square_0.50,2,0,0.10423076923076924
+CosFace minus batch-hard triplet,identity,square_0.50,2,1,0.10365384615384615
+CosFace minus batch-hard triplet,identity,square_0.50,2,2,0.10442307692307692
+CosFace minus batch-hard triplet,identity,square_0.60,0,0,0.06269230769230769
+CosFace minus batch-hard triplet,identity,square_0.60,0,1,0.06288461538461539
+CosFace minus batch-hard triplet,identity,square_0.60,0,2,0.06346153846153846
+CosFace minus batch-hard triplet,identity,square_0.60,1,0,0.0625
+CosFace minus batch-hard triplet,identity,square_0.60,1,1,0.0626923076923077
+CosFace minus batch-hard triplet,identity,square_0.60,1,2,0.06326923076923077
+CosFace minus batch-hard triplet,identity,square_0.60,2,0,0.05961538461538462
+CosFace minus batch-hard triplet,identity,square_0.60,2,1,0.05980769230769231
+CosFace minus batch-hard triplet,identity,square_0.60,2,2,0.060384615384615384
+CosFace minus batch-hard triplet,same_image,square_0.00,0,0,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,0,1,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,0,2,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,1,0,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,1,1,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,1,2,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,2,0,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,2,1,0.0
+CosFace minus batch-hard triplet,same_image,square_0.00,2,2,0.0
+CosFace minus batch-hard triplet,same_image,square_0.05,0,0,0.522
+CosFace minus batch-hard triplet,same_image,square_0.05,0,1,0.585
+CosFace minus batch-hard triplet,same_image,square_0.05,0,2,0.532
+CosFace minus batch-hard triplet,same_image,square_0.05,1,0,0.522
+CosFace minus batch-hard triplet,same_image,square_0.05,1,1,0.585
+CosFace minus batch-hard triplet,same_image,square_0.05,1,2,0.532
+CosFace minus batch-hard triplet,same_image,square_0.05,2,0,0.522
+CosFace minus batch-hard triplet,same_image,square_0.05,2,1,0.585
+CosFace minus batch-hard triplet,same_image,square_0.05,2,2,0.532
+CosFace minus batch-hard triplet,same_image,square_0.10,0,0,0.5429999999999999
+CosFace minus batch-hard triplet,same_image,square_0.10,0,1,0.5660000000000001
+CosFace minus batch-hard triplet,same_image,square_0.10,0,2,0.5740000000000001
+CosFace minus batch-hard triplet,same_image,square_0.10,1,0,0.5429999999999999
+CosFace minus batch-hard triplet,same_image,square_0.10,1,1,0.5660000000000001
+CosFace minus batch-hard triplet,same_image,square_0.10,1,2,0.5740000000000001
+CosFace minus batch-hard triplet,same_image,square_0.10,2,0,0.5429999999999999
+CosFace minus batch-hard triplet,same_image,square_0.10,2,1,0.5660000000000001
+CosFace minus batch-hard triplet,same_image,square_0.10,2,2,0.5740000000000001
+CosFace minus batch-hard triplet,same_image,square_0.20,0,0,0.613
+CosFace minus batch-hard triplet,same_image,square_0.20,0,1,0.5920000000000001
+CosFace minus batch-hard triplet,same_image,square_0.20,0,2,0.605
+CosFace minus batch-hard triplet,same_image,square_0.20,1,0,0.613
+CosFace minus batch-hard triplet,same_image,square_0.20,1,1,0.5920000000000001
+CosFace minus batch-hard triplet,same_image,square_0.20,1,2,0.605
+CosFace minus batch-hard triplet,same_image,square_0.20,2,0,0.613
+CosFace minus batch-hard triplet,same_image,square_0.20,2,1,0.5920000000000001
+CosFace minus batch-hard triplet,same_image,square_0.20,2,2,0.605
+CosFace minus batch-hard triplet,same_image,square_0.30,0,0,0.64
+CosFace minus batch-hard triplet,same_image,square_0.30,0,1,0.62
+CosFace minus batch-hard triplet,same_image,square_0.30,0,2,0.651
+CosFace minus batch-hard triplet,same_image,square_0.30,1,0,0.64
+CosFace minus batch-hard triplet,same_image,square_0.30,1,1,0.62
+CosFace minus batch-hard triplet,same_image,square_0.30,1,2,0.651
+CosFace minus batch-hard triplet,same_image,square_0.30,2,0,0.64
+CosFace minus batch-hard triplet,same_image,square_0.30,2,1,0.62
+CosFace minus batch-hard triplet,same_image,square_0.30,2,2,0.651
+CosFace minus batch-hard triplet,same_image,square_0.50,0,0,0.786
+CosFace minus batch-hard triplet,same_image,square_0.50,0,1,0.77
+CosFace minus batch-hard triplet,same_image,square_0.50,0,2,0.833
+CosFace minus batch-hard triplet,same_image,square_0.50,1,0,0.786
+CosFace minus batch-hard triplet,same_image,square_0.50,1,1,0.77
+CosFace minus batch-hard triplet,same_image,square_0.50,1,2,0.833
+CosFace minus batch-hard triplet,same_image,square_0.50,2,0,0.786
+CosFace minus batch-hard triplet,same_image,square_0.50,2,1,0.77
+CosFace minus batch-hard triplet,same_image,square_0.50,2,2,0.833

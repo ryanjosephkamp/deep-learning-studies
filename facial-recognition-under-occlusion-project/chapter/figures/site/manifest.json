@@ -1,0 +1,734 @@
+{
+  "about": "The chapter's five figures in the course book's style, one file per printing and layout. Show <name>.light.svg in the day printing and <name>.dark.svg in the night printing, on the plate mount; on narrow screens (about 360 CSS px), show <name>.phone.light.svg and <name>.phone.dark.svg, which stack the same panels one per row. Each has a transparent background and its text drawn as paths.",
+  "generator": "chapter/make_site_figures.py",
+  "source_script": "paper/make_figures.py",
+  "font": "Old Standard TT (SIL Open Font License), from the site's docs/assets/fonts",
+  "printings": {
+    "light": {
+      "mount": "#fbf8f1",
+      "ink": "#1b1714",
+      "ink2": "#594f43",
+      "rubric": "#b8321a",
+      "occluder_crop": "#fbf8f1",
+      "occluder_ink": "#1b1714"
+    },
+    "dark": {
+      "mount": "#1c1f24",
+      "ink": "#ece5d6",
+      "ink2": "#b3ab9b",
+      "rubric": "#ff7a52",
+      "occluder_crop": "#ece5d6",
+      "occluder_ink": "#1b1714"
+    }
+  },
+  "layouts": {
+    "wide": "panels side by side, drawn 7.1 in wide for about 600 to 1,100 CSS px",
+    "phone": "panels stacked one per row, drawn 3.75 in wide for about 360 CSS px"
+  },
+  "colors": {
+    "arcface_r50": {
+      "label": "ArcFace R50",
+      "marker": "o",
+      "light": "#b8321a",
+      "contrast_light": 5.64,
+      "dark": "#ff7a52",
+      "contrast_dark": 6.42
+    },
+    "sface": {
+      "label": "SFace",
+      "marker": "s",
+      "light": "#285994",
+      "contrast_light": 6.72,
+      "dark": "#8cc3fc",
+      "contrast_dark": 8.91
+    },
+    "sface_same_crop": {
+      "label": "SFace, same crop for probe and gallery",
+      "marker": "D",
+      "light": "#5e8ab8",
+      "contrast_light": 3.41,
+      "dark": "#6291ba",
+      "contrast_dark": 4.94
+    },
+    "cosface_att_aug": {
+      "label": "CNN, both",
+      "marker": "D",
+      "light": "#00503d",
+      "contrast_light": 8.94,
+      "dark": "#4cae86",
+      "contrast_dark": 6.06
+    },
+    "cosface_noatt_aug": {
+      "label": "CNN, augmentation",
+      "marker": "v",
+      "light": "#b58127",
+      "contrast_light": 3.23,
+      "dark": "#e6b55d",
+      "contrast_dark": 8.76
+    },
+    "cosface_att_noaug": {
+      "label": "CNN, attention",
+      "marker": "^",
+      "light": "#9b4270",
+      "contrast_light": 5.81,
+      "dark": "#e88db6",
+      "contrast_dark": 7.02
+    },
+    "cosface_noatt_noaug": {
+      "label": "CNN, neither",
+      "marker": "P",
+      "light": "#1b1714",
+      "contrast_light": 16.79,
+      "dark": "#ece5d6",
+      "contrast_dark": 13.18
+    },
+    "triplet_att_aug": {
+      "label": "CNN, both, triplet",
+      "marker": "X",
+      "light": "#8273bc",
+      "contrast_light": 3.86,
+      "dark": "#8e7fc9",
+      "contrast_dark": 4.74
+    },
+    "pixels_crop": {
+      "label": "Crop pixels",
+      "marker": ".",
+      "light": "#8d8881",
+      "contrast_light": 3.32,
+      "dark": "#76716a",
+      "contrast_dark": 3.42
+    },
+    "pixels_frame": {
+      "label": "Frame pixels",
+      "marker": ".",
+      "light": "#8d8881",
+      "contrast_light": 3.32,
+      "dark": "#76716a",
+      "contrast_dark": 3.42
+    },
+    "original_model": {
+      "label": "Original model",
+      "marker": "o",
+      "light": "#743e19",
+      "contrast_light": 8.1,
+      "dark": "#e1ad80",
+      "contrast_dark": 8.25
+    }
+  },
+  "original_model_sample_steps": {
+    "N = 50": {
+      "light": "#b9805e",
+      "dark": "#946a45",
+      "contrast_light": 3.14,
+      "contrast_dark": 3.47
+    },
+    "N = 100": {
+      "light": "#985c36",
+      "dark": "#bd8b5f",
+      "contrast_light": 5.05,
+      "contrast_dark": 5.53
+    },
+    "N = 200": {
+      "light": "#743e19",
+      "dark": "#e1ad80",
+      "contrast_light": 8.1,
+      "contrast_dark": 8.25
+    },
+    "N = 500": {
+      "light": "#4d260a",
+      "dark": "#fad4b4",
+      "contrast_light": 12.4,
+      "contrast_dark": 11.91
+    }
+  },
+  "page_inks": {
+    "ink": {
+      "light": "#1b1714",
+      "contrast_light": 16.79,
+      "dark": "#ece5d6",
+      "contrast_dark": 13.18,
+      "used_for": "titles, axis labels, key text, the 95% intervals in fig_contrasts, CNN neither"
+    },
+    "ink2": {
+      "light": "#594f43",
+      "contrast_light": 7.54,
+      "dark": "#b3ab9b",
+      "contrast_dark": 7.25,
+      "used_for": "tick labels, axes, the keys for line styles, raw pixels (same sample), face found by the detector, the 98.3% intervals, zero lines, notes"
+    },
+    "rubric": {
+      "light": "#b8321a",
+      "contrast_light": 5.64,
+      "dark": "#ff7a52",
+      "contrast_dark": 6.42,
+      "used_for": "ArcFace R50, the primary-contrast estimates and their one-seed ranges, the template landmarks"
+    }
+  },
+  "effect_colors": {
+    "augmentation": "same as cosface_noatt_aug",
+    "attention": "same as cosface_att_noaug"
+  },
+  "figures": {
+    "fig_original": {
+      "files": {
+        "light": {
+          "file": "fig_original.light.svg",
+          "bytes": 125955,
+          "width_pt": 497.7,
+          "height_pt": 287.5
+        },
+        "dark": {
+          "file": "fig_original.dark.svg",
+          "bytes": 125943,
+          "width_pt": 497.7,
+          "height_pt": 287.5
+        },
+        "phone.light": {
+          "file": "fig_original.phone.light.svg",
+          "bytes": 124891,
+          "width_pt": 256.5,
+          "height_pt": 590.6
+        },
+        "phone.dark": {
+          "file": "fig_original.phone.dark.svg",
+          "bytes": 124879,
+          "width_pt": 256.5,
+          "height_pt": 590.6
+        }
+      },
+      "check": {
+        "source_script": "paper/make_figures.py",
+        "source_function": "fig_original",
+        "data_files": [
+          "analysis/out/check_detector_sface.csv",
+          "analysis/out/check_pixel_baseline.csv",
+          "results/original/exper__size_100__20251130_235656.csv",
+          "results/original/exper__size_200__20251201_203249.csv",
+          "results/original/exper__size_500__20251201_004627.csv",
+          "results/original/exper__size_50__20251201_192436.csv"
+        ],
+        "panels": 2,
+        "series_compared": 13,
+        "lines": 13,
+        "collections": 0,
+        "patches": 0,
+        "text_strings": 42,
+        "values_compared": 340,
+        "color_groups": 7,
+        "renders_compared": [
+          "light",
+          "dark",
+          "phone.light",
+          "phone.dark"
+        ],
+        "result": "pass",
+        "differences": [],
+        "accepted_differences": [],
+        "shipped_files": {
+          "light": "matches",
+          "dark": "matches",
+          "phone.light": "matches",
+          "phone.dark": "matches"
+        }
+      }
+    },
+    "fig_occluders": {
+      "files": {
+        "light": {
+          "file": "fig_occluders.light.svg",
+          "bytes": 43777,
+          "width_pt": 504.2,
+          "height_pt": 167.0
+        },
+        "dark": {
+          "file": "fig_occluders.dark.svg",
+          "bytes": 43777,
+          "width_pt": 504.2,
+          "height_pt": 167.0
+        },
+        "phone.light": {
+          "file": "fig_occluders.phone.light.svg",
+          "bytes": 43690,
+          "width_pt": 259.2,
+          "height_pt": 483.1
+        },
+        "phone.dark": {
+          "file": "fig_occluders.phone.dark.svg",
+          "bytes": 43690,
+          "width_pt": 259.2,
+          "height_pt": 483.1
+        }
+      },
+      "check": {
+        "source_script": "paper/make_figures.py",
+        "source_function": "fig_occluders",
+        "data_files": [
+          "study/config.json"
+        ],
+        "panels": 3,
+        "series_compared": 12,
+        "lines": 0,
+        "collections": 3,
+        "patches": 9,
+        "text_strings": 9,
+        "values_compared": 199,
+        "color_groups": 6,
+        "renders_compared": [
+          "light",
+          "dark",
+          "phone.light",
+          "phone.dark"
+        ],
+        "result": "pass",
+        "differences": [],
+        "accepted_differences": [
+          {
+            "where": "fig_occluders.panels[0].patches[0].filled",
+            "paper": false,
+            "site": true,
+            "reason": "the crop is filled as a pale image, so the occluders read dark on it in both printings",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[0].position",
+            "paper": [
+              14.5,
+              14.5
+            ],
+            "site": [
+              14.5,
+              18.6
+            ],
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[0].va",
+            "paper": "top",
+            "site": "baseline",
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[1].position",
+            "paper": [
+              22.5,
+              22.5
+            ],
+            "site": [
+              22.5,
+              26.6
+            ],
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[1].va",
+            "paper": "top",
+            "site": "baseline",
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[2].position",
+            "paper": [
+              32.5,
+              32.5
+            ],
+            "site": [
+              32.5,
+              36.6
+            ],
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[2].va",
+            "paper": "top",
+            "site": "baseline",
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[3].position",
+            "paper": [
+              39.5,
+              39.5
+            ],
+            "site": [
+              39.5,
+              43.6
+            ],
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[0].texts[3].va",
+            "paper": "top",
+            "site": "baseline",
+            "reason": "the size label stands inside its ring instead of hanging from the corner, so it clears the next square",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[1].patches[0].filled",
+            "paper": false,
+            "site": true,
+            "reason": "the crop is filled as a pale image, so the occluders read dark on it in both printings",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[1].texts[0].position",
+            "paper": [
+              56.0,
+              47.5
+            ],
+            "site": [
+              56.0,
+              40.5
+            ],
+            "reason": "the eye-band label moved up within the band so the eye landmarks no longer sit on it",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[2].patches[0].filled",
+            "paper": false,
+            "site": true,
+            "reason": "the crop is filled as a pale image, so the occluders read dark on it in both printings",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_occluders.panels[2].texts[0].position",
+            "paper": [
+              56.0,
+              89.5
+            ],
+            "site": [
+              56.0,
+              103.5
+            ],
+            "reason": "the lower-band label moved down within the band so the mouth-corner landmarks no longer sit on it",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          }
+        ],
+        "shipped_files": {
+          "light": "matches",
+          "dark": "matches",
+          "phone.light": "matches",
+          "phone.dark": "matches"
+        }
+      }
+    },
+    "fig_squares": {
+      "files": {
+        "light": {
+          "file": "fig_squares.light.svg",
+          "bytes": 121378,
+          "width_pt": 516.0,
+          "height_pt": 255.9
+        },
+        "dark": {
+          "file": "fig_squares.dark.svg",
+          "bytes": 121364,
+          "width_pt": 516.0,
+          "height_pt": 255.9
+        },
+        "phone.light": {
+          "file": "fig_squares.phone.light.svg",
+          "bytes": 121312,
+          "width_pt": 258.1,
+          "height_pt": 532.7
+        },
+        "phone.dark": {
+          "file": "fig_squares.phone.dark.svg",
+          "bytes": 121298,
+          "width_pt": 258.1,
+          "height_pt": 532.7
+        }
+      },
+      "check": {
+        "source_script": "paper/make_figures.py",
+        "source_function": "fig_squares",
+        "data_files": [
+          "results/study/analysis/intervals.csv"
+        ],
+        "panels": 2,
+        "series_compared": 22,
+        "lines": 11,
+        "collections": 11,
+        "patches": 0,
+        "text_strings": 45,
+        "values_compared": 427,
+        "color_groups": 16,
+        "renders_compared": [
+          "light",
+          "dark",
+          "phone.light",
+          "phone.dark"
+        ],
+        "result": "pass",
+        "differences": [],
+        "accepted_differences": [],
+        "shipped_files": {
+          "light": "matches",
+          "dark": "matches",
+          "phone.light": "matches",
+          "phone.dark": "matches"
+        }
+      }
+    },
+    "fig_gap": {
+      "files": {
+        "light": {
+          "file": "fig_gap.light.svg",
+          "bytes": 107046,
+          "width_pt": 493.5,
+          "height_pt": 281.1
+        },
+        "dark": {
+          "file": "fig_gap.dark.svg",
+          "bytes": 107034,
+          "width_pt": 493.5,
+          "height_pt": 281.1
+        },
+        "phone.light": {
+          "file": "fig_gap.phone.light.svg",
+          "bytes": 107113,
+          "width_pt": 256.5,
+          "height_pt": 561.7
+        },
+        "phone.dark": {
+          "file": "fig_gap.phone.dark.svg",
+          "bytes": 107101,
+          "width_pt": 256.5,
+          "height_pt": 561.7
+        }
+      },
+      "check": {
+        "source_script": "paper/make_figures.py",
+        "source_function": "fig_gap",
+        "data_files": [
+          "results/study/analysis/protocol_gap.csv"
+        ],
+        "panels": 2,
+        "series_compared": 20,
+        "lines": 20,
+        "collections": 0,
+        "patches": 0,
+        "text_strings": 42,
+        "values_compared": 435,
+        "color_groups": 8,
+        "renders_compared": [
+          "light",
+          "dark",
+          "phone.light",
+          "phone.dark"
+        ],
+        "result": "pass",
+        "differences": [],
+        "accepted_differences": [],
+        "shipped_files": {
+          "light": "matches",
+          "dark": "matches",
+          "phone.light": "matches",
+          "phone.dark": "matches"
+        }
+      }
+    },
+    "fig_contrasts": {
+      "files": {
+        "light": {
+          "file": "fig_contrasts.light.svg",
+          "bytes": 124686,
+          "width_pt": 513.7,
+          "height_pt": 252.1
+        },
+        "dark": {
+          "file": "fig_contrasts.dark.svg",
+          "bytes": 124676,
+          "width_pt": 513.7,
+          "height_pt": 252.1
+        },
+        "phone.light": {
+          "file": "fig_contrasts.phone.light.svg",
+          "bytes": 124681,
+          "width_pt": 258.5,
+          "height_pt": 532.7
+        },
+        "phone.dark": {
+          "file": "fig_contrasts.phone.dark.svg",
+          "bytes": 124671,
+          "width_pt": 258.5,
+          "height_pt": 532.7
+        }
+      },
+      "check": {
+        "source_script": "paper/make_figures.py",
+        "source_function": "fig_contrasts",
+        "data_files": [
+          "results/study/analysis/contrasts_primary.csv",
+          "results/study/analysis/main_effects_by_condition.csv"
+        ],
+        "panels": 2,
+        "series_compared": 87,
+        "lines": 51,
+        "collections": 34,
+        "patches": 2,
+        "text_strings": 41,
+        "values_compared": 1024,
+        "color_groups": 7,
+        "renders_compared": [
+          "light",
+          "dark",
+          "phone.light",
+          "phone.dark"
+        ],
+        "result": "pass",
+        "differences": [],
+        "accepted_differences": [
+          {
+            "where": "fig_contrasts.panels[0].lines[3].fill",
+            "paper": "paper",
+            "site": "none",
+            "reason": "the estimate is a ring with nothing inside, so the 95% interval shows through it even where it is shorter than the marker (P3)",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_contrasts.panels[0].lines[7].fill",
+            "paper": "paper",
+            "site": "none",
+            "reason": "the estimate is a ring with nothing inside, so the 95% interval shows through it even where it is shorter than the marker (P3)",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_contrasts.panels[0].lines[11].fill",
+            "paper": "paper",
+            "site": "none",
+            "reason": "the estimate is a ring with nothing inside, so the 95% interval shows through it even where it is shorter than the marker (P3)",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_contrasts.color_groups",
+            "move": [
+              "panels[0].lines[3]",
+              "panels[0].lines[7]",
+              "panels[0].lines[11]"
+            ],
+            "from_group_of": "panels[0].lines[1]",
+            "to_group_of": "panels[0].lines[2]",
+            "reason": "the estimates take the rubric, the color of their one-seed ranges, instead of the ink of the 95% intervals",
+            "renders": [
+              "light",
+              "dark",
+              "phone.light",
+              "phone.dark"
+            ]
+          },
+          {
+            "where": "fig_contrasts.panels[1].texts[1].position",
+            "layout": "phone",
+            "paper": [
+              13.0,
+              15.5
+            ],
+            "site": [
+              13.0,
+              -15.0
+            ],
+            "reason": "stacked, the panel is too narrow for the two span notes to share a row, so the P2 note sits at the foot of its span",
+            "renders": [
+              "phone.light",
+              "phone.dark"
+            ]
+          }
+        ],
+        "shipped_files": {
+          "light": "matches",
+          "dark": "matches",
+          "phone.light": "matches",
+          "phone.dark": "matches"
+        }
+      }
+    }
+  },
+  "unexpected_files": []
+}
