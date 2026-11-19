@@ -1,6 +1,6 @@
 {
  "checked": "2026-11-19",
- "passed": 39259,
+ "passed": 39291,
  "failed": 0,
  "counts": {
   "faces": 1384,
@@ -8,7 +8,8 @@
   "hero": 33,
   "sface": 16596,
   "seeds": 21205,
-  "portraits": 15
+  "portraits": 15,
+  "thumb": 32
  },
  "checker": "tools/check_site.mjs",
  "against": [

@@ -73,14 +73,60 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
 .brand { font: 400 clamp(0.88rem, 4.1vw, 1.08rem)/1 var(--fat); text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; }
 .head nav { display: flex; align-items: center; gap: 2px; }
 .head nav a { padding: 10px 8px; text-decoration: none; font-style: italic; }
-@media (max-width: 420px) { .head { padding: 0 6px 0 16px; gap: 4px; } .head nav a { padding: 10px 4px; font-size: 0.95rem; } .mode { width: 36px; } }
+@media (max-width: 420px) { .head { padding: 0 6px 0 16px; gap: 4px; } .head nav a { padding: 10px 4px; font-size: 0.95rem; } .head .mode { width: 36px; } }
 .mode { all: unset; box-sizing: border-box; display: inline-grid; place-items: center; width: 40px; height: 40px; cursor: pointer; border-radius: 50%; font-size: 1.15rem; }
 .mode:focus-visible { outline: 2px solid var(--rubric); }
 
-/* The fore-edge: one painted tab per chapter, and one for the contents */
-.edge { position: fixed; z-index: 45; right: 0; top: 64px; bottom: 12px; width: var(--edge); display: flex; flex-direction: column; gap: 2px; }
-.edge a { flex: 0 1 72px; min-height: 28px; background: var(--c, var(--ink-2)); border-radius: 3px 0 0 3px; transform-origin: right center; transition: transform 0.14s; box-shadow: inset -5px 0 6px -5px rgba(0, 0, 0, 0.4); }
-.edge a:hover, .edge a[aria-current="page"] { transform: scaleX(1.6); }
+/* The fore-edge: a painted tab for the contents, one for each chapter, and a narrower one, in the
+   chapter's ink, for each of its sections. Each tab is painted at the edge; the link around it is its
+   hit area, which a touch screen widens. The strip is only as tall as its tabs. The tab of the page, and
+   of the section being read, stands out. */
+:root { --edge-hit: 24px; --edge-pad: var(--edge); }
+.edge { position: fixed; z-index: 45; right: 0; top: 64px; max-height: calc(100vh - 76px); max-height: calc(100dvh - 76px); width: var(--edge-hit); display: flex; flex-direction: column; }
+.edge a { --tab: var(--c, var(--ink-2)); --paint: var(--edge); position: relative; flex: 0 1 72px; min-height: 28px; }
+.edge a::before { content: ""; position: absolute; top: 1px; right: 0; bottom: 1px; width: var(--paint); background: var(--tab); border-radius: 3px 0 0 3px; transform-origin: right center; transition: transform 0.14s; box-shadow: inset -5px 0 6px -5px rgba(0, 0, 0, 0.4); }
+/* a section's tab: the chapter's own ink (at least 3:1 on the paper in both printings), painted narrower */
+.edge a.sec { --paint: 9px; flex-basis: 56px; }
+.edge a.sec::before { border-radius: 2px 0 0 2px; }
+.edge a:hover::before, .edge a[aria-current]::before, .edge a.is-on::before { transform: scaleX(1.6); }
+.edge a:focus-visible { outline: 2px solid var(--rubric); outline-offset: -2px; }
+/* The flag: a slip of ink beside the edge with the tab's name, the numeral or fleuron in red. A clear
+   bridge spans the gap to the strip, so the pointer can cross onto the flag without losing it. */
+.edge-flag { position: fixed; z-index: 46; right: calc(var(--edge-hit) + 6px); transform: translateY(-50%); padding: 6px 11px 7px; background: var(--ink); color: var(--paper); font: italic 400 0.95rem/1.2 var(--serif); width: max-content; max-width: min(24rem, calc(100vw - var(--edge-hit) - 28px)); text-wrap: balance; overflow-wrap: anywhere; border-radius: 2px; box-shadow: 0 6px 16px -8px rgba(var(--shade), 0.6); }
+.edge-flag::after { content: ""; position: absolute; top: 0; bottom: 0; left: 100%; width: 8px; }
+.edge-flag[hidden] { display: none; }
+.edge-flag .flag-no { font-style: normal; color: #ff7a52; margin-right: 0.45em; }
+:root[data-theme="dark"] .edge-flag .flag-no { color: #b8321a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .edge-flag .flag-no { color: #b8321a; } }
+/* scrubbing with a thumb: a larger flag beside the thumb, clear of it; a long name takes a second line */
+.edge-flag.is-scrub { right: 66px; max-width: calc(100vw - 66px - 16px); pointer-events: none; padding: 10px 14px 11px; font-size: 1.1rem; }
+.edge-flag.is-scrub::after { display: none; }
+/* slid away from the edge: the flag says the reader will stay, on the lighter ink */
+.edge-flag.is-off { background: var(--ink-2); }
+/* On a touch screen each tab answers 48 px in from the edge and is at least 48 px tall, so a thumb lands on it
+   away from the system's edge swipe, and the page's own column, plates, and demos stay clear of that strip. A
+   thumb pressed on a tab scrubs the tabs (book.js); the strip doesn't scroll the page. The running head sits
+   above the strip, so it runs to the screen's edge. */
+@media (any-pointer: coarse) {
+  :root { --edge-hit: 48px; --edge-pad: max(var(--edge), calc(var(--edge-hit) - var(--gutter))); }
+  body { padding-right: var(--edge-pad); }
+  .head { margin-right: calc(-1 * var(--edge-pad)); }
+  .edge { top: 58px; max-height: calc(100vh - 66px); max-height: calc(100dvh - 66px); touch-action: none; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+  .edge a { min-height: 48px; -webkit-tap-highlight-color: transparent; }
+  .edge-flag { pointer-events: none; }
+}
+/* On a short screen (a phone held sideways) the strip starts right under the running head and the tabs share
+   the height: 48 px each from 390 px tall; shorter, every tab still shows and the strip still scrubs. */
+@media (any-pointer: coarse) and (max-height: 420px) {
+  .edge { top: 54px; height: calc(100vh - 54px); height: calc(100dvh - 54px); max-height: none; }
+  .edge a, .edge a.sec { flex: 1 1 0; min-height: 0; }
+}
+/* Forced colors: the tabs keep an outline in the system's colors, and the current ones are filled. */
+@media (forced-colors: active) {
+  .edge a::before { border: 1px solid LinkText; box-shadow: none; }
+  .edge a[aria-current]::before, .edge a.is-on::before { background: Highlight; forced-color-adjust: none; }
+  .edge-flag { border: 1px solid CanvasText; }
+}
 
 /* The title page */
 .title-page { max-width: 44rem; margin: 0 auto; padding: clamp(40px, 9vh, 96px) var(--gutter) 24px; text-align: center; }
@@ -334,7 +380,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
   .ox-cropwrap { grid-template-columns: minmax(120px, 42%) 1fr; align-items: start; column-gap: 12px; }
   .ox-cropwrap > .ox-stack { grid-row: span 4; }
 }
-@media (prefers-reduced-motion: reduce) { .ox-dot, .ox-ci, .plate > button.lift, .edge a { transition: none; } .lifted { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .ox-dot, .ox-ci, .plate > button.lift, .edge a::before, .edge-flag.is-scrub { transition: none; } .lifted { animation: none; } }
 
 /* The foot */
 .foot { margin: 64px var(--gutter) 0; padding: 22px 0 32px; border-top: 3px double var(--rule-2); }

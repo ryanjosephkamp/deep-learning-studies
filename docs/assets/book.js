@@ -1,6 +1,6 @@
-// The book's page script: the day and night printing, and lifting a plate off the page to look
-// closer (pinch, scroll, or drag to zoom and pan; Escape or the close button to put it back), and
-// which way the page turns between pages.
+// The book's page script: the day and night printing, the thumb index's flags (and, on a touch screen,
+// scrubbing through them), lifting a plate off the page to look closer (pinch, scroll, or drag to zoom
+// and pan; Escape or the close button to put it back), and which way the page turns between pages.
 (function () {
   var root = document.documentElement;
   var KEY = "course-book-theme";
@@ -44,6 +44,161 @@
         var next = v === "auto" ? "light" : v === "light" ? "dark" : null;
         store(next); apply(next); label();
       });
+    }
+
+    // The thumb index: Contents, the chapter, and the chapter's sections. A flag names the tab under the
+    // pointer or the keyboard's focus; on the chapter's page, the tab of the section being read stands out.
+    var edge = document.querySelector("nav.edge");
+    if (edge) {
+      var flag = document.createElement("span");
+      flag.className = "edge-flag"; flag.setAttribute("aria-hidden", "true"); flag.hidden = true;
+      edge.appendChild(flag);
+      var said = null;
+      // the flag's words: the chapter's numeral or a section's fleuron in red, then the name (rebuilt only
+      // when they change)
+      var say = function (text) {
+        if (text === said) return;
+        said = text;
+        var parts = text.split(" · ");
+        flag.textContent = "";
+        if (parts.length > 1) {
+          var no = document.createElement("span");
+          no.className = "flag-no"; no.textContent = parts[0];
+          flag.appendChild(no);
+          flag.appendChild(document.createTextNode(parts.slice(1).join(" · ")));
+        } else flag.textContent = text;
+      };
+      var show = function (a) {
+        if (!a || !a.dataset.flag) return;
+        var r = a.getBoundingClientRect();
+        say(a.dataset.flag); flag.hidden = false;
+        flag.style.top = (r.top + r.height / 2) + "px";
+      };
+      // A new keyboard focus wins over a pointer parked on another tab; while neither changes, the pointer's
+      // tab wins, then the focused tab's. The pointer can rest on the flag itself. Escape puts the flag away,
+      // and it stays away until the pointer or the focus reaches another tab.
+      var hovered = null, focused = null, latched = false;
+      var update = function () {
+        var a = hovered || focused;
+        if (a && !latched) show(a); else flag.hidden = true;
+      };
+      var hover = function (a) { if (a === hovered) return; hovered = a; if (a) latched = false; update(); };
+      edge.addEventListener("mouseover", function (e) { if (flag.contains(e.target)) return; hover(e.target.closest("a")); });
+      edge.addEventListener("mouseleave", function () { hover(null); });
+      edge.addEventListener("focusin", function (e) { var a = e.target.closest("a"); if (a !== focused) latched = false; focused = a; hovered = null; update(); });
+      edge.addEventListener("focusout", function () { focused = null; update(); });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !flag.hidden && !scrub) { latched = true; flag.hidden = true; }
+      });
+
+      // A thumb on the edge: press a tab to see its name beside the thumb, slide along the edge to run through
+      // the tabs, and let go to go to the one named. Slide away from the edge first to stay where you are. A
+      // second finger calls the scrub off.
+      var tabs = Array.prototype.slice.call(edge.querySelectorAll("a")), scrub = null, quiet = null;
+      var touchy = matchMedia("(any-pointer: coarse)");
+      var under = function (y) {
+        for (var i = 0; i < tabs.length; i++) if (y < tabs[i].getBoundingClientRect().bottom) return tabs[i];
+        return tabs[tabs.length - 1];
+      };
+      var pick = function (a, y) {
+        if (a !== scrub.on) {
+          // a tick as the thumb crosses a tab, where the phone allows it (only once the page has been touched)
+          if (scrub.on) { scrub.on.classList.remove("is-on"); if (navigator.vibrate && navigator.userActivation && navigator.userActivation.hasBeenActive) { try { navigator.vibrate(3); } catch (x) {} } }
+          scrub.on = a; a.classList.add("is-on");
+        }
+        say(scrub.off ? "Let go to stay here" : a.dataset.flag);
+        flag.hidden = false;
+        flag.style.top = Math.max(84, Math.min(innerHeight - 40, y - 56)) + "px";
+      };
+      // a tab within this page (the chapter's top or a section) always goes; another page's tab goes unless
+      // it is this page
+      var go = function (a) {
+        var href = a.getAttribute("href");
+        if (href.charAt(0) === "#") {
+          // a second press on the tab of the place already in the address still takes the reader there
+          var t = document.getElementById(href.slice(1));
+          if (location.hash === href && t) t.scrollIntoView(); else location.hash = href;
+        } else if (a.getAttribute("aria-current") !== "page") location.href = a.href;
+      };
+      // The click that the scrub's own touch makes as it lifts would only repeat the scrub's decision, so that
+      // one click is dropped: a click from the same pointer (or, where the browser doesn't say, any pointer
+      // click) within 700 ms of the release. A click from a key or a screen reader (detail 0), or from another
+      // pointer, is the link's own.
+      var end = function (go_, e) {
+        if (!scrub) return;
+        var a = scrub.on, off = scrub.off, id = scrub.id;
+        scrub = null;
+        if (a) a.classList.remove("is-on");
+        flag.classList.remove("is-scrub", "is-off");
+        flag.hidden = true; latched = false;
+        quiet = { id: id, until: Date.now() + 700 };
+        if (go_ && a && !off) go(a);
+      };
+      var mine = function (e) { return scrub && e.pointerId === scrub.id; };
+      edge.addEventListener("pointerdown", function (e) {
+        if (scrub) {
+          // a second contact during a scrub calls it off, and its own click is dropped too
+          if (e.pointerId !== scrub.id) { e.preventDefault(); end(false); quiet = { id: null, until: Date.now() + 700 }; }
+          return;
+        }
+        // only a finger or a pen on a tab, and only where the strip is a touch strip (it doesn't scroll the page
+        // there); a mouse, or a touch elsewhere, is a plain click
+        if (e.pointerType === "mouse" || !e.isPrimary || !touchy.matches || !e.target.closest("a")) return;
+        e.preventDefault();
+        try { edge.setPointerCapture(e.pointerId); } catch (x) {}
+        scrub = { id: e.pointerId, on: null, off: false };
+        flag.classList.add("is-scrub");
+        pick(e.target.closest("a"), e.clientY);
+      });
+      var track = function (e) {
+        var off = e.clientX < innerWidth - 120;
+        if (off !== scrub.off) { scrub.off = off; flag.classList.toggle("is-off", off); }
+        pick(under(e.clientY), e.clientY);
+      };
+      // listened for on the window too, so a scrub whose capture failed still ends when the finger lifts
+      window.addEventListener("pointermove", function (e) { if (mine(e)) track(e); });
+      // the thumb's own release decides: where it lifts, not where it last moved
+      window.addEventListener("pointerup", function (e) { if (!mine(e)) return; track(e); end(true, e); });
+      window.addEventListener("pointercancel", function (e) { if (mine(e)) end(false, e); });
+      edge.addEventListener("lostpointercapture", function (e) { if (mine(e)) end(false, e); });
+      window.addEventListener("blur", function () { end(false); });
+      window.addEventListener("pagehide", function () { end(false); });
+      // a long press during a scrub doesn't open the link's menu; a mouse's right click still does
+      edge.addEventListener("contextmenu", function (e) { if (scrub) e.preventDefault(); });
+      edge.addEventListener("click", function (e) {
+        if (!quiet || Date.now() > quiet.until || e.detail === 0) return;
+        if (quiet.id !== null && typeof e.pointerId === "number" && e.pointerId > 0 && e.pointerId !== quiet.id) return;
+        e.preventDefault(); quiet = null;
+      });
+
+      // On the chapter's page, the section being read: the last whose heading has passed the reading line, a
+      // third of the way down the screen (never above where a jump to a heading leaves it), or the last
+      // section once the page can scroll no further. Its tab stands out and is announced as the current location.
+      var marks = tabs.filter(function (a) { return a.dataset.sec && a.getAttribute("href").charAt(0) === "#"; })
+        .map(function (a) { return { a: a, h: document.getElementById(a.dataset.sec) }; })
+        .filter(function (m) { return m.h; });
+      if (marks.length) {
+        var shown = null, queued = false;
+        var spy = function () {
+          queued = false;
+          var line = Math.max(innerHeight / 3, 72), now = null;
+          for (var i = 0; i < marks.length; i++) if (marks[i].h.getBoundingClientRect().top < line) now = marks[i];
+          var last = marks[marks.length - 1], doc = document.documentElement;
+          if (scrollY > 0 && scrollY + innerHeight >= doc.scrollHeight - 2 && last.h.getBoundingClientRect().top < innerHeight) now = last;
+          if (now === shown) return;
+          if (shown) shown.a.removeAttribute("aria-current");
+          if (now) now.a.setAttribute("aria-current", "location");
+          shown = now;
+        };
+        var later = function () { if (!queued) { queued = true; setTimeout(spy, 80); } };
+        window.addEventListener("scroll", later, { passive: true });
+        window.addEventListener("resize", later);
+        window.addEventListener("hashchange", later);
+        window.addEventListener("pageshow", later);
+        // a demo that loads, or a font that arrives, can move the headings without a scroll
+        if (window.ResizeObserver) new ResizeObserver(later).observe(document.body);
+        spy();
+      }
     }
 
     // Lifting a plate

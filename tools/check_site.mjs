@@ -1,6 +1,6 @@
 // Check the built course site (docs/) against the repository's committed results.
 //
-//   node tools/check_site.mjs [<repo>] [<chapter-folder> ...]
+//   node tools/check_site.mjs [--no-write] [<repo>] [<chapter-folder> ...]
 //
 // For each chapter, it checks that:
 //  1. every value the face plate shows (data/faces.json), and the interval ends it draws, equal the
@@ -19,17 +19,23 @@
 //     cutoff); and every number its sentences can show is the score, a cutoff, or a false accept rate;
 //  7. the seed-draw plate's values, draws, and sentences match the study's results (check_seeds.mjs).
 //  8. the portraits the face plates offer are the chapter's (chapter/portraits/manifest.json), byte for
-//     byte, each credited as a synthetic portrait.
+//     byte, each credited as a synthetic portrait;
+//  9. the thumb index on the title page and the chapter's page has a tab for the contents, the chapter,
+//     and each of the chapter's sections in order, named as the chapter names them, and each section's
+//     tab reaches its heading (no id on the page is used twice).
 // Every live plate on the page must have its data and its checks. It doesn't check the figures'
 // drawing (chapter/make_site_figures.py --check does) or run the face models.
-// It writes data/checks.json beside each chapter's data, which the plates show, and exits 1 on any failure.
+// It writes data/checks.json beside each chapter's data, which the plates show (not with --no-write, for a
+// read-only checkout), and exits 1 on any failure.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, resolve, dirname } from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
 import { checkSeeds } from "./check_seeds.mjs";
 
-const repo = resolve(process.argv[2] || join(dirname(fileURLToPath(import.meta.url)), ".."));
-const chapters = process.argv.slice(3).length ? process.argv.slice(3) : ["facial-recognition-under-occlusion-project"];
+const args = process.argv.slice(2).filter((a) => a !== "--no-write");
+const write = args.length === process.argv.length - 2;
+const repo = resolve(args[0] || join(dirname(fileURLToPath(import.meta.url)), ".."));
+const chapters = args.slice(1).length ? args.slice(1) : ["facial-recognition-under-occlusion-project"];
 const fails = [];
 let passes = 0;
 const ok = (cond, msg) => { if (cond) passes++; else fails.push(msg); };
@@ -268,10 +274,54 @@ for (const ch of chapters) {
     }
   });
 
+  // 9. the thumb index
+  section("thumb", () => {
+    const md = readFileSync(join(proj, "chapter/chapter.md"), "utf8");
+    const words = (s) => s.replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/[*`]/g, "").replace(/'/g, "’");
+    const title = words(md.match(/^# (.+)$/m)[1]);
+    const secs = [...md.matchAll(/^## (.+)$/gm)].map((m) => {
+      const w = words(m[1]);
+      return { words: w, id: w.toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") };
+    });
+    ok(secs.length >= 2 && secs.every((s) => s.id), `the chapter's sections don't each give an id`);
+    const home = readFileSync(join(repo, "docs/index.html"), "utf8");
+    for (const [where, page, here] of [["title page", home, false], ["chapter page", html, true]]) {
+      // the page is plain markup: no inert or commented-out copy that a pattern could match instead
+      ok(!/<template\b|<!--/.test(page), `the ${where} has a template or a comment`);
+      const navs = [...page.matchAll(/<nav\b[^>]*class="edge"[^>]*>([\s\S]*?)<\/nav>/g)];
+      ok(navs.length === 1 && /^<nav class="edge" aria-label="Thumb index">/.test(navs[0]?.[0] || ""), `the ${where} has ${navs.length} thumb indexes`);
+      if (navs.length !== 1) continue;
+      ok(navs[0][1].replace(/<a\b[^>]*><\/a>/g, "") === "", `the ${where}'s thumb index holds something besides its empty tabs`);
+      const tabs = [...navs[0][1].matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].map((m) => Object.fromEntries([...m[1].matchAll(/([\w-]+)="([^"]*)"/g)].map((a) => [a[1], decode(a[2])])));
+      const want = [{ href: here ? "../index.html" : "index.html", "data-flag": "Contents", "aria-label": "Contents" },
+        { href: here ? "#main" : `${ch}/index.html`, "data-flag": `I · ${title}`, "aria-label": `Chapter I: ${title}` },
+        ...secs.map((s) => ({ class: "sec", href: here ? `#${s.id}` : `${ch}/index.html#${s.id}`, "data-flag": `❦ · ${s.words}`, "aria-label": `Chapter I, section: ${s.words}`, "data-sec": s.id }))];
+      want[here ? 1 : 0]["aria-current"] = "page";
+      ok(tabs.length === want.length, `the ${where}'s thumb index has ${tabs.length} tabs, not ${want.length}`);
+      want.forEach((w, i) => {
+        const a = { ...(tabs[i] || {}) };
+        delete a.style;
+        ok(JSON.stringify(Object.keys(a).sort().map((k) => [k, a[k]])) === JSON.stringify(Object.keys(w).sort().map((k) => [k, w[k]])),
+          `the ${where}'s tab ${i + 1} is ${JSON.stringify(a)}, not ${JSON.stringify(w)}`);
+      });
+      // exactly one main, the target of the skip link and of the chapter's own tab
+      ok((page.match(/<main id="main">/g) || []).length === 1 && (page.match(/\sid="main"/g) || []).length === 1, `the ${where} has no single <main id="main">`);
+      // no id on the page is used twice
+      const ids = [...page.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
+      ok(ids.length === new Set(ids).size, `the ${where} uses an id twice: ${ids.filter((x, i) => ids.indexOf(x) !== i).join(", ")}`);
+    }
+    // each section's tab reaches its heading: the one element with that id is the heading with those words
+    for (const s of secs) {
+      const any = [...html.matchAll(new RegExp(`\\sid="${s.id}"`, "g"))].length;
+      const h = [...html.matchAll(new RegExp(`<h2 id="${s.id}">([\\s\\S]*?)</h2>`, "g"))];
+      ok(any === 1 && h.length === 1 && decode(h[0][1].replace(/<[^>]+>/g, "")) === s.words, `no single heading with the id ${s.id} reads "${s.words}"`);
+    }
+  });
+
   const stamp = { checked: new Date().toLocaleDateString("en-CA"), passed: passes, failed: fails.length, counts,
     checker: "tools/check_site.mjs",
     against: ["results/study/analysis", "results/study/eval/sface/fixed_thresholds.json", "study/config.json", "study/README.md", "paper/numbers.tex", "chapter/chapter.md", "chapter/figures"] };
-  writeFileSync(join(site, "data/checks.json"), JSON.stringify(stamp, null, 1) + "\n");
+  if (write) writeFileSync(join(site, "data/checks.json"), JSON.stringify(stamp, null, 1) + "\n");
   console.log(ch, counts);
 }
 for (const f of fails) console.log("FAIL:", f);
