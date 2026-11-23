@@ -11,7 +11,6 @@ const MONTHS = ["January", "February", "March", "April", "May", "June", "July", 
 const usDate = (iso) => { const [y, m, d] = iso.split("-").map(Number); return `${MONTHS[m - 1]} ${d}, ${y}`; };
 const STEP = 1100;   // ms between draws while playing
 const START = 8000;  // ms on screen, untouched, before the plate starts on its own
-const BAND = 24;     // px: the height of the strip the draws sit in
 
 const el = (tag, attrs = {}, kids = []) => {
   const n = document.createElement(tag);
@@ -134,7 +133,7 @@ export async function mount(root) {
     const dots = values[c.key].map((v, i) => {
       const d = el("i", { class: "sd-dot" });
       d.style.left = `${place(ax, 100 * v)}%`;
-      d.style.top = `${y[i] * BAND}px`;
+      d.style.top = `calc(${y[i]} * var(--sd-band))`;  // the strip's height is set in book.css
       cloud.append(d);
       return d;
     });
@@ -199,7 +198,7 @@ export async function mount(root) {
       const r = rows[key];
       const v = values[key][state.index];
       r.now.style.left = r.nowLine.style.left = `${place(ax, 100 * v)}%`;
-      r.now.style.top = `${r.y[state.index] * BAND}px`;
+      r.now.style.top = `calc(${r.y[state.index]} * var(--sd-band))`;
       r.dots.forEach((d, i) => { d.classList.toggle("is-seen", state.seen.has(i)); });
       r.read.replaceChildren(...readout(data, key, draw).map((p, i) =>
         el("span", { class: i === 0 ? "sd-r sd-r-now" : "sd-r" }, [el("i", { text: p.label }), " ", el("b", { text: p.value })])));
