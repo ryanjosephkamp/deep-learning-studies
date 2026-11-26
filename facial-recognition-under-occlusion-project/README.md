@@ -39,6 +39,7 @@ The identification study's main results (the paper and chapter give the interval
 - In the project's network trained from scratch, training with occluded faces adds 12.1 points of rank-1 on the centered black squares from 10 to 50% it trained with (95% interval +10.9 to +13.4) and 5.2 on average on occluders it never saw (+4.5 to +6.0), and costs 13.4 points on clean faces.
 - The attention layer's main comparison, averaged over the 14 occluders of the first two, is +1.0 point (95% bootstrap interval +0.5 to +1.5); it comes from the noise fills and the lower band, and with three seeds per configuration, whether it is significant depends on the test. It costs 2.2 points on clean faces.
 - The four CosFace configurations are weak identifiers (15.6 to 31.3% clean rank-1), so the study is about the differences between them. A fifth, trained with a batch-hard triplet loss, failed to train (1.3% clean rank-1).
+- The study uses one dataset, CelebA-HQ. No result is broken down by demographic group, and none shows whether these models are fit for real-world use.
 
 ## Run it
 

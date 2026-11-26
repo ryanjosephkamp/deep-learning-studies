@@ -10,8 +10,8 @@ Verification uses every probe-gallery pair, two ways:
   of them pass; the true accept rate (TAR) at that threshold. This re-calibrates to each
   occluder, so it hides any shift in impostor scores.
 - tar_fixed_far_<f> and far_fixed_far_<f>: the threshold is fixed once per model, on the clean
-  identity condition (no occluder) at FAR f, and applied to every condition, as a deployed system
-  would; the TAR and the actual false accept rate under the condition at that threshold.
+  identity condition (no occluder) for a target FAR f, and applied to every condition; the TAR and the
+  actual false accept rate under the condition at that threshold.
 The fixed thresholds are in eval/<model>/fixed_thresholds.json, and each unit also saves its
 impostor-score quantiles (<unit>.impostors.npz) so other operating points can be computed later.
 
