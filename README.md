@@ -9,6 +9,9 @@ and the numbers in their sentences, against the committed results.
 |---|---|
 | [`facial-recognition-under-occlusion-project`](facial-recognition-under-occlusion-project/) | Face identification with part of the face covered |
 
+Known and potential problems found after release, with the status of each, are listed in
+[`KNOWN-ISSUES.md`](KNOWN-ISSUES.md).
+
 Code is under the MIT License. Each project's README credits its data and gives the terms of the
 data and model weights it uses; the face model's weights, attached to this repository's
 [release](https://github.com/ryanjosephkamp/deep-learning-studies/releases), are for non-commercial research only.

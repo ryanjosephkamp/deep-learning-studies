@@ -6,9 +6,11 @@ Coursework for CS 6073 Deep Learning (final project), University of Cincinnati, 
 
 An identification study ([`study/`](study/), results in [`results/study/`](results/study/)) asks the question the original protocol could not: whether a model picks out a different photo of the same person, among 1,000 people held out from the newly trained networks, when part of the face is covered. The write-up is a paper ([`paper/main.tex`](paper/main.tex), [PDF](https://ryanjosephkamp.github.io/deep-learning-studies/facial-recognition-under-occlusion-project/paper.pdf)) and a [chapter of the course site](https://ryanjosephkamp.github.io/deep-learning-studies/facial-recognition-under-occlusion-project/) ([`chapter/chapter.md`](chapter/chapter.md)).
 
+Known and potential problems found after release, with the status of each, are listed in [`KNOWN-ISSUES.md`](../KNOWN-ISSUES.md) at the repository's root.
+
 ## Question
 
-The project measures how identification accuracy falls as more of each face image is hidden, whether a CNN with spatial attention trained on occluded examples holds up better than pretrained face recognition models, and whether removing the background helps.
+The project measures how matching accuracy falls as more of each face image is hidden, whether a CNN with spatial attention trained on occluded examples holds up better than pretrained face recognition models, and whether removing the background helps.
 
 ## Setup
 
