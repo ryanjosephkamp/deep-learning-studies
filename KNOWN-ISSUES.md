@@ -22,7 +22,7 @@ below are relative to that folder.
 
 #### KI-01. The verification thresholds are set on the test identities and held fixed in the intervals
 
-- **Kind:** wording. **Status:** open, November 25, 2026.
+- **Kind:** wording. **Status:** fixed, November 26, 2026, in [`3c04676`][3c04676].
 - **Where:** `study/evaluate.py` (lines 13 to 14 and 132 to 143) and `study/analyze.py` (lines 99 to 101 and 150 to
   172); the paper's study design section and its results for the pretrained models (the two places that mention a
   deployed system), and the "Seeds" item in Limitations.
@@ -41,7 +41,7 @@ below are relative to that folder.
 
 #### KI-02. The closest prior work isn't cited
 
-- **Kind:** prior work. **Status:** open, November 25, 2026.
+- **Kind:** prior work. **Status:** fixed, November 26, 2026, in [`3c04676`][3c04676].
 - **Where:** the paper's related work section and references.
 - **Observed:** X. Xu, N. Sarafianos, and I. A. Kakadiaris, "On Improving the Generalization of Face Recognition in
   the Presence of Occlusions" (CVPR Workshops 2020, arXiv:2006.06787), combines an attention mechanism with a
@@ -53,7 +53,7 @@ below are relative to that folder.
 
 #### KI-03. No statement on demographic scope or fitness for real use
 
-- **Kind:** wording. **Status:** open, November 25, 2026.
+- **Kind:** wording. **Status:** fixed, November 26, 2026, in [`3c04676`][3c04676].
 - **Where:** the paper's Limitations, the chapter, and the READMEs.
 - **Observed:** the text says the data are mostly frontal, high-quality photos of celebrities, but nowhere says that
   no demographic or subgroup analysis was done, or that the results say nothing about whether these models are fit
@@ -80,6 +80,8 @@ below are relative to that folder.
   each arm would test it; none has been run.
 - **To check:** the `loss` and `lr` columns of `results/study/train/cosface_*_seed*/train_log.csv`, and
   `occlusion_probability` and `epochs` in `study/config.json`.
+- **Update, November 26, 2026:** the paper's ablation results, Discussion, and Limitations, and the chapter, now
+  state this possible confound ([`3c04676`][3c04676]). It stays potential until a longer run tests it.
 
 ### Reproducibility
 
@@ -94,6 +96,8 @@ below are relative to that folder.
   `requirements.txt`.)
 - **Affects:** what a reader can expect from rerunning `study/run_study.py`.
 - **To check:** `results/study/run_log.json`.
+- **Update, November 26, 2026:** the paper's "Reproducing the results" now states this ([`3c04676`][3c04676]). It
+  stays open until a seeded rerun is compared with the committed results.
 
 #### KI-06. No tests of the scoring or the identity split
 
@@ -106,3 +110,5 @@ below are relative to that folder.
   `paper/make_numbers.py` generates them from those files, which doesn't test the scoring itself.
 - **Affects:** how a reader can check the rank and verification code without the data.
 - **To check:** `git ls-files`, `study/run_study.py`.
+
+[3c04676]: https://github.com/ryanjosephkamp/deep-learning-studies/commit/3c0467641101e1b7d71b24fc60597a64b756adf8
